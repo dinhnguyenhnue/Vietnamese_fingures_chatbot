@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Hỏi đáp cùng AI - Tinh Hoa Việt</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "error-container": "#ffdad6",
+            "primary-fixed": "#ffdad6",
+            "surface-bright": "#fcf9f0",
+            "on-tertiary-container": "#dcac7f",
+            "on-secondary-fixed": "#2b1611",
+            "surface-container-low": "#f6f3ea",
+            "on-surface-variant": "#58413f",
+            "on-error-container": "#93000a",
+            "background": "#fcf9f0",
+            "on-surface": "#1c1c17",
+            "secondary-fixed-dim": "#e5beb5",
+            "primary": "#690008",
+            "tertiary-fixed-dim": "#eebd8e",
+            "inverse-on-surface": "#f4f1e8",
+            "inverse-primary": "#ffb3ac",
+            "on-background": "#1c1c17",
+            "surface-tint": "#ac322e",
+            "tertiary-container": "#61401b",
+            "surface-container": "#f1eee5",
+            "outline": "#8c716e",
+            "tertiary": "#472a07",
+            "surface-container-high": "#ebe8df",
+            "on-tertiary-fixed-variant": "#61401b",
+            "surface-dim": "#dddad1",
+            "primary-container": "#8b1a1a",
+            "primary-fixed-dim": "#ffb3ac",
+            "tertiary-fixed": "#ffdcbd",
+            "on-primary-fixed": "#410003",
+            "error": "#ba1a1a",
+            "surface": "#fcf9f0",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed-variant": "#5c403a",
+            "inverse-surface": "#31312b",
+            "secondary-fixed": "#ffdad2",
+            "on-primary-fixed-variant": "#8a1a1a",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed": "#2c1600",
+            "on-primary-container": "#ff9a91",
+            "outline-variant": "#e0bfbc",
+            "on-error": "#ffffff",
+            "surface-variant": "#e5e2da",
+            "surface-container-highest": "#e5e2da",
+            "on-secondary": "#ffffff",
+            "secondary": "#755750",
+            "on-secondary-container": "#7a5b54",
+            "secondary-container": "#ffd7ce",
+            "on-tertiary": "#ffffff"
+          },
+          fontFamily: {
+            "headline": ["Newsreader", "serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Page Transition Animation CSS */
+    .page-transition {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.4s ease-out;
+    }
+
+    .page-transition.loaded {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Typing Indicator Animation */
+    .typing-indicator span {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      margin: 0 2px;
+      animation: bounce 1.4s infinite ease-in-out both;
+    }
+
+    .typing-indicator span:nth-child(1) {
+      animation-delay: -0.32s;
+    }
+
+    .typing-indicator span:nth-child(2) {
+      animation-delay: -0.16s;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      80%,
+      100% {
+        transform: scale(0);
+      }
+
+      40% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-background font-body">
+  <!-- TopNavBar -->
+  <header
+    class="flex justify-between items-center px-8 py-4 w-full sticky top-0 bg-[#fcf9f0] dark:bg-stone-900/90 backdrop-blur-md z-50 border-b border-outline-variant/10">
+    <a href="index.html"
+      class="text-2xl font-serif font-bold text-[#690008] dark:text-[#8b1a1a] tracking-tight hover:opacity-80 transition-opacity">
+      Tinh Hoa Việt
+    </a>
+    <nav class="hidden md:flex space-x-8">
+      <a id="nav-bio"
+        class="cursor-pointer text-stone-600 dark:text-stone-400 font-medium hover:text-[#690008] transition-colors duration-300">Tiểu
+        sử & Dấu ấn</a>
+      <a id="nav-chat"
+        class="cursor-pointer text-[#690008] dark:text-[#8b1a1a] font-bold border-b-2 border-[#690008] pb-1">Hỏi đáp cùng AI</a>
+    </nav>
+    <div class="flex items-center space-x-4">
+    </div>
+  </header>
+
+  <div class="flex min-h-[calc(100vh-64px)]">
+    <!-- SideNavBar -->
+    <aside
+      class="fixed left-0 top-16 h-[calc(100vh-64px)] w-72 flex flex-col py-6 bg-[#f6f3ea] dark:bg-stone-800 bg-gradient-to-r from-transparent to-[#f1eee5] hidden lg:flex z-40">
+      <div class="px-6 mb-8">
+        <h2 class="font-serif text-lg text-[#472a07] italic">Danh Nhân Văn Hóa</h2>
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-secondary opacity-70">Hành trình di sản
+        </p>
+      </div>
+      <nav id="sidebar-nav" class="flex-1 space-y-1">
+        <!-- Rendered by JS -->
+      </nav>
+      <div class="mt-auto px-6 pt-6 border-t border-outline-variant/20">
+        <a href="https://drive.google.com/drive/folders/1u1PUQ-UHbtnL9kOroOGd_TjLoGlPvR9e?usp=drive_link"
+          target="_blank"
+          class="w-full py-3 px-4 bg-primary text-on-primary rounded-md text-sm font-semibold tracking-wide hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-sm">archive</span> Khám phá Kho lưu trữ
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Chat Canvas -->
+    <main id="main-content" class="flex-1 lg:ml-72 flex flex-col relative bg-surface page-transition">
+      <!-- Chat Header -->
+      <div
+        class="h-16 px-8 flex items-center justify-between bg-surface-container-low border-b border-outline-variant/10">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center">
+            <img id="header-avatar" alt="Portrait"
+              class="w-full h-full rounded-full object-cover border border-primary/20 shadow-sm" src="" />
+          </div>
+          <div>
+            <h1 class="font-headline text-xl text-primary font-semibold">Trợ lý AI Tinh Hoa Việt</h1>
+            <p id="header-role" class="text-[10px] uppercase tracking-widest text-secondary font-bold"></p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <button class="p-2 text-secondary hover:bg-surface-container transition-colors rounded-full">
+            <span class="material-symbols-outlined">settings</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Messages Area -->
+      <div id="chat-messages" class="flex-1 overflow-y-auto p-8 space-y-8 scrollbar-hide">
+        <!-- Initial Greetings populated by JS -->
+      </div>
+
+      <!-- Suggested Questions -->
+      <div id="chat-suggestions" class="flex flex-wrap gap-2 max-w-3xl mx-auto w-full pt-4 px-8 mb-2">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Input Area -->
+      <div class="p-6 bg-surface-container-low/50 backdrop-blur-sm z-10 w-full static mt-auto">
+        <div class="max-w-3xl mx-auto relative group">
+          <div
+            class="absolute inset-0 bg-primary/5 rounded-xl blur-lg opacity-0 group-focus-within:opacity-100 transition-opacity">
+          </div>
+          <div
+            class="relative flex items-center bg-surface-container-lowest border border-outline/40 focus-within:border-primary transition-all p-2 rounded-xl shadow-sm">
+            <button class="p-2 text-outline hover:text-primary transition-colors cursor-default">
+              <span id="input-person-icon" class="material-symbols-outlined"></span>
+            </button>
+            <input id="chat-input"
+              class="flex-1 bg-transparent border-none outline-none focus:ring-0 text-sm py-3 px-4 font-body placeholder:text-outline/60"
+              placeholder="Hỏi thêm về danh nhân..." type="text" autocomplete="off" />
+            <div class="flex items-center gap-2 px-2">
+              <button id="chat-send-btn"
+                class="w-10 h-10 bg-primary text-on-primary rounded-lg flex items-center justify-center hover:opacity-90 active:scale-95 transition-all">
+                <span class="material-symbols-outlined">send</span>
+              </button>
+            </div>
+          </div>
+          <p class="text-[10px] text-center mt-3 text-outline/60 font-medium">Sử dụng AI để khám phá chiều sâu lịch sử
+            Việt Nam. Thông tin có tính chất tham khảo học thuật.</p>
+        </div>
+      </div>
+
+
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Data Initialization
+      const urlParams = new URLSearchParams(window.location.search);
+      let currentId = urlParams.get('id');
+
+      let person = danhNhanData.find(p => p.id === currentId);
+      if (!person) {
+        currentId = danhNhanData[0].id;
+        person = danhNhanData[0];
+        window.history.replaceState({}, '', `?id=${currentId}`);
+      }
+
+      document.title = `Hỏi đáp cùng AI - ${person.name}`;
+
+      // Navigate gently function
+      const mainContent = document.getElementById('main-content');
+      window.smoothNavigate = function (url) {
+        mainContent.classList.remove('loaded');
+        setTimeout(() => {
+          window.location.href = url;
+        }, 300);
+      };
+
+      // Set Nav links
+      document.getElementById('nav-bio').onclick = () => smoothNavigate(`index.html?id=${currentId}`);
+      document.getElementById('nav-chat').onclick = () => smoothNavigate(`code_chatbot.html?id=${currentId}`);
+
+      // 2. Render Sidebar
+      const sidebarNav = document.getElementById('sidebar-nav');
+      danhNhanData.forEach(p => {
+        const isActive = p.id === currentId;
+        const a = document.createElement('a');
+
+        if (isActive) {
+          a.className = "cursor-pointer flex items-center space-x-3 px-6 py-3 bg-[#ffffff] dark:bg-stone-700 text-[#690008] dark:text-white rounded-l-full ml-4 shadow-sm ease-in-out duration-200";
+        } else {
+          a.className = "cursor-pointer flex items-center space-x-3 px-6 py-3 text-stone-500 dark:text-stone-400 hover:translate-x-1 transition-transform hover:bg-[#f1eee5] dark:hover:bg-stone-700";
+        }
+
+        a.innerHTML = `
+          <span class="material-symbols-outlined">${p.sidebarIcon}</span>
+          <span class="font-sans text-sm font-semibold">${p.name}</span>
+        `;
+
+        a.onclick = (e) => {
+          e.preventDefault();
+          if (p.id !== currentId) smoothNavigate(`code_chatbot.html?id=${p.id}`);
+        };
+        sidebarNav.appendChild(a);
+      });
+
+      // 3. Render Header
+      const headerAvatar = document.getElementById('header-avatar');
+      headerAvatar.src = person.headerAvatar;
+      headerAvatar.className = `w-full h-full rounded-full object-cover border border-primary/20 shadow-sm ${person.imagePosition || ""}`;
+      document.getElementById('header-role').textContent = person.chatRole;
+      document.getElementById('input-person-icon').textContent = person.sidebarIcon;
+
+      // 4. Initial AI Message Setup
+      const chatMessagesBox = document.getElementById('chat-messages');
+
+      function addAIBubble(htmlContent) {
+        const bubble = document.createElement('div');
+        bubble.className = "flex flex-col items-start animate-in slide-in-from-left-4 duration-700 mt-6";
+        bubble.innerHTML = `
+          <div class="flex gap-4 items-start max-w-[85%]">
+            <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center mt-1">
+              <img alt="Avatar" class="w-full h-full rounded-full object-cover border border-primary/20 shadow-sm ${person.imagePosition || ''}" src="${person.chatAvatar}" />
+            </div>
+            <div class="bg-surface-container-lowest border border-outline-variant/10 p-6 rounded-xl rounded-tl-none shadow-[0px_12px_32px_rgba(28,28,23,0.06)]">
+              ${htmlContent}
+            </div>
+          </div>
+          <span class="text-[10px] mt-2 ml-12 text-outline font-semibold uppercase tracking-tighter">Trợ lý Tinh Hoa Việt • Vừa xong</span>
+        `;
+        chatMessagesBox.appendChild(bubble);
+        scrollToBottom();
+      }
+
+      function addUserBubble(text) {
+        const bubble = document.createElement('div');
+        bubble.className = "flex flex-col items-end animate-in slide-in-from-right-4 duration-500 mt-6";
+        bubble.innerHTML = `
+          <div class="max-w-[80%] bg-surface-container-highest text-on-surface p-4 rounded-xl rounded-tr-none shadow-sm">
+            <p class="text-sm leading-relaxed font-semibold">${text}</p>
+          </div>
+          <span class="text-[10px] mt-2 text-outline font-semibold uppercase tracking-tighter">Bạn • Vừa xong</span>
+        `;
+        chatMessagesBox.appendChild(bubble);
+        scrollToBottom();
+      }
+
+      function scrollToBottom() {
+        // give it a tiny delay to wait for DOM redraw
+        setTimeout(() => {
+          chatMessagesBox.scrollTop = chatMessagesBox.scrollHeight;
+        }, 10);
+      }
+
+      // Add the initial message and suggestions
+      addAIBubble(person.initialAIChat);
+
+      // Handle initial question from URL if any
+      const initialQuestion = urlParams.get('q');
+      if (initialQuestion) {
+        setTimeout(() => {
+          chatInput.value = initialQuestion;
+          handleChatSubmit();
+        }, 800); // slight delay for visual smoothness
+      }
+
+      // 5. Render Suggestions
+      const suggestionsBox = document.getElementById('chat-suggestions');
+      person.suggestedQuestions.forEach(q => {
+        const btn = document.createElement('button');
+        btn.className = "px-4 py-2 bg-surface-container-high hover:bg-surface-container-highest text-secondary text-xs font-semibold rounded-full border border-outline-variant/20 transition-all flex items-center gap-2 suggestion-btn";
+        btn.dataset.question = q.text;
+        btn.innerHTML = `<span class="material-symbols-outlined text-sm">${q.icon}</span> ${q.text}`;
+        btn.onclick = () => {
+          handleChatSubmit(q.text);
+        };
+        suggestionsBox.appendChild(btn);
+      });
+
+      // Chat Input Logic
+      const chatInput = document.getElementById('chat-input');
+      const chatSendBtn = document.getElementById('chat-send-btn');
+
+
+
+      function addTypewriterBubble(text) {
+        const bubble = document.createElement('div');
+        bubble.className = "flex flex-col items-start animate-in slide-in-from-left-4 duration-700 mt-6";
+
+        const contentId = "msg-" + Date.now();
+        bubble.innerHTML = `
+          <div class="flex gap-4 items-start max-w-[85%]">
+            <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center mt-1">
+              <img alt="Avatar" class="w-full h-full rounded-full object-cover border border-primary/20 shadow-sm ${person.imagePosition || ''}" src="${person.chatAvatar}" />
+            </div>
+            <div class="bg-surface-container-lowest border border-outline-variant/10 p-6 rounded-xl rounded-tl-none shadow-[0px_12px_32px_rgba(28,28,23,0.06)]">
+              <p id="${contentId}" class="text-[15px] leading-relaxed font-body"></p>
+            </div>
+          </div>
+          <span class="text-[10px] mt-2 ml-12 text-outline font-semibold uppercase tracking-tighter">Trợ lý Tinh Hoa Việt • Vừa xong</span>
+        `;
+        chatMessagesBox.appendChild(bubble);
+        scrollToBottom();
+
+        const contentEl = document.getElementById(contentId);
+        let i = 0;
+        let isTag = false;
+
+        // Basic markdown to HTML
+        let htmlText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        htmlText = htmlText.replace(/\*/g, '');
+        htmlText = htmlText.replace(/\n/g, '<br>');
+
+        let currentHTML = "";
+        function typeWriter() {
+          if (i < htmlText.length) {
+            if (htmlText.charAt(i) === '<') isTag = true;
+            currentHTML += htmlText.charAt(i);
+            if (htmlText.charAt(i) === '>') isTag = false;
+
+            contentEl.innerHTML = currentHTML;
+            i++;
+
+            if (isTag) {
+              typeWriter();
+            } else {
+              scrollToBottom();
+              setTimeout(typeWriter, 15); // tốc độ chạy chữ
+            }
+          } else {
+            chatInput.disabled = false;
+            chatSendBtn.disabled = false;
+            chatInput.focus();
+            scrollToBottom();
+          }
+        }
+        typeWriter();
+      }
+
+      async function handleChatSubmit(submittedText = null) {
+        const text = submittedText || chatInput.value.trim();
+        if (!text) return;
+
+        chatInput.value = '';
+        chatInput.disabled = true;
+        chatSendBtn.disabled = true;
+
+        addUserBubble(text);
+
+        // Simulated typing indicator (3 dots)
+        const typingId = "typing-" + Date.now();
+        const typingHTML = `
+          <div id="${typingId}" class="flex flex-col items-start mt-6">
+            <div class="flex gap-4 items-start max-w-[85%]">
+              <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center mt-1">
+                <img alt="Avatar" class="w-full h-full rounded-full object-cover border border-primary/20 shadow-sm" src="${person.chatAvatar}" />
+              </div>
+              <div class="bg-surface-container-lowest border border-outline-variant/10 p-4 rounded-xl rounded-tl-none shadow-sm">
+                <div class="typing-indicator"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        `;
+        chatMessagesBox.insertAdjacentHTML('beforeend', typingHTML);
+        scrollToBottom();
+
+        // 1. Check if predefined question
+        const matchedQuestion = person.suggestedQuestions.find(q => q.text === text);
+        if (matchedQuestion && matchedQuestion.answer) {
+          // Remove the suggestion button that was just asked
+          document.querySelectorAll('.suggestion-btn').forEach(btn => {
+            if (btn.dataset.question === text) {
+              btn.remove();
+            }
+          });
+
+          setTimeout(() => {
+            document.getElementById(typingId).remove();
+            addTypewriterBubble(matchedQuestion.answer);
+          }, 600);
+          return;
+        }
+
+        // 2. Chuyển hướng sang Gem riêng
+        setTimeout(() => {
+          document.getElementById(typingId).remove();
+          let leadingText = `Câu hỏi của bạn rất đỗi thú vị! Nếu bạn muốn đàm đạo mở rộng và chuyên sâu hơn nữa, mời bạn 👉 <a href="${person.gemLink}" target="_blank" class="text-[#ac322e] font-bold underline hover:opacity-80">ghé thăm không gian trò chuyện chuyên biệt (Gem) của ta tại đây nhé!</a>`;
+          addTypewriterBubble(leadingText);
+        }, 1200);
+      }
+
+      chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleChatSubmit();
+      });
+      chatSendBtn.onclick = () => handleChatSubmit();
+
+      // Trigger fade-in animation
+      setTimeout(() => {
+        mainContent.classList.add('loaded');
+      }, 50);
+    });
+  </script>
+</body>
+
+</html>
