@@ -399,7 +399,7 @@
           const modDiv = document.createElement('div');
           modDiv.className = "bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 shadow-sm relative overflow-hidden";
           
-          let innerHtml = `<h3 class="serif-text text-2xl font-bold text-primary mb-6 flex items-center gap-3"><span class="bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center text-sm font-sans">${mod.id.replace('s', '')}</span> ${mod.title.replace(/^\d+\.\s*/, '')}</h3>`;
+          let innerHtml = `<h3 class="serif-text text-2xl font-bold text-primary mb-6 flex items-center gap-4"><div class="w-12 h-12 rounded-xl overflow-hidden border border-outline-variant/30 shrink-0 shadow-sm"><img src="${person.headerAvatar || person.avatar}" class="w-full h-full object-cover"></div> ${mod.title}</h3>`;
           
           if (mod.type === 'text_media') {
              innerHtml += `<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">`;
@@ -436,7 +436,7 @@
              innerHtml += `<div class="space-y-12">`;
              mod.blocks.forEach(blk => {
                 innerHtml += `<div>`;
-                if (blk.title) innerHtml += `<h4 class="font-bold text-lg text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-stone-400 text-sm">label_important</span> ${blk.title}</h4>`;
+                if (blk.title) innerHtml += `<h4 class="font-bold text-lg text-primary mb-4 flex items-center gap-3"><div class="w-6 h-6 rounded overflow-hidden shrink-0 shadow-sm ring-1 ring-outline-variant/30"><img src="${person.headerAvatar || person.avatar}" class="w-full h-full object-cover"></div> ${blk.title}</h4>`;
                 
                 if (blk.type === 'text_media') {
                    innerHtml += `<div class="flex flex-col sm:flex-row gap-8 items-center mb-8 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm">`;
