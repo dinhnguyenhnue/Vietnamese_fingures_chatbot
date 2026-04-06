@@ -23,7 +23,18 @@ const danhNhanData = [
       "Thất trảm sớ gồm những ai?",
       "Chu Văn An đã dạy những vị vua nào?"
     ],
-    chatAvatar: "https://drive.google.com/thumbnail?id=1axI1iFE8R_iAH10pu34W5PtqOJb7GIxt&sz=w1000",
+    title: "Vạn thế sư biểu",
+    summary: "Người thầy vĩ đại của muôn đời, biểu tượng của nền giáo dục Việt Nam.",
+    metadata: [
+        { label: "Họ và tên", value: "Chu Văn An" },
+        { label: "Tự", value: "Linh Triệt" },
+        { label: "Hiệu", value: "Tiều Ẩn, Khang Tiết tiên sinh" },
+        { label: "Thụy", value: "Văn Trinh" },
+        { label: "Sinh - Mất", value: "1292 – 1370" },
+        { label: "Quê quán", value: "Thanh Đàm (nay thuộc Thanh Trì, Hà Nội)" },
+        { label: "UNESCO", value: "Danh nhân văn hóa thế giới (2019)" }
+    ],
+    avatar: "https://drive.google.com/thumbnail?id=1axI1iFE8R_iAH10pu34W5PtqOJb7GIxt&sz=w1000",
     headerAvatar: "https://drive.google.com/thumbnail?id=1axI1iFE8R_iAH10pu34W5PtqOJb7GIxt&sz=w1000",
     chatRole: "Chuyên gia lịch sử & văn hóa",
     gemLink: "https://gemini.google.com/gem/1XsVPSGgEq1dx9XuObJ9L53M8REIh1tOQ?usp=sharing",
@@ -243,7 +254,8 @@ const danhNhanData = [
         title: "3. Cuộc đời",
         html: "<p>Chu Văn An (1292 – 1370), tên hiệu là Tiều Ẩn, tên chữ là Linh Triệt, người làng Quang Liệt (nay là thôn Văn), xã Thanh Liệt, huyện Thanh Trì, Hà Nội. Cuộc đời và sự nghiệp của Chu Văn An để lại cho chúng ta một nhân cách lớn của một nhà trí thức lớn. Sức mạnh tinh thần phong phú giúp Chu Văn An sống một cuộc đời đầy ý nghĩa, tự tại, tự tôn trong bối cảnh xã hội rối ren đương thời. Cho đến nay, Chu Văn An vẫn được coi là một trong những vị Tư nghiệp đầu tiên của Quốc Tử Giám, có nhiều dấu ấn với Văn Miếu Quốc Tử Giám và nền Quốc học nước nhà thế kỷ XIV.</p><p class='mt-3'>Theo Đại Việt sử ký toàn thư, Chu Văn An \"tính cương nghị, thẳng thắn, sửa mình trong sạch, không cầu lợi lộc\". Ông ở nhà đọc sách, học vấn tinh thông, nổi tiếng gần xa, \"học trò đầy cửa, thường có kẻ đỗ đại khoa\".</p><p class='mt-3'>Các học trò đến với lớp học không chỉ vì biết thầy Chu Văn An tinh thông Nho học mà còn vì nể phục, trân trọng khí chất thanh cao, tấm lòng trung hiếu với dân, với nước không màng danh vọng. Học trò của thầy có nhiều người đã đỗ đạt và làm quan trong triều đình được sử sách nhắc tới như Phạm Sư Mãnh, Lê Quát.</p>",
         media: { type: "video", url: "https://youtu.be/JSsTk6ui0-M?si=x-fme0i15Uuuixh4" },
-        task: "Xây dựng thẻ hồ sơ thông tin về danh nhân Chu Văn An với những tiêu chí cơ bản sau: Họ và tên, tự, nơi sinh, gia đình,…"
+        task: "Xây dựng thẻ hồ sơ thông tin về danh nhân Chu Văn An với những tiêu chí cơ bản sau: Họ và tên, tự, nơi sinh, gia đình,…",
+        taskUrl: "https://aseanmotbian.my.canva.site/taothedanhnhan"
       },
       {
         id: "s4",
@@ -251,7 +263,8 @@ const danhNhanData = [
         title: "4. Sự nghiệp – hoạt động",
         html: "<p>Cuộc đời của Chu Văn An được chia làm 3 giai đoạn:</p><ul class='list-disc pl-5 mt-2 space-y-2'><li>Giai đoạn sau khi đỗ Thái học sinh (tương đương với Tiến sĩ), Chu Văn An không ra làm quan mà về Huỳnh Cung mở trường dạy học, thu hút được nhiều học trò.</li><li>Giai đoạn được vua Trần Minh Tông (1300-1357) mời ông ra làm tư nghiệp Quốc tử giám, dạy cho Thái tử Trần Vượng, tức là vua Trần Hiến Tông;</li><li>Giai đoạn thoái lui ở núi Phượng Hoàng (Chí Linh, Hải Dương): Theo Đại Việt sử ký toàn thư, sau khi dâng Thất trảm sớ nhưng không được vua trả lời, Chu Văn An rời kinh thành về vùng đất Chí Linh mở trường tiếp tục dạy học, lấy hiệu là Tiều Ẩn.</li></ul><p class='mt-3'>Sau khi Chu Văn An mất, ông được triều đình truy tặng tước Văn Trinh Công, được ban tên thụy là Khang Tiết và thờ ở Văn Miếu.</p>",
         media: { type: "image", src: "https://drive.google.com/thumbnail?id=1p9eJ6eg5jfY-u6PZCyw0kWbuR4igZQhe&sz=w1000", url: "https://drive.google.com/file/d/1p9eJ6eg5jfY-u6PZCyw0kWbuR4igZQhe/view?usp=drive_link" },
-        task: "Vẽ sơ đồ tư duy tóm tắt sự nghiệp, hoạt động tiêu biểu của danh nhân Chu Văn An."
+        task: "Vẽ sơ đồ tư duy tóm tắt sự nghiệp, hoạt động tiêu biểu của danh nhân Chu Văn An.",
+        taskUrl: "https://aseanmotbian.my.canva.site/sodotuduy"
       },
       {
         id: "s5",
@@ -261,7 +274,7 @@ const danhNhanData = [
           {
             type: "text_media",
             title: "Nhà giáo dục kiệt xuất",
-            html: "<p>Mở trường dân lập dạy cho nhân dân, đào tạo ra nhiều nhân tài cho đất nước. Học trò đến học ở trường Huỳnh Cung khá đông đến 3.000, có nhiều người đỗ đạt và ra làm quan to. Đây cũng là mở đầu cho đa dạng hệ thống hình thức trường học, cơ sở giáo dục của nước nhà.</p>",
+            html: "<p>Mở trường dân lập dạy cho nhân dân, đào tạo ra nhiều nhân tài cho đất nước. Học trò đến học ở trường Huỳnh Cung khá đông với khoảng 3.000 người, có nhiều người đỗ đạt và làm quan to trong triều (như Nhập nội Hành khiển Lê Quát hay Phạm Sư Mạnh). Qua đó, thầy đã đóng vai trò quan trọng mở rộng cơ hội học tập cho bình dân, không chỉ dành cho quý tộc. Đây cũng là bước mở đầu cho sự đa dạng hình thức cơ sở giáo dục nước nhà.</p>",
             media: { type: "image", src: "https://drive.google.com/thumbnail?id=1GtwazRrdzR9yiruEayKC33ibrYRanGFq&sz=w1000", url: "https://drive.google.com/file/d/1GtwazRrdzR9yiruEayKC33ibrYRanGFq/view?usp=drive_link" }
           },
           {
@@ -279,6 +292,7 @@ const danhNhanData = [
           {
             type: "table_task",
             task: "Tìm hiểu về đóng góp của Chu Văn An trên các lĩnh vực bằng cách suy nghĩ hoàn thành bảng sau:",
+            taskUrl: "https://aseanmotbian.my.canva.site/timhieudonggopdanhnhan",
             headers: ["Lĩnh vực", "Thành tựu", "Ý nghĩa"],
             rows: [
               ["Giáo dục", "...", "..."],
@@ -304,7 +318,8 @@ const danhNhanData = [
         rows: [
           ["1", "Hội thảo khoa học Danh nhân Chu Văn An – Con người và Sự nghiệp", "Trung tâm VHKH Văn Miếu", "6/4/2018", "Quốc gia"]
         ],
-        task: "Đóng vai là ban tổ chức, hãy lên kế hoạch cho một cuộc hội thảo khoa học về danh nhân Chu Văn An tại trường của bạn."
+        task: "Đóng vai là ban tổ chức, hãy lên kế hoạch cho một cuộc hội thảo khoa học về danh nhân Chu Văn An tại trường của bạn.",
+        taskUrl: "https://aseanmotbian.my.canva.site/hoatdonghoctap"
       },
       {
         id: "s8",
@@ -319,13 +334,20 @@ const danhNhanData = [
           },
           {
             type: "text_media",
+            title: "Nhà sử học Phan Huy Chú",
+            html: "<p>\"Ông học nghiệp thuần túy, tiết tháo cao thượng... thực là một bậc nho tông ở nước Việt ta, tiếng tăm lưu truyền mãi được tôn kính, bực hiền nhân đều không ai bằng.\"</p>",
+            media: { type: "image", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Phan_Huy_Chu_statue_at_Van_Mieu%2C_Hanoi.jpg/400px-Phan_Huy_Chu_statue_at_Van_Mieu%2C_Hanoi.jpg", url: "https://vi.wikipedia.org/wiki/Phan_Huy_Ch%C3%BA" }
+          },
+          {
+            type: "text_media",
             title: "Sử học gia Ngô Sỹ Liên",
             html: "<p>\"Người chịu để tâm đến đại đức, suy nghĩ đến việc giúp Vua nêu đức tốt cho dân được nhờ ơn, Chu Văn An ở đời Trần có lẽ gần được như thế…\"</p>"
           },
           {
             type: "text_media",
             title: "Đại diện UNESCO",
-            html: "<p>\"Chúng ta hãy coi giáo dục là một sự nghiệp suốt đời quan trọng và cần thiết cho sự phát triển bền vững của bản thân, của gia đình, của cộng đồng và của toàn dân tộc.\"</p>"
+            html: "<p>\"Chúng ta hãy coi giáo dục là một sự nghiệp suốt đời quan trọng và cần thiết cho sự phát triển bền vững của bản thân, của gia đình, của cộng đồng và của toàn dân tộc.\"</p>",
+            media: { type: "image", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/UNESCO_logo.svg/512px-UNESCO_logo.svg.png", url: "https://vi.wikipedia.org/wiki/Danh_nh%C3%A2n_v%C4%83n_h%C3%B3a_th%E1%BA%BF_gi%E1%BB%9Bi" }
           }
         ]
       },
@@ -334,7 +356,8 @@ const danhNhanData = [
         type: "text_media",
         title: "9. Di sản để lại",
         html: "<p>Người dân vùng quê Thanh Đàm thờ ông làm Thành hoàng và gọi là đức Thánh Chu. Nhiều nơi trong nước có di tích thờ phụng ông, như đền Thanh Liệt, Văn Điển, đền Phượng Sơn ở Chí Linh...</p><p class='mt-3'>Nhân dân Thủ đô cũng lấy tên ông để đặt tên cho một đường phố và một trường trung học lớn của Hà Nội. Trung tâm Văn Miếu thường xuyên tổ chức chuyên đề thiết kế, sáng tác về thầy.</p>",
-        task: "Đóng vai là hướng dẫn viên du lịch, hãy giới thiệu về một di tích thờ phụng, tưởng niệm danh nhân Chu Văn An mà em biết."
+        task: "Đóng vai là hướng dẫn viên du lịch, hãy giới thiệu về một di tích thờ phụng, tưởng niệm danh nhân Chu Văn An mà em biết.",
+        taskUrl: "https://aseanmotbian.my.canva.site/emlamhuongdanviendulich"
       },
       {
         id: "s10",
@@ -342,12 +365,14 @@ const danhNhanData = [
         title: "10. Trò chơi Canva",
         html: "<p>Tham gia trò chơi Canva tương tác chuyên đề về Chu Văn An.</p>",
         link: "#",
-        status: "Sắp ra mắt"
+        status: "Sắp ra mắt",
+        taskUrl: "https://aseanmotbian.my.canva.site/tracnghiem"
       },
       {
         id: "s11",
         type: "quiz",
         title: "11. Trắc nghiệm ĐÚNG/SAI",
+        taskUrl: "https://aseanmotbian.my.canva.site/tracnghiemdungsai",
         questions: [
           { q: "Chu Văn An là một nhà Nho tiêu biểu của tầng lớp sĩ phu Việt Nam hơn 600 năm trước.", a: "Đ", text: "Câu 1 a" },
           { q: "Trong bối cảnh chính sự suy đồi, Chu Văn An đã dâng sớ xin nhà vua xử chém bảy tên nịnh thần.", a: "Đ", text: "Câu 1 b" },
