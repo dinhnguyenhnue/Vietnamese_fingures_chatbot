@@ -173,63 +173,60 @@
       </div>
 
       <!-- Bento Grid Content -->
-      <div class="grid grid-cols-12 gap-8">
-        <!-- Biography Column -->
-        <section class="col-span-12 lg:col-span-7 space-y-8">
-          <div
-            class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 shadow-[0px_12px_32px_rgba(28,28,23,0.04)]">
-            <div class="flex items-center gap-3 mb-6">
-              <span class="material-symbols-outlined text-primary-container">history</span>
-              <h3 id="bio-title" class="serif-text text-3xl font-bold text-primary"></h3>
-            </div>
-            <p id="bio-desc" class="font-sans text-stone-700 leading-relaxed text-lg mb-6"></p>
-            <div class="grid grid-cols-2 gap-6 mt-8">
-              <div class="bg-surface-container-low p-6 rounded-lg">
+      <section class="bg-surface-container-lowest p-8 sm:p-10 rounded-3xl border border-outline-variant/30 shadow-sm mb-16">
+        <h3 id="bio-title" class="serif-text text-3xl font-bold text-primary mb-8 border-b border-outline-variant/30 pb-4 uppercase"></h3>
+        <div class="grid grid-cols-12 gap-8">
+          <!-- Biography Column -->
+          <div class="col-span-12 lg:col-span-7 space-y-8">
+            <p id="bio-desc" class="font-sans text-stone-700 leading-relaxed text-lg"></p>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="bg-surface-container-low p-6 rounded-lg text-center shadow-sm">
                 <span class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">Sinh thời</span>
                 <span id="bio-lifespan" class="serif-text text-xl text-primary font-semibold"></span>
               </div>
-              <div class="bg-surface-container-low p-6 rounded-lg">
+              <div class="bg-surface-container-low p-6 rounded-lg text-center shadow-sm">
                 <span class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">Quê quán</span>
                 <span id="bio-hometown" class="serif-text text-xl text-primary font-semibold"></span>
               </div>
             </div>
-          </div>
-          <div class="relative group overflow-hidden rounded-xl h-[450px] md:h-[600px] bg-surface-container-highest">
-            <img id="image-element"
-              class="w-full h-full object-contain object-top transition-transform duration-700 group-hover:scale-105" src=""
-              alt="Hero Image" />
-            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
-              <h2 id="image-title" class="text-white font-bold text-xl drop-shadow-md"></h2>
-              <p id="image-desc" class="text-white/80 text-sm mt-1 mb-3"></p>
-              <div id="hero-metadata" class="flex flex-col gap-1.5 hidden"></div>
+            
+            <div class="relative group overflow-hidden rounded-xl h-[450px] md:h-[600px] bg-surface-container-highest shadow-sm border border-outline-variant/20">
+              <img id="image-element"
+                class="w-full h-full object-contain object-top transition-transform duration-700 group-hover:scale-105" src=""
+                alt="Hero Image" />
+              <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
+                <h2 id="image-title" class="text-white font-bold text-xl drop-shadow-md"></h2>
+                <p id="image-desc" class="text-white/80 text-sm mt-1 mb-3"></p>
+                <div id="hero-metadata" class="flex flex-col gap-1.5 hidden"></div>
+              </div>
             </div>
-          </div>
-        </section>
-
-        <!-- Legacy Column -->
-        <section class="col-span-12 lg:col-span-5 space-y-8">
-          <div class="bg-primary p-10 rounded-xl text-white">
-            <div class="flex items-center gap-3 mb-6">
-              <span class="material-symbols-outlined text-primary-fixed"
-                style="font-variation-settings: 'FILL' 1;">bookmark_heart</span>
-              <h3 class="serif-text text-3xl font-bold">Dấu ấn Lịch sử</h3>
-            </div>
-            <ul id="achievements-list" class="space-y-6">
-              <!-- Rendered by JS -->
-            </ul>
           </div>
 
-          <div class="bg-surface-container p-8 rounded-xl border border-outline-variant/10">
-            <div class="flex items-center justify-between mb-6">
-              <h4 class="serif-text text-xl font-bold text-tertiary">Câu hỏi thường gặp</h4>
-              <span class="material-symbols-outlined text-stone-400">lightbulb</span>
+          <!-- Legacy Column -->
+          <div class="col-span-12 lg:col-span-5 space-y-8">
+            <div class="bg-primary p-10 rounded-xl text-white shadow-sm border border-outline-variant/10">
+              <div class="flex items-center gap-3 mb-6">
+                <span class="material-symbols-outlined text-primary-fixed"
+                  style="font-variation-settings: 'FILL' 1;">bookmark_heart</span>
+                <h3 class="serif-text text-3xl font-bold">Dấu ấn Lịch sử</h3>
+              </div>
+              <ul id="achievements-list" class="space-y-6">
+                <!-- Rendered by JS -->
+              </ul>
             </div>
-            <div id="faq-list" class="space-y-4">
-              <!-- Rendered by JS -->
+
+            <div class="bg-surface-container p-8 rounded-xl border border-outline-variant/30 shadow-sm">
+              <div class="flex items-center justify-between mb-6">
+                <h4 class="serif-text text-xl font-bold text-tertiary">Câu hỏi thường gặp</h4>
+                <span class="material-symbols-outlined text-stone-400">lightbulb</span>
+              </div>
+              <div id="faq-list" class="space-y-4">
+                <!-- Rendered by JS -->
+              </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- Learning Modules Section -->
       <div id="learning-modules-section" class="hidden flex-col gap-12 pt-16 mt-8 border-t border-outline-variant/20">
@@ -482,13 +479,16 @@
              }
           }
           else if (mod.type === 'game') {
-             innerHtml += `<div class="flex flex-col items-center justify-center p-10 bg-gradient-to-r from-primary-container/20 to-tertiary-container/20 rounded-xl border border-outline-variant/30">`;
-             innerHtml += `  <span class="material-symbols-outlined text-6xl text-primary mb-4 drop-shadow-sm">sports_esports</span>`;
-             innerHtml += `  <div class="text-stone-700 font-medium mb-6 text-center">${mod.html}</div>`;
+             innerHtml += `<div class="w-full">`;
              if (mod.taskUrl) {
-                innerHtml += `<a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 px-8 py-3 bg-[#00c4cc] text-white font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all text-lg"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" class="w-6 h-6"/> Chơi ngay trên Canva</a>`;
+                innerHtml += `<div class="rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 mb-4 bg-surface-container-highest"><iframe src="${mod.taskUrl}" style="border:none; width: 100%; height: 600px;" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe></div>`;
+                innerHtml += `<div class="flex justify-center"><a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 px-6 py-2 bg-stone-100 text-stone-600 font-bold rounded-full hover:bg-stone-200 transition-colors text-sm shadow-sm"><span class="material-symbols-outlined text-sm">open_in_new</span> Mở riêng toàn màn hình</a></div>`;
              } else {
+                innerHtml += `<div class="flex flex-col items-center justify-center p-10 bg-gradient-to-r from-primary-container/20 to-tertiary-container/20 rounded-xl border border-outline-variant/30">`;
+                innerHtml += `  <span class="material-symbols-outlined text-6xl text-primary mb-4 drop-shadow-sm">sports_esports</span>`;
+                innerHtml += `  <div class="text-stone-700 font-medium mb-6 text-center">${mod.html}</div>`;
                 innerHtml += `  <button class="px-8 py-3 bg-stone-300 text-stone-500 font-bold rounded-full cursor-not-allowed shadow-inner flex items-center gap-2"><span class="material-symbols-outlined text-sm">lock</span> ${mod.status}</button>`;
+                innerHtml += `</div>`;
              }
              innerHtml += `</div>`;
           }

@@ -335,8 +335,7 @@ const danhNhanData = [
           {
             type: "text_media",
             title: "Nhà sử học Phan Huy Chú",
-            html: "<p>\"Ông học nghiệp thuần túy, tiết tháo cao thượng... thực là một bậc nho tông ở nước Việt ta, tiếng tăm lưu truyền mãi được tôn kính, bực hiền nhân đều không ai bằng.\"</p>",
-            media: { type: "image", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Phan_Huy_Chu_statue_at_Van_Mieu%2C_Hanoi.jpg/400px-Phan_Huy_Chu_statue_at_Van_Mieu%2C_Hanoi.jpg", url: "https://vi.wikipedia.org/wiki/Phan_Huy_Ch%C3%BA" }
+            html: "<p>\"Ông học nghiệp thuần túy, tiết tháo cao thượng... thực là một bậc nho tông ở nước Việt ta, tiếng tăm lưu truyền mãi được tôn kính, bực hiền nhân đều không ai bằng.\"</p>"
           },
           {
             type: "text_media",
@@ -346,8 +345,7 @@ const danhNhanData = [
           {
             type: "text_media",
             title: "Đại diện UNESCO",
-            html: "<p>\"Chúng ta hãy coi giáo dục là một sự nghiệp suốt đời quan trọng và cần thiết cho sự phát triển bền vững của bản thân, của gia đình, của cộng đồng và của toàn dân tộc.\"</p>",
-            media: { type: "image", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/UNESCO_logo.svg/512px-UNESCO_logo.svg.png", url: "https://vi.wikipedia.org/wiki/Danh_nh%C3%A2n_v%C4%83n_h%C3%B3a_th%E1%BA%BF_gi%E1%BB%9Bi" }
+            html: "<p>\"Chúng ta hãy coi giáo dục là một sự nghiệp suốt đời quan trọng và cần thiết cho sự phát triển bền vững của bản thân, của gia đình, của cộng đồng và của toàn dân tộc.\"</p>"
           }
         ]
       },
