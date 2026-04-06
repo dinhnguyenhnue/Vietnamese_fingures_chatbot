@@ -9,10 +9,10 @@ const danhNhanData = [
     bio: "Chu Văn An (1292 – 1370), tên thật là Chu An, tự là Linh Triệt, hiệu là Tiều Ẩn. Ông là một nhà giáo, thầy thuốc, đại quan dưới triều Trần. Được tôn vinh là \"Vạn thế sư biểu\" (Người thầy mẫu mực của muôn đời), ông nổi tiếng với sự cương trực, thanh liêm và học vấn uyên thâm.",
     lifespan: "1292 - 1370",
     hometown: "Thanh Trì, Thăng Long",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Institut_des_Fils_de_lEtat_%28Temple_de_la_litt%C3%A9rature%2C_Hanoi%29_%284356119550%29.jpg",
-    imageCaptionTitle: "Di sản giáo dục",
-    imageTitle: "Trường Quốc Tử Giám",
-    imageDesc: "Nơi ông từng giữ chức Tư nghiệp, đào tạo nhân tài cho đất nước.",
+    image: "https://drive.google.com/thumbnail?id=1axI1iFE8R_iAH10pu34W5PtqOJb7GIxt&sz=w1000",
+    imageCaptionTitle: "Chân dung",
+    imageTitle: "Vạn Thế Sư Biểu",
+    imageDesc: "Ảnh chân dung danh nhân Chu Văn An.",
     achievements: [
       { title: "Thất trảm sớ", desc: "Tờ sớ đòi chém 7 nịnh thần, thể hiện khí tiết lẫm liệt của người trí thức trước cường quyền." },
       { title: "Trường tư thục Huỳnh Cung", desc: "Mở trường dạy học cho dân thường, không phân biệt giàu nghèo, đặt nền móng cho giáo dục tư nhân." },
@@ -23,8 +23,8 @@ const danhNhanData = [
       "Thất trảm sớ gồm những ai?",
       "Chu Văn An đã dạy những vị vua nào?"
     ],
-    chatAvatar: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Institut_des_Fils_de_lEtat_%28Temple_de_la_litt%C3%A9rature%2C_Hanoi%29_%284356119550%29.jpg",
-    headerAvatar: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Institut_des_Fils_de_lEtat_%28Temple_de_la_litt%C3%A9rature%2C_Hanoi%29_%284356119550%29.jpg",
+    chatAvatar: "https://drive.google.com/thumbnail?id=1axI1iFE8R_iAH10pu34W5PtqOJb7GIxt&sz=w1000",
+    headerAvatar: "https://drive.google.com/thumbnail?id=1axI1iFE8R_iAH10pu34W5PtqOJb7GIxt&sz=w1000",
     chatRole: "Chuyên gia lịch sử & văn hóa",
     gemLink: "https://gemini.google.com/gem/1XsVPSGgEq1dx9XuObJ9L53M8REIh1tOQ?usp=sharing",
     initialAIChat: `
@@ -46,6 +46,335 @@ const danhNhanData = [
       { icon: "explore", text: "Thầy dạy những môn học gì?", answer: "Ta chủ yếu giảng dạy Tứ thư, Ngũ kinh của Nho giáo, đồng thời nhấn mạnh vào chữ 'Lý' và chữ 'Tâm'. Học trò phải rèn luyện đạo đức, giữ vững khí tiết quân tử trước khi mong ra giúp đời." },
       { icon: "history_edu", text: "\"Thất trảm sớ\" là gì?", answer: "Đó là bản tấu ta dâng lên vua Trần Dụ Tông vào năm 1369, yêu cầu chém đầu 7 tên nịnh thần lũng đoạn triều đình. Rất tiếc vua không nghe, ta liền cởi áo trả triều phục, lui về núi Phượng Hoàng ở ẩn." },
       { icon: "location_on", text: "Vị trí trường Huỳnh Cung hiện nay?", answer: "Trường Huỳnh Cung nằm trên gò miếu Cung, thuộc làng Quang Liệt, nay là thôn Huỳnh Cung, xã Tam Hiệp, huyện Thanh Trì, thành phố Hà Nội." }
+    ],
+    resources: [
+      {
+        categoryTitle: "Khối tư liệu Video",
+        categoryDesc: "Dùng cho phần giới thiệu bối cảnh, tiểu sử và nơi thờ tự",
+        items: [
+          {
+            title: "TÓM TẮT LỊCH SỬ NHÀ TRẦN PHẦN 21 NEW 2022",
+            desc: "Dùng để minh họa bối cảnh lịch sử, xã hội thời nhà Trần - thời đại mà Chu Văn An sinh sống và làm việc",
+            link: "https://www.youtube.com/results?search_query=T%C3%93M+T%E1%BA%AET+L%E1%BB%8ACH+S%E1%BB%AC+NH%C3%80+TR%E1%BA%A6N+PH%E1%BA%A6N+21+NEW+2022",
+            type: "video"
+          },
+          {
+            title: "Video tư liệu về thầy Chu Văn An",
+            desc: "Cung cấp các thước phim tư liệu tổng quan về cuộc đời, các giai đoạn phát triển và sự nghiệp của danh nhân",
+            link: "https://www.youtube.com/results?search_query=Video+t%C6%B0+li%E1%BB%87u+v%E1%BB%81+th%E1%BA%A7y+Chu+V%C4%83n+An",
+            type: "video"
+          },
+          {
+            title: "Văn Miếu Quốc Tử Giám",
+            desc: "Video minh họa trực quan không gian Văn Miếu Quốc Tử Giám, nơi ông được thờ phụng",
+            link: "https://www.youtube.com/results?search_query=V%C4%83n+Mi%E1%BA%BFu+Qu%E1%BB%91c+T%E1%BB%AD+Gi%C3%A1m",
+            type: "video"
+          }
+        ]
+      },
+      {
+        categoryTitle: "Khối hình ảnh Tiểu sử, Sự nghiệp và Đóng góp",
+        categoryDesc: "Dùng cho trang chủ hoặc phần chi tiết cuộc đời",
+        items: [
+          {
+            title: "Sơ đồ tư duy",
+            desc: "Tóm tắt trực quan 3 giai đoạn cuộc đời và các hoạt động tiêu biểu của ông",
+            link: "https://drive.google.com/file/d/1p9eJ6eg5jfY-u6PZCyw0kWbuR4igZQhe/view?usp=drive_link",
+            thumbnail: "https://drive.google.com/thumbnail?id=1p9eJ6eg5jfY-u6PZCyw0kWbuR4igZQhe&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Mở trường dạy học - Huỳnh Cung",
+            desc: "Minh họa cho đóng góp mở trường dân lập và phát triển giáo dục nước nhà",
+            link: "https://drive.google.com/file/d/1GtwazRrdzR9yiruEayKC33ibrYRanGFq/view?usp=drive_link",
+            thumbnail: "https://drive.google.com/thumbnail?id=1GtwazRrdzR9yiruEayKC33ibrYRanGFq&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Mộc bản Ngự chế Việt sử...",
+            desc: "Minh chứng lịch sử: Vua Trần Minh Tông cử ông làm Tư nghiệp Quốc Tử Giám",
+            link: "https://drive.google.com/file/d/15xncc3i7NtQo_B8KOOotfXG4QRJocU03/view?usp=drive_link",
+            thumbnail: "https://drive.google.com/thumbnail?id=15xncc3i7NtQo_B8KOOotfXG4QRJocU03&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Y học, Văn học, Tư tưởng",
+            desc: "Phần nói về tác phẩm thi ca, y học hoặc bộ sách 'Tứ thư thuyết ước'",
+            link: "https://drive.google.com/file/d/1hidEACpzPaqNrcOlPMdMaymRZvPF-QQi/view?usp=drive_link",
+            thumbnail: "https://drive.google.com/thumbnail?id=1hidEACpzPaqNrcOlPMdMaymRZvPF-QQi&sz=w1000",
+            type: "image"
+          }
+        ]
+      },
+      {
+        categoryTitle: "Khối hình ảnh Đánh giá và Vinh danh",
+        categoryDesc: "Dùng cho phần Tôn vinh, UNESCO vinh danh",
+        items: [
+          {
+            title: "Ảnh tượng Chu Văn An (H17)",
+            desc: "Tượng danh nhân",
+            link: "https://drive.google.com/file/d/1f3TrS4l9uKvYXCBZ2sIXCSVuLVyOdA7D/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=1f3TrS4l9uKvYXCBZ2sIXCSVuLVyOdA7D&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Sự kiện UNESCO vinh danh",
+            desc: "Minh họa quá trình vinh danh Chu Văn An là Danh nhân văn hóa thế giới",
+            link: "https://drive.google.com/file/d/1MtNtGHGjWW--Vmz2_yHXSFPI0AuW0hqt/view?usp=drive_link",
+            thumbnail: "https://drive.google.com/thumbnail?id=1MtNtGHGjWW--Vmz2_yHXSFPI0AuW0hqt&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Hội thảo khoa học (H4)",
+            desc: "Tư liệu sự kiện 'Con người và sự nghiệp danh nhân Chu Văn An'",
+            link: "https://drive.google.com/drive/u/0/folders/17j7hKZVGgulIcdGhmA6iDi83Zsu5Iuz9",
+            type: "folder"
+          },
+          {
+            title: "Đại Việt sử ký toàn thư",
+            desc: "Ghi chép ca ngợi tính cương nghị, thẳng thắn của ông",
+            link: "https://drive.google.com/file/d/1L01WzN0lvbr93vjgeIAcgNZvFaMF73xX/view?usp=drive_link",
+            thumbnail: "https://drive.google.com/thumbnail?id=1L01WzN0lvbr93vjgeIAcgNZvFaMF73xX&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Nhà sử học Ngô Sỹ Liên",
+            desc: "Lời khen, ca ngợi đại đức của Chu Văn An",
+            link: "https://drive.google.com/file/d/1yEcv27N5IXyg07SKw7YRVVYyt1R5vVJm/view?usp=drive_link",
+            thumbnail: "https://drive.google.com/thumbnail?id=1yEcv27N5IXyg07SKw7YRVVYyt1R5vVJm&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Phan Huy Chú ca ngợi",
+            desc: "'Học nghiệp thuần túy, tiết tháo cao thượng'",
+            link: "https://drive.google.com/file/d/1q_qz_IrABvmZ-nCX2Vokgp38dtZcLqeL/view?usp=drive_link",
+            thumbnail: "https://drive.google.com/thumbnail?id=1q_qz_IrABvmZ-nCX2Vokgp38dtZcLqeL&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Đại diện UNESCO chia sẻ",
+            desc: "Trích bài nói chuyện của ông Michael Croft về di sản công lý và giáo dục",
+            link: "https://drive.google.com/file/d/1WyhC4wV5Ool0VnNXKC7zIySvySLNyTA-/view?usp=drive_link",
+            thumbnail: "https://drive.google.com/thumbnail?id=1WyhC4wV5Ool0VnNXKC7zIySvySLNyTA-&sz=w1000",
+            type: "image"
+          }
+        ]
+      },
+      {
+        categoryTitle: "Khối hình ảnh Di sản, Di tích và Tưởng niệm",
+        categoryDesc: "Dùng cho trang/thư viện Di sản",
+        items: [
+          {
+            title: "Đền thờ tại Hải Dương (H6)",
+            link: "https://drive.google.com/file/d/1CqEQgSzBSnWGpR2mT4nJ36Lq2WTbB96K/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=1CqEQgSzBSnWGpR2mT4nJ36Lq2WTbB96K&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Hoạt động sáng tác (H7)",
+            link: "https://drive.google.com/file/d/17RsNRX5F5lLqBBAAldAkq8F7MiBg8QfQ/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=17RsNRX5F5lLqBBAAldAkq8F7MiBg8QfQ&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Triển lãm Thượng tường Sơn Đẩu (H8)",
+            link: "https://drive.google.com/file/d/1xyhBuDTM0VmoN7n6EwDDFN0vPyooSXtH/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=1xyhBuDTM0VmoN7n6EwDDFN0vPyooSXtH&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Lăng mộ Chu Văn An (H9)",
+            link: "https://drive.google.com/file/d/1YJI0h_q5DP5bdIK3jhGh9X9jMjuS-DGk/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=1YJI0h_q5DP5bdIK3jhGh9X9jMjuS-DGk&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Lễ dâng hương (H11)",
+            desc: "Giáo viên & Học sinh",
+            link: "https://drive.google.com/file/d/16uBxnSqxTsodxn8XLaxH62xwYSXlxTcg/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=16uBxnSqxTsodxn8XLaxH62xwYSXlxTcg&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Toàn cảnh gian thờ (H12)",
+            link: "https://drive.google.com/file/d/1Yn0usHJBPCMpe-a_WXAf5VkUSGAKsB85/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=1Yn0usHJBPCMpe-a_WXAf5VkUSGAKsB85&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Trường Đại Học Chu Văn An (H13)",
+            link: "https://drive.google.com/file/d/1DsUn_5DTADLrJ445V59r0vKnFmWsRE-5/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=1DsUn_5DTADLrJ445V59r0vKnFmWsRE-5&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Trao giải thi sáng tác (H14)",
+            link: "https://drive.google.com/file/d/161RMJ8c8y23nykC97g19ZDLtbaUEqamf/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=161RMJ8c8y23nykC97g19ZDLtbaUEqamf&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Sách viết về danh nhân (H15)",
+            link: "https://drive.google.com/file/d/1x2vUgzyfD6AAYuxKjsDDK2GLx0PGLpU6/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=1x2vUgzyfD6AAYuxKjsDDK2GLx0PGLpU6&sz=w1000",
+            type: "image"
+          },
+          {
+            title: "Khán thờ sơn son thếp vàng & tượng thờ (H16)",
+            desc: "Tại đền Thanh Liệt",
+            link: "https://drive.google.com/file/d/1W5nl_TAPvvh9ny5GKa2-pB48sCG8eicA/view?usp=sharing",
+            thumbnail: "https://drive.google.com/thumbnail?id=1W5nl_TAPvvh9ny5GKa2-pB48sCG8eicA&sz=w1000",
+            type: "image"
+          }
+        ]
+      }
+    ],
+    learningModules: [
+      {
+        id: "s2",
+        type: "text_media",
+        title: "2. Bối cảnh thời đại",
+        html: "<p>Chu Văn An sống vào cuối thời nhà Trần – một giai đoạn có nhiều biến động về chính trị, xã hội và giáo dục ở Đại Việt: triều chính rốn ren, kinh tế - xã hội khó khăn. Cũng trong thời kỳ này, Nho giáo phát triển, đóng vai trò quan trọng, tạo điều kiện cho các trí thức Nho học tham gia vào việc triều chính, ảnh hưởng sâu sắc đến tư tưởng và hành động của ông.</p>",
+        media: { type: "video", url: "https://youtu.be/v064-uFUAcQ?si=8A7XR6dZe5Y4VcyI" }
+      },
+      {
+        id: "s3",
+        type: "text_media",
+        title: "3. Cuộc đời",
+        html: "<p>Chu Văn An (1292 – 1370), tên hiệu là Tiều Ẩn, tên chữ là Linh Triệt, người làng Quang Liệt (nay là thôn Văn), xã Thanh Liệt, huyện Thanh Trì, Hà Nội. Cuộc đời và sự nghiệp của Chu Văn An để lại cho chúng ta một nhân cách lớn của một nhà trí thức lớn. Sức mạnh tinh thần phong phú giúp Chu Văn An sống một cuộc đời đầy ý nghĩa, tự tại, tự tôn trong bối cảnh xã hội rối ren đương thời. Cho đến nay, Chu Văn An vẫn được coi là một trong những vị Tư nghiệp đầu tiên của Quốc Tử Giám, có nhiều dấu ấn với Văn Miếu Quốc Tử Giám và nền Quốc học nước nhà thế kỷ XIV.</p><p class='mt-3'>Theo Đại Việt sử ký toàn thư, Chu Văn An \"tính cương nghị, thẳng thắn, sửa mình trong sạch, không cầu lợi lộc\". Ông ở nhà đọc sách, học vấn tinh thông, nổi tiếng gần xa, \"học trò đầy cửa, thường có kẻ đỗ đại khoa\".</p><p class='mt-3'>Các học trò đến với lớp học không chỉ vì biết thầy Chu Văn An tinh thông Nho học mà còn vì nể phục, trân trọng khí chất thanh cao, tấm lòng trung hiếu với dân, với nước không màng danh vọng. Học trò của thầy có nhiều người đã đỗ đạt và làm quan trong triều đình được sử sách nhắc tới như Phạm Sư Mãnh, Lê Quát.</p>",
+        media: { type: "video", url: "https://youtu.be/JSsTk6ui0-M?si=x-fme0i15Uuuixh4" },
+        task: "Xây dựng thẻ hồ sơ thông tin về danh nhân Chu Văn An với những tiêu chí cơ bản sau: Họ và tên, tự, nơi sinh, gia đình,…"
+      },
+      {
+        id: "s4",
+        type: "text_media",
+        title: "4. Sự nghiệp – hoạt động",
+        html: "<p>Cuộc đời của Chu Văn An được chia làm 3 giai đoạn:</p><ul class='list-disc pl-5 mt-2 space-y-2'><li>Giai đoạn sau khi đỗ Thái học sinh (tương đương với Tiến sĩ), Chu Văn An không ra làm quan mà về Huỳnh Cung mở trường dạy học, thu hút được nhiều học trò.</li><li>Giai đoạn được vua Trần Minh Tông (1300-1357) mời ông ra làm tư nghiệp Quốc tử giám, dạy cho Thái tử Trần Vượng, tức là vua Trần Hiến Tông;</li><li>Giai đoạn thoái lui ở núi Phượng Hoàng (Chí Linh, Hải Dương): Theo Đại Việt sử ký toàn thư, sau khi dâng Thất trảm sớ nhưng không được vua trả lời, Chu Văn An rời kinh thành về vùng đất Chí Linh mở trường tiếp tục dạy học, lấy hiệu là Tiều Ẩn.</li></ul><p class='mt-3'>Sau khi Chu Văn An mất, ông được triều đình truy tặng tước Văn Trinh Công, được ban tên thụy là Khang Tiết và thờ ở Văn Miếu.</p>",
+        media: { type: "image", src: "https://drive.google.com/thumbnail?id=1p9eJ6eg5jfY-u6PZCyw0kWbuR4igZQhe&sz=w1000", url: "https://drive.google.com/file/d/1p9eJ6eg5jfY-u6PZCyw0kWbuR4igZQhe/view?usp=drive_link" },
+        task: "Vẽ sơ đồ tư duy tóm tắt sự nghiệp, hoạt động tiêu biểu của danh nhân Chu Văn An."
+      },
+      {
+        id: "s5",
+        type: "complex",
+        title: "5. Đóng góp nổi bật danh nhân",
+        blocks: [
+          {
+            type: "text_media",
+            title: "Nhà giáo dục kiệt xuất",
+            html: "<p>Mở trường dân lập dạy cho nhân dân, đào tạo ra nhiều nhân tài cho đất nước. Học trò đến học ở trường Huỳnh Cung khá đông đến 3.000, có nhiều người đỗ đạt và ra làm quan to. Đây cũng là mở đầu cho đa dạng hệ thống hình thức trường học, cơ sở giáo dục của nước nhà.</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1GtwazRrdzR9yiruEayKC33ibrYRanGFq&sz=w1000", url: "https://drive.google.com/file/d/1GtwazRrdzR9yiruEayKC33ibrYRanGFq/view?usp=drive_link" }
+          },
+          {
+            type: "text_media",
+            title: "Giữ chức Tư nghiệp Quốc Tử Giám",
+            html: "<p>Đến thời vua Trần Minh Tông, ông được mời ra làm Tư nghiệp Quốc Tử Giám, trông coi việc học của cả nước và trực tiếp giảng dạy cho hai Thái tử.</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=15xncc3i7NtQo_B8KOOotfXG4QRJocU03&sz=w1000", url: "https://drive.google.com/file/d/15xncc3i7NtQo_B8KOOotfXG4QRJocU03/view?usp=drive_link", caption: "Mộc bản sách Ngự chế Việt sử tổng vịnh tập" }
+          },
+          {
+            type: "text_media",
+            title: "Đóng góp trong Văn học, Y học và Tư tưởng",
+            html: "<p>Trong thời gian lui về ở ẩn, ông còn nghiên cứu y học, chữa bệnh cho dân và làm thơ. Ông là tác giả của “Tứ thư thuyết ước”, tóm tắt 4 bộ sách lớn làm giáo trình giảng dạy.</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1hidEACpzPaqNrcOlPMdMaymRZvPF-QQi&sz=w1000", url: "https://drive.google.com/file/d/1hidEACpzPaqNrcOlPMdMaymRZvPF-QQi/view?usp=drive_link" }
+          },
+          {
+            type: "table_task",
+            task: "Tìm hiểu về đóng góp của Chu Văn An trên các lĩnh vực bằng cách suy nghĩ hoàn thành bảng sau:",
+            headers: ["Lĩnh vực", "Thành tựu", "Ý nghĩa"],
+            rows: [
+              ["Giáo dục", "...", "..."],
+              ["Văn học", "...", "..."],
+              ["Y học", "...", "..."],
+              ["Tư tưởng", "...", "..."]
+            ]
+          }
+        ]
+      },
+      {
+        id: "s6",
+        type: "text_media",
+        title: "6. Lịch sử vinh danh",
+        html: "<p>Sau khi Chu Văn An mất, ông được thờ ở Văn Miếu, xem ông ngang hàng với những bực Thánh hiền ngày xưa.</p><p class='mt-3'>Tháng 11/2019, Chu Văn An được Đại hội đồng UNESCO thế giới vinh danh là Danh nhân văn hóa thế giới và ra Nghị quyết cùng Việt Nam kỷ niệm 650 năm ngày mất vào năm 2020 để ghi nhận và tưởng nhớ những đóng góp của ông.</p>",
+        media: { type: "image", src: "https://drive.google.com/thumbnail?id=1MtNtGHGjWW--Vmz2_yHXSFPI0AuW0hqt&sz=w1000", url: "https://drive.google.com/file/d/1MtNtGHGjWW--Vmz2_yHXSFPI0AuW0hqt/view?usp=drive_link" }
+      },
+      {
+        id: "s7",
+        type: "table_task",
+        title: "7. Sự kiện biểu dương",
+        headers: ["STT", "Tên Hội thảo", "Địa điểm", "Thời gian", "Cấp"],
+        rows: [
+          ["1", "Hội thảo khoa học Danh nhân Chu Văn An – Con người và Sự nghiệp", "Trung tâm VHKH Văn Miếu", "6/4/2018", "Quốc gia"]
+        ],
+        task: "Đóng vai là ban tổ chức, hãy lên kế hoạch cho một cuộc hội thảo khoa học về danh nhân Chu Văn An tại trường của bạn."
+      },
+      {
+        id: "s8",
+        type: "complex",
+        title: "8. Đánh giá về danh nhân",
+        blocks: [
+          {
+            type: "text_media",
+            title: "Đại Việt sử ký toàn thư",
+            html: "<p>Chu Văn An \"tính cương nghị, thẳng thắn, sửa mình trong sạch, không cầu lợi lộc\".</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1L01WzN0lvbr93vjgeIAcgNZvFaMF73xX&sz=w1000", url: "https://drive.google.com/file/d/1L01WzN0lvbr93vjgeIAcgNZvFaMF73xX/view?usp=drive_link" }
+          },
+          {
+            type: "text_media",
+            title: "Sử học gia Ngô Sỹ Liên",
+            html: "<p>\"Người chịu để tâm đến đại đức, suy nghĩ đến việc giúp Vua nêu đức tốt cho dân được nhờ ơn, Chu Văn An ở đời Trần có lẽ gần được như thế…\"</p>"
+          },
+          {
+            type: "text_media",
+            title: "Đại diện UNESCO",
+            html: "<p>\"Chúng ta hãy coi giáo dục là một sự nghiệp suốt đời quan trọng và cần thiết cho sự phát triển bền vững của bản thân, của gia đình, của cộng đồng và của toàn dân tộc.\"</p>"
+          }
+        ]
+      },
+      {
+        id: "s9",
+        type: "text_media",
+        title: "9. Di sản để lại",
+        html: "<p>Người dân vùng quê Thanh Đàm thờ ông làm Thành hoàng và gọi là đức Thánh Chu. Nhiều nơi trong nước có di tích thờ phụng ông, như đền Thanh Liệt, Văn Điển, đền Phượng Sơn ở Chí Linh...</p><p class='mt-3'>Nhân dân Thủ đô cũng lấy tên ông để đặt tên cho một đường phố và một trường trung học lớn của Hà Nội. Trung tâm Văn Miếu thường xuyên tổ chức chuyên đề thiết kế, sáng tác về thầy.</p>",
+        task: "Đóng vai là hướng dẫn viên du lịch, hãy giới thiệu về một di tích thờ phụng, tưởng niệm danh nhân Chu Văn An mà em biết."
+      },
+      {
+        id: "s10",
+        type: "game",
+        title: "10. Trò chơi Canva",
+        html: "<p>Tham gia trò chơi Canva tương tác chuyên đề về Chu Văn An.</p>",
+        link: "#",
+        status: "Sắp ra mắt"
+      },
+      {
+        id: "s11",
+        type: "quiz",
+        title: "11. Trắc nghiệm ĐÚNG/SAI",
+        questions: [
+          { q: "Chu Văn An là một nhà Nho tiêu biểu của tầng lớp sĩ phu Việt Nam hơn 600 năm trước.", a: "Đ", text: "Câu 1 a" },
+          { q: "Trong bối cảnh chính sự suy đồi, Chu Văn An đã dâng sớ xin nhà vua xử chém bảy tên nịnh thần.", a: "Đ", text: "Câu 1 b" },
+          { q: "Sau khi dâng sớ, nhà vua lập tức chấp thuận và xử chém bảy tên nịnh thần.", a: "S", text: "Câu 1 c" },
+          { q: "Khi đề nghị không được chấp nhận, Chu Văn An từ quan và trở về mở trường dạy học.", a: "Đ", text: "Câu 1 d" },
+          { q: "Sau khi Chu Văn An qua đời, vua Trần Nghệ Tông đặt tên thụy cho ông là Văn Trinh.", a: "Đ", text: "Câu 2 a" },
+          { q: "Chu Văn An được UNESCO vinh danh vào năm 2000.", a: "S", text: "Câu 3 a" },
+          { q: "Chu Văn An đã nêu ra 4 quan điểm đạo đức nhà giáo gồm: cùng lý, chính tâm, tịch tà và cự bế.", a: "Đ", text: "Câu 4 a" }
+        ]
+      },
+      {
+        id: "s12",
+        type: "integration",
+        title: "12. Tích hợp Liên môn",
+        subjects: [
+          {
+            name: "Lịch sử 5 - Triều Trần",
+            html: "<p>Nhà Trần được thành lập năm 1226. Dưới thời nhà Trần, giáo dục khoa cử tiếp tục được quan tâm. Nhà nước mở rộng trường học và chọn được nhiều nhân tài, trong đó có Chu Văn An.</p>",
+            task: "Học trò của Chu Văn An có người làm quan to, nhưng về thăm thầy vẫn giữ lễ. Điều này dạy ta bài học gì về 'Tôn sư trọng đạo'?"
+          },
+          {
+            name: "GDCD 7 - Bảo tồn di sản văn hóa",
+            html: "<p>Văn Miếu - Quốc Tử Giám là công trình cổ xưa dạy học và thờ kính Khổng Tử, hiền tài Nho học. Tượng đồng thầy Chu Văn An được đặt ở vị trí trung tâm tại Nhà Thái Học.</p>",
+            task: "Kể tên một số giải pháp nhằm bảo tồn di sản văn hóa như Văn Miếu Quốc Tử Giám."
+          }
+        ]
+      }
     ]
   },
   {

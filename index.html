@@ -166,7 +166,7 @@
       <!-- Navigation Tabs -->
       <div class="flex justify-center mb-16 border-b border-outline-variant/20">
         <div class="flex gap-12">
-          <button class="pb-4 border-b-2 border-primary text-primary font-bold text-sm tracking-wide">TIỂU SỬ</button>
+          <button class="pb-4 border-b-2 border-primary text-primary font-bold text-sm tracking-wide">HÀNH TRÌNH TÌM HIỂU</button>
           <a id="tab-chat-link"
             class="cursor-pointer pb-4 border-b-2 border-transparent text-stone-400 hover:text-stone-600 font-bold text-sm tracking-wide transition-colors">HỎI ĐÁP CÙNG AI</a>
         </div>
@@ -194,9 +194,9 @@
               </div>
             </div>
           </div>
-          <div class="relative group overflow-hidden rounded-xl h-80">
+          <div class="relative group overflow-hidden rounded-xl h-[450px] md:h-[600px] bg-surface-container-highest">
             <img id="image-element"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src=""
+              class="w-full h-full object-contain object-top transition-transform duration-700 group-hover:scale-105" src=""
               alt="Hero Image" />
             <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
               <div>
@@ -232,6 +232,28 @@
             </div>
           </div>
         </section>
+      </div>
+
+      <!-- Learning Modules Section -->
+      <div id="learning-modules-section" class="hidden flex-col gap-12 pt-16 mt-8 border-t border-outline-variant/20">
+        <div class="text-center">
+          <h2 class="serif-text text-4xl font-bold text-primary mb-4">Bài học và Khám phá</h2>
+          <p class="font-sans text-stone-600 max-w-2xl mx-auto">Chuyên đề chi tiết về cuộc đời, sự nghiệp, di sản và các bài tập tương tác thực hành.</p>
+        </div>
+        <div id="learning-modules-content" class="space-y-12">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Resources Library Section -->
+      <div id="resources-section" class="hidden flex-col gap-12 pt-16 mt-8 border-t border-outline-variant/20">
+        <div class="text-center">
+          <h2 class="serif-text text-4xl font-bold text-primary mb-4">Thư Viện Tư Liệu</h2>
+          <p class="font-sans text-stone-600 max-w-2xl mx-auto">Tài liệu, hình ảnh và video liên quan đến cuộc đời, sự nghiệp và di sản của danh nhân.</p>
+        </div>
+        <div id="resources-content" class="space-y-12">
+          <!-- Rendered by JS -->
+        </div>
       </div>
 
       <!-- Footer -->
@@ -361,6 +383,212 @@
         `;
         faqList.appendChild(btn);
       });
+
+      // Render Learning Modules
+      const lmSection = document.getElementById('learning-modules-section');
+      const lmContent = document.getElementById('learning-modules-content');
+      
+      if (person.learningModules && person.learningModules.length > 0) {
+        lmSection.classList.remove('hidden');
+        lmSection.classList.add('flex');
+        
+        person.learningModules.forEach((mod, index) => {
+          const modDiv = document.createElement('div');
+          modDiv.className = "bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 shadow-sm relative overflow-hidden";
+          
+          let innerHtml = `<h3 class="serif-text text-2xl font-bold text-primary mb-6 flex items-center gap-3"><span class="bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center text-sm font-sans">${mod.id.replace('s', '')}</span> ${mod.title.replace(/^\d+\.\s*/, '')}</h3>`;
+          
+          if (mod.type === 'text_media') {
+             innerHtml += `<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">`;
+             innerHtml += `<div class="font-sans text-stone-700 leading-relaxed md:col-span-${mod.media ? '1' : '2'} space-y-4">${mod.html}</div>`;
+             
+             if (mod.media) {
+                if (mod.media.type === 'video') {
+                   let embedBg = 'class="bg-black/5"';
+                   const yIdMatch = mod.media.url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})/);
+                   if (yIdMatch && yIdMatch[1]) {
+                      embedBg = `style="background-image: url('https://img.youtube.com/vi/${yIdMatch[1]}/hqdefault.jpg'); background-size: cover; background-position: center;"`;
+                   }
+                   innerHtml += `<a href="${mod.media.url}" target="_blank" class="block relative rounded-xl overflow-hidden shadow-md group aspect-video flex items-center justify-center border border-outline-variant/30" ${embedBg}>`;
+                   innerHtml += `<div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>`;
+                   innerHtml += `<span class="material-symbols-outlined text-6xl text-white opacity-90 group-hover:scale-110 transition-transform drop-shadow-lg relative z-10">play_circle</span>`;
+                   innerHtml += `</a>`;
+                } else if (mod.media.type === 'image') {
+                   innerHtml += `<div class="space-y-2"><a href="${mod.media.url}" target="_blank" class="block rounded-xl overflow-hidden shadow-md"><img src="${mod.media.src}" class="w-full h-auto object-contain max-h-[80vh]" /></a>${mod.media.caption ? `<p class="text-xs text-center text-stone-500 italic">${mod.media.caption}</p>` : ''}</div>`;
+                }
+             }
+             innerHtml += `</div>`;
+             
+             if (mod.task) {
+                innerHtml += `<div class="mt-8 bg-tertiary-container/10 border-l-4 border-tertiary p-6 rounded-r-lg">`;
+                innerHtml += `  <div class="flex items-center gap-2 text-tertiary font-bold mb-2"><span class="material-symbols-outlined">edit_note</span> Nhiệm vụ học tập</div>`;
+                innerHtml += `  <p class="text-stone-700">${mod.task}</p>`;
+                innerHtml += `</div>`;
+             }
+          }
+          else if (mod.type === 'complex') {
+             innerHtml += `<div class="space-y-12">`;
+             mod.blocks.forEach(blk => {
+                innerHtml += `<div>`;
+                if (blk.title) innerHtml += `<h4 class="font-bold text-lg text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-stone-400 text-sm">label_important</span> ${blk.title}</h4>`;
+                
+                if (blk.type === 'text_media') {
+                   innerHtml += `<div class="flex flex-col sm:flex-row gap-8 items-center mb-8 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm">`;
+                   if (blk.media) {
+                      innerHtml += `<div class="w-full sm:w-1/3 flex-shrink-0"><a href="${blk.media.url}" target="_blank" class="block rounded-xl overflow-hidden shadow-md border border-outline-variant/30 bg-white"><img src="${blk.media.src}" class="w-full h-auto object-contain max-h-48" /></a>${blk.media.caption ? `<p class="text-xs text-center text-stone-500 italic mt-2">${blk.media.caption}</p>` : ''}</div>`;
+                   }
+                   innerHtml += `<div class="font-sans text-stone-700 leading-relaxed text-[15px] italic w-full border-l-4 border-primary/30 pl-5 flex-grow">${blk.html || ''}</div>`;
+                   innerHtml += `</div>`;
+                }
+                else if (blk.type === 'table_task') {
+                   innerHtml += `<div class="bg-tertiary-container/10 border-l-4 border-tertiary p-6 rounded-r-lg">`;
+                   innerHtml += `  <div class="flex items-center gap-2 text-tertiary font-bold mb-2"><span class="material-symbols-outlined">edit_note</span> Nhiệm vụ học tập</div>`;
+                   innerHtml += `  <p class="text-stone-700 font-medium mb-4">${blk.task}</p>`;
+                   innerHtml += `  <div class="overflow-x-auto"><table class="w-full text-left border-collapse border border-outline-variant/50 bg-white">`;
+                   innerHtml += `    <thead class="bg-surface-container-highest"><tr>${blk.headers.map(h => `<th class="p-3 border border-outline-variant/30 text-sm text-stone-700 font-bold">${h}</th>`).join('')}</tr></thead>`;
+                   innerHtml += `    <tbody>${blk.rows.map(r => `<tr>${r.map(c => `<td class="p-4 border border-outline-variant/30 text-sm text-stone-500 italic">${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
+                   innerHtml += `  </table></div>`;
+                   innerHtml += `</div>`;
+                }
+                innerHtml += `</div>`;
+             });
+             innerHtml += `</div>`;
+          }
+          else if (mod.type === 'table_task') {
+             innerHtml += `<div class="overflow-x-auto mb-6"><table class="w-full text-left border border-outline-variant/50 bg-white rounded-lg overflow-hidden">`;
+             innerHtml += `  <thead class="bg-primary/5 text-primary"><tr>${mod.headers.map(h => `<th class="p-4 border-b border-outline-variant/30 text-sm font-bold">${h}</th>`).join('')}</tr></thead>`;
+             innerHtml += `  <tbody>${mod.rows.map(r => `<tr>${r.map(c => `<td class="p-4 border-b border-outline-variant/30 text-sm text-stone-700">${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
+             innerHtml += `</table></div>`;
+             if (mod.task) {
+                innerHtml += `<div class="bg-tertiary-container/10 border-l-4 border-tertiary p-6 rounded-r-lg">`;
+                innerHtml += `  <div class="flex items-center gap-2 text-tertiary font-bold mb-2"><span class="material-symbols-outlined">edit_note</span> Nhiệm vụ học tập</div>`;
+                innerHtml += `  <p class="text-stone-700">${mod.task}</p>`;
+                innerHtml += `</div>`;
+             }
+          }
+          else if (mod.type === 'game') {
+             innerHtml += `<div class="flex flex-col items-center justify-center p-10 bg-gradient-to-r from-primary-container/20 to-tertiary-container/20 rounded-xl border border-outline-variant/30">`;
+             innerHtml += `  <span class="material-symbols-outlined text-6xl text-primary mb-4 drop-shadow-sm">sports_esports</span>`;
+             innerHtml += `  <div class="text-stone-700 font-medium mb-6 text-center">${mod.html}</div>`;
+             innerHtml += `  <button class="px-8 py-3 bg-stone-300 text-stone-500 font-bold rounded-full cursor-not-allowed shadow-inner flex items-center gap-2"><span class="material-symbols-outlined text-sm">lock</span> ${mod.status}</button>`;
+             innerHtml += `</div>`;
+          }
+          else if (mod.type === 'quiz') {
+             innerHtml += `<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="quiz-${mod.id}">`;
+             mod.questions.forEach((q, i) => {
+                innerHtml += `<div class="bg-surface-container p-6 rounded-xl border border-outline-variant/30 shadow-sm quiz-item" data-ans="${q.a}">`;
+                innerHtml += `  <p class="font-bold text-stone-800 mb-6 text-[15px] leading-relaxed"><span class="text-primary mr-2 bg-primary/10 px-2 py-1 rounded">Câu ${i+1}</span> ${q.q}</p>`;
+                innerHtml += `  <div class="flex gap-4">`;
+                innerHtml += `    <button class="flex-1 py-3 rounded-lg font-bold border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all active:scale-95" onclick="checkAnswer(this, 'Đ')">Đúng</button>`;
+                innerHtml += `    <button class="flex-1 py-3 rounded-lg font-bold border-2 border-stone-400 text-stone-500 hover:bg-stone-500 hover:text-white transition-all active:scale-95" onclick="checkAnswer(this, 'S')">Sai</button>`;
+                innerHtml += `  </div>`;
+                innerHtml += `  <div class="feedback-msg mt-4 text-center rounded-lg p-3 hidden"></div>`;
+                innerHtml += `</div>`;
+             });
+             innerHtml += `</div>`;
+          }
+          else if (mod.type === 'integration') {
+             innerHtml += `<div class="grid grid-cols-1 md:grid-cols-2 gap-8">`;
+             mod.subjects.forEach(sub => {
+                innerHtml += `<div class="bg-[#f8fafd] p-8 rounded-xl border border-blue-100 shadow-sm">`;
+                innerHtml += `  <h4 class="font-bold text-[#1e40af] mb-4 flex items-center gap-2 border-b border-blue-100 pb-3"><span class="material-symbols-outlined">menu_book</span> ${sub.name}</h4>`;
+                innerHtml += `  <div class="text-sm text-stone-700 leading-relaxed mb-6 space-y-3">${sub.html}</div>`;
+                innerHtml += `  <div class="bg-white p-5 rounded-lg border-l-4 border-[#3b82f6] shadow-sm text-sm">`;
+                innerHtml += `    <strong class="flex items-center gap-2 mb-2 text-[#2563eb]"><span class="material-symbols-outlined text-[16px]">psychology_alt</span> Câu hỏi mở rộng:</strong>`;
+                innerHtml += `    <span class="text-stone-600 font-medium">${sub.task}</span>`;
+                innerHtml += `  </div>`;
+                innerHtml += `</div>`;
+             });
+             innerHtml += `</div>`;
+          }
+          
+          modDiv.innerHTML = innerHtml;
+          lmContent.appendChild(modDiv);
+        });
+      }
+      
+      // Global quiz checker function
+      window.checkAnswer = function(btn, chosen) {
+         const container = btn.closest('.quiz-item');
+         const correctAns = container.getAttribute('data-ans');
+         const feedback = container.querySelector('.feedback-msg');
+         
+         const btns = container.querySelectorAll('button');
+         btns.forEach(b => {
+             b.disabled = true;
+             b.classList.remove('hover:bg-primary', 'hover:text-white', 'hover:bg-stone-500', 'active:scale-95');
+             b.classList.add('opacity-50', 'cursor-not-allowed');
+         });
+         
+         feedback.classList.remove('hidden');
+         if (chosen === correctAns) {
+            feedback.innerHTML = '<span class="material-symbols-outlined text-lg align-middle mr-1">check_circle</span> Trả lời chính xác!';
+            feedback.className = 'feedback-msg mt-4 text-center rounded-lg p-3 bg-green-50 text-green-700 font-bold border border-green-200';
+            btn.classList.add('bg-green-600', 'text-white', 'border-green-600', 'opacity-100');
+            btn.classList.remove('border-primary', 'text-primary', 'border-stone-400', 'text-stone-500', 'opacity-50');
+         } else {
+            feedback.innerHTML = '<span class="material-symbols-outlined text-lg align-middle mr-1">cancel</span> Chưa chính xác! Hãy đọc kỹ lại bài học nhé.';
+            feedback.className = 'feedback-msg mt-4 text-center rounded-lg p-3 bg-red-50 text-red-700 font-bold border border-red-200';
+            btn.classList.add('bg-red-500', 'text-white', 'border-red-500', 'opacity-100');
+            btn.classList.remove('border-primary', 'text-primary', 'border-stone-400', 'text-stone-500', 'opacity-50');
+            
+            // Highlight correct one
+            btns.forEach(b => {
+               if(b.textContent.trim() === 'Đúng' && correctAns === 'Đ') {
+                  b.classList.add('bg-green-600', 'text-white', 'border-green-600', 'opacity-100');
+               } else if (b.textContent.trim() === 'Sai' && correctAns === 'S') {
+                  b.classList.add('bg-green-600', 'text-white', 'border-green-600', 'opacity-100');
+               }
+            });
+         }
+      }
+
+      // 5. Render Resources
+      const resSection = document.getElementById('resources-section');
+      const resContent = document.getElementById('resources-content');
+      
+      if (person.resources && person.resources.length > 0) {
+        resSection.classList.remove('hidden');
+        resSection.classList.add('flex');
+        
+        person.resources.forEach(category => {
+          const catDiv = document.createElement('div');
+          catDiv.className = "bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 shadow-sm";
+          
+          let html = `
+            <div class="mb-6">
+              <h3 class="serif-text text-2xl font-bold text-primary mb-2">${category.categoryTitle}</h3>
+              ${category.categoryDesc ? `<p class="font-sans text-sm text-stone-500">${category.categoryDesc}</p>` : ''}
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          `;
+          
+          category.items.forEach(item => {
+            let icon = 'image';
+            if (item.type === 'video') icon = 'play_circle';
+            if (item.type === 'folder') icon = 'folder';
+            
+            html += `
+              <a href="${item.link}" target="_blank" class="group block relative rounded-lg overflow-hidden border border-outline-variant/20 bg-surface h-48 hover:shadow-md transition-shadow">
+                ${item.thumbnail ? 
+                  `<img src="${item.thumbnail}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="${item.title}" />` : 
+                  `<div class="w-full h-full flex flex-col items-center justify-center bg-surface-container-low text-stone-400 group-hover:text-primary transition-colors">
+                     <span class="material-symbols-outlined text-4xl mb-2">${icon}</span>
+                   </div>`
+                }
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4">
+                  <h4 class="text-white font-bold text-sm leading-tight mb-1 line-clamp-2">${item.title}</h4>
+                  ${item.desc ? `<p class="text-white/70 text-xs line-clamp-1">${item.desc}</p>` : ''}
+                </div>
+              </a>
+            `;
+          });
+          
+          html += `</div>`;
+          catDiv.innerHTML = html;
+          resContent.appendChild(catDiv);
+        });
+      }
 
       // Trigger fade-in animation
       setTimeout(() => {
