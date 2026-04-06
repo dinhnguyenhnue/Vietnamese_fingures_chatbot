@@ -427,7 +427,7 @@
                 innerHtml += `  <div class="flex items-center gap-2 text-tertiary font-bold mb-2"><span class="material-symbols-outlined">edit_note</span> Nhiệm vụ học tập</div>`;
                 innerHtml += `  <p class="text-stone-700">${mod.task}</p>`;
                 if (mod.taskUrl) {
-                   innerHtml += `<a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 mt-4 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" class="w-5 h-5"/> Thực hành trên Canva</a>`;
+                   innerHtml += `<a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 mt-4 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><span class="material-symbols-outlined text-[20px]">open_in_new</span> Thực hành trên Canva</a>`;
                 }
                 innerHtml += `</div>`;
              }
@@ -451,7 +451,7 @@
                    innerHtml += `  <div class="flex items-center gap-2 text-tertiary font-bold mb-2"><span class="material-symbols-outlined">edit_note</span> Nhiệm vụ học tập</div>`;
                    innerHtml += `  <p class="text-stone-700 font-medium mb-4">${blk.task}</p>`;
                    if (blk.taskUrl) {
-                      innerHtml += `<a href="${blk.taskUrl}" target="_blank" class="inline-flex items-center gap-2 mb-4 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" class="w-5 h-5"/> Thực hành trên Canva</a>`;
+                      innerHtml += `<a href="${blk.taskUrl}" target="_blank" class="inline-flex items-center gap-2 mb-4 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><span class="material-symbols-outlined text-[20px]">open_in_new</span> Thực hành trên Canva</a>`;
                    }
                    innerHtml += `  <div class="overflow-x-auto"><table class="w-full text-left border-collapse border border-outline-variant/50 bg-white">`;
                    innerHtml += `    <thead class="bg-surface-container-highest"><tr>${blk.headers.map(h => `<th class="p-3 border border-outline-variant/30 text-sm text-stone-700 font-bold">${h}</th>`).join('')}</tr></thead>`;
@@ -473,7 +473,7 @@
                 innerHtml += `  <div class="flex items-center gap-2 text-tertiary font-bold mb-2"><span class="material-symbols-outlined">edit_note</span> Nhiệm vụ học tập</div>`;
                 innerHtml += `  <p class="text-stone-700">${mod.task}</p>`;
                 if (mod.taskUrl) {
-                   innerHtml += `<a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 mt-4 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" class="w-5 h-5"/> Thực hành trên Canva</a>`;
+                   innerHtml += `<a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 mt-4 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><span class="material-symbols-outlined text-[20px]">open_in_new</span> Thực hành trên Canva</a>`;
                 }
                 innerHtml += `</div>`;
              }
@@ -481,8 +481,14 @@
           else if (mod.type === 'game') {
              innerHtml += `<div class="w-full">`;
              if (mod.taskUrl) {
-                innerHtml += `<div class="rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 mb-4 bg-surface-container-highest"><iframe src="${mod.taskUrl}" style="border:none; width: 100%; height: 600px;" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe></div>`;
-                innerHtml += `<div class="flex justify-center"><a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 px-6 py-2 bg-stone-100 text-stone-600 font-bold rounded-full hover:bg-stone-200 transition-colors text-sm shadow-sm"><span class="material-symbols-outlined text-sm">open_in_new</span> Mở riêng toàn màn hình</a></div>`;
+                innerHtml += `<div class="w-full relative group rounded-3xl overflow-hidden shadow-md border border-outline-variant/30 bg-gradient-to-br from-[#00c4cc]/20 to-[#690008]/20 flex flex-col items-center justify-center cursor-pointer min-h-[400px]" onclick="window.open('${mod.taskUrl}', '_blank')">`;
+                innerHtml += `  <div class="absolute inset-0 bg-white/40 backdrop-blur-sm group-hover:bg-white/10 transition-all duration-500"></div>`;
+                innerHtml += `  <div class="relative z-10 flex flex-col items-center group-hover:-translate-y-2 transition-transform duration-500">`;
+                innerHtml += `     <span class="material-symbols-outlined text-8xl text-[#00c4cc] drop-shadow-lg mb-6 group-hover:scale-110 transition-transform duration-500">play_circle</span>`;
+                innerHtml += `     <h4 class="text-3xl font-bold text-stone-800 tracking-wide mb-3 drop-shadow-sm">Bắt đầu trò chơi</h4>`;
+                innerHtml += `     <p class="text-stone-700 font-bold bg-white/80 px-6 py-2 rounded-full text-sm shadow-sm ring-1 ring-black/5 flex items-center gap-2"><span class="material-symbols-outlined text-sm">launch</span> Play / Mở thẻ mới</p>`;
+                innerHtml += `  </div>`;
+                innerHtml += `</div>`;
              } else {
                 innerHtml += `<div class="flex flex-col items-center justify-center p-10 bg-gradient-to-r from-primary-container/20 to-tertiary-container/20 rounded-xl border border-outline-variant/30">`;
                 innerHtml += `  <span class="material-symbols-outlined text-6xl text-primary mb-4 drop-shadow-sm">sports_esports</span>`;
@@ -494,7 +500,7 @@
           }
           else if (mod.type === 'quiz') {
              if (mod.taskUrl) {
-                innerHtml += `<div class="flex justify-end mb-4"><a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" class="w-5 h-5"/> Link gốc trên Canva</a></div>`;
+                innerHtml += `<div class="flex justify-end mb-4"><a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><span class="material-symbols-outlined text-[20px]">open_in_new</span> Link gốc trên Canva</a></div>`;
              }
              innerHtml += `<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="quiz-${mod.id}">`;
              mod.questions.forEach((q, i) => {
