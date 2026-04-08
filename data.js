@@ -442,6 +442,144 @@ const danhNhanData = [
       { icon: "psychology", text: "Chủ trương 'Mưu phạt tâm công' là gì?", answer: "Đó là sách lược đánh giặc bằng mưu trí và thu phục lòng người. Thay vì chỉ dùng binh đao phá thành, ta dùng lý lẽ nhân nghĩa để thuyết phục, khiến địch tự giác quy hàng, tránh cảnh đổ máu cho cả đôi bên." },
       { icon: "book", text: "Hoàn cảnh viết Bình Ngô Đại Cáo?", answer: "Ta viết bản cáo này vào đầu năm 1428, sau khi khởi nghĩa Lam Sơn toàn thắng, triều Minh rút quân. Đây là bản cáo bá cáo thiên hạ về nền độc lập thái bình của Đại Việt ta." },
       { icon: "landscape", text: "Đời sống ở Côn Sơn của Ngài thế nào?", answer: "Ở Côn Sơn, ta vui thú điền viên, lấy suối làm đàn, lấy đá làm thảm, sống thanh tịnh cùng tùng cúc, không vướng bận danh lợi chốn quan trường." }
+    ],
+    resources: [
+      {
+        categoryTitle: "Hình ảnh Tư liệu",
+        items: [
+          { title: "Chân dung Nguyễn Trãi", link: "https://drive.google.com/file/d/1esbMQzHacwdhy7Hx2RfJAPTM0CM5kTu4/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1esbMQzHacwdhy7Hx2RfJAPTM0CM5kTu4&sz=w1000" },
+          { title: "Bình Ngô đại cáo", link: "https://drive.google.com/file/d/19m6RQxMAlupmpCh2RPbMVx4MHZ_FzBkA/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=19m6RQxMAlupmpCh2RPbMVx4MHZ_FzBkA&sz=w1000" },
+          { title: "Trong khởi nghĩa Lam Sơn", link: "https://drive.google.com/file/d/1Jr6iK-hVp9fZSC38NSDdJ-FSTckgDd6M/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1Jr6iK-hVp9fZSC38NSDdJ-FSTckgDd6M&sz=w1000" },
+          { title: "Quân trung từ mệnh tập", link: "https://drive.google.com/file/d/1qpVRMIqJuCMKT4EkchPkNVv8o1qKKPys/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1qpVRMIqJuCMKT4EkchPkNVv8o1qKKPys&sz=w1000" },
+          { title: "Văn bia Vĩnh Lăng", link: "https://drive.google.com/file/d/11SDKsGZxljBiM7yY6vdF2d1VF-K2bnSx/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=11SDKsGZxljBiM7yY6vdF2d1VF-K2bnSx&sz=w1000" },
+          { title: "Dư địa chí", link: "https://drive.google.com/file/d/1s7XhCX4TWYDrjTfcyd_0GLaQjdbfrZsa/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1s7XhCX4TWYDrjTfcyd_0GLaQjdbfrZsa&sz=w1000" },
+          { title: "Ức Trai thi tập", link: "https://drive.google.com/file/d/1c1sstUWKZINbTQh58KaAPm23gN_koRoX/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1c1sstUWKZINbTQh58KaAPm23gN_koRoX&sz=w1000" },
+          { title: "Đền thờ Thường Tín", link: "https://drive.google.com/file/d/1iQK8DqjDHgnuUk4Mcx0LpwUfsVGjTEY_/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1iQK8DqjDHgnuUk4Mcx0LpwUfsVGjTEY_&sz=w1000" },
+          { title: "Đền thờ Côn Sơn", link: "https://drive.google.com/file/d/1ZPAsfWHbjpW7B9ZGUZHlPrFg5UfY5Yhw/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1ZPAsfWHbjpW7B9ZGUZHlPrFg5UfY5Yhw&sz=w1000" },
+          { title: "Tượng Nguyễn Trãi", link: "https://drive.google.com/file/d/1pLieaRANYlFk2BUbbXdi8AzguA9DsmI0/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1pLieaRANYlFk2BUbbXdi8AzguA9DsmI0&sz=w1000" }
+        ]
+      }
+    ],
+    learningModules: [
+      {
+        id: "s1",
+        type: "text_media",
+        title: "1. Bối cảnh thời đại",
+        html: "<p>Nguyễn Trãi sống trong giai đoạn lịch sử nhiều biến động chính trị lớn của Đại Việt. Ông trải qua cuối triều Trần suy yếu, thời cải cách ngắn ngủi của Hồ Quý Ly, thời kỳ bị Nhà Minh đô hộ, và thời khởi nghĩa Lam Sơn. Sau đó là thời kỳ xây dựng nhà Lê sơ với nhiều biến động xã hội.</p>",
+        media: { type: "video", url: "https://www.youtube.com/results?search_query=QU%C3%82N+MINH+X%C3%82M+L%C6%AF%E1%BB%A2C+N%C6%AF%E1%BB%9AC+TA" }
+      },
+      {
+        id: "s2",
+        type: "text_media",
+        title: "2. Cuộc đời",
+        html: "<p>Nguyễn Trãi quê ở Chi Ngại (Hải Dương) sau rời về Nhị Khê (Hà Nội). Thân sinh là Nguyễn Phi Khanh đỗ Thái học sinh dưới triều Hồ. Mẹ là Trần Thị Thái, dòng dõi quý tộc. Ông được thừa hưởng tấm lòng vì dân vì nước từ gia đình truyền thống đó.</p>",
+        media: { type: "video", url: "https://www.youtube.com/results?search_query=Nguy%E1%BB%85n+Tr%C3%A3i+Full+%7C+Phim+Vi%E1%BB%87t+Nam+C%C5%A9+Hay+Nh%E1%BA%A5t" },
+        task: "Vẽ sơ đồ tư duy tóm tắt về bối cảnh thời đại và cuộc đời",
+        taskUrl: "https://aseanmotbian.my.canva.site/v-s-t-duy-v-nguy-n-tr-i"
+      },
+      {
+        id: "s3",
+        type: "text_media",
+        title: "3. Sự nghiệp – hoạt động",
+        html: "<p>1400: Làm quan nhà Hồ <br/>1407: Bị giặc Minh bắt giam lỏng<br/>1417: Tham gia khởi nghĩa, dâng Bình Ngô sách<br/>1428: Làm quan triều Lê<br/>1442: Án oan Lệ Chi Viên (tru di tam tộc)<br/>1464: Được giả oan</p>",
+        task: "Tóm tắt những sự kiện chính về cuộc đời Nguyễn Trãi trên timeline.",
+        taskUrl: "https://aseanmotbian.my.canva.site/timeline-s-ki-n-cu-c-i-nguy-n-tr-i"
+      },
+      {
+        id: "s4",
+        type: "complex",
+        title: "4. Đóng góp nổi bật",
+        blocks: [
+          {
+            type: "text_media",
+            title: "Nhà tham mưu chiến lược tài năng",
+            html: "<p>Dâng lên Lê Lợi Bình Ngô sách lấy nhân nghĩa làm đầu. Đề cao chiến lược \"Tâm công\" - mưu đánh vào lòng người, không chiến mà thắng.</p>"
+          },
+          {
+            type: "text_media",
+            title: "Bản Tuyên ngôn Độc lập thứ hai",
+            html: "<p>Biên soạn Bình Ngô đại cáo, án thiên cổ hùng văn ca ngợi tinh thần đại nghĩa thắng hung tàn.</p>"
+          },
+          {
+            type: "text_media",
+            title: "Đóng góp Văn hóa - Lịch sử - Địa lý",
+            html: "<p>Để lại kho tàng thư tịch quý: Quân trung từ mệnh tập, Ức Trai thi tập, Quốc âm thi tập, Dư địa chí... Ông đánh dấu bước phát triển rực rỡ của chữ Nôm.</p>"
+          }
+        ]
+      },
+      {
+        id: "s5",
+        type: "text_media",
+        title: "5. Hoạt động Đóng góp",
+        html: "<p>Tổng hợp những đóng góp đáng kinh ngạc của ông trên nhiều phương diện.</p>",
+        task: "Xây dựng bài thuyết trình với chủ đề Đóng góp của Nguyễn Trãi.",
+        taskUrl: "https://aseanmotbian.my.canva.site/thuy-t-tr-nh-ng-g-p-c-a-nguy-n-tr-i-trong-l-ch-s-vi-t-nam"
+      },
+      {
+        id: "s6",
+        type: "text_media",
+        title: "6. Lịch sử vinh danh",
+        html: "<p>Năm 1980, Nguyễn Trãi được UNESCO công nhận là Danh nhân văn hóa thế giới và kỷ niệm 600 năm ngày sinh. Nhiều công trình, trường học lớn mang tên ông ra đời trên khắp cả nước.</p>",
+        media: { type: "image", src: "https://drive.google.com/thumbnail?id=1v3qDwk42VVBzhk8b8TgIwqlUgLLHD-Gr&sz=w1000", url: "https://drive.google.com/file/d/1v3qDwk42VVBzhk8b8TgIwqlUgLLHD-Gr/view?usp=sharing" }
+      },
+      {
+        id: "s7",
+        type: "complex",
+        title: "7. Đánh giá về nhân vật",
+        blocks: [
+          {
+            type: "text_media",
+            title: "Thủ tướng Phạm Văn Đồng",
+            html: "<p>\"Nguyễn Trãi, người anh hùng của dân tộc, văn võ song toàn... thật là một con người vĩ đại về nhiều mặt.\"</p>"
+          },
+          {
+            type: "text_media",
+            title: "Vua Lê Thánh Tông",
+            html: "<p>\"Ức Trai tâm thượng quang Khuê tảo\" (Nghĩa là: Ức Trai lòng rực rỡ như sao Khuê).</p>"
+          },
+          {
+            type: "text_media",
+            title: "Lê Quý Đôn",
+            html: "<p>\"Người có công lao đứng đầu về việc giúp rập vua, thì ngàn năm cũng không thể mai một được.\"</p>"
+          }
+        ]
+      },
+      {
+        id: "s8",
+        type: "game",
+        title: "8. Trò chơi Canva",
+        html: "<p>Trò Chơi Trắc Nghiệm: Khám Phá Di Sản Nguyễn Trãi</p>",
+        taskUrl: "https://aseanmotbian.my.canva.site/timhieudanhnhannguyentrai"
+      },
+      {
+        id: "s9",
+        type: "quiz",
+        title: "9. Trắc nghiệm ĐÚNG/SAI",
+        taskUrl: "https://aseanmotbian.my.canva.site/tr-ch-i-ng-sai-v-nguy-n-tr-i",
+        questions: [
+          { q: "Nguyễn Trãi được xem là nhà tư tưởng, nhà chính trị quân sự lỗi lạc thời trung đại.", a: "Đ" },
+          { q: "Tư tưởng 'tâm công' chỉ có ý nghĩa trong khởi nghĩa Lam Sơn và không còn giá trị về sau.", a: "S" },
+          { q: "Năm 2000, UNESCO đã vinh danh Nguyễn Trãi là danh nhân văn hóa thế giới.", a: "S" },
+          { q: "Nguyễn Trãi mở rộng tư tưởng nhân nghĩa thành mối quan hệ máu thịt giữa nước và dân.", a: "Đ" }
+        ]
+      },
+      {
+        id: "s10",
+        type: "integration",
+        title: "10. Liên môn Lịch sử - Ngữ văn",
+        subjects: [
+          {
+            name: "Lớp 10 Ngữ Văn",
+            html: "<p>Người học tìm hiểu Thơ văn Nguyễn Trãi, những tác phẩm thấm nhuần tư tưởng nhân nghĩa, yêu nước.</p>",
+            task: "Hãy hoàn thành sơ đồ timeline về cuộc đời và sự nghiệp văn chương của ông."
+          },
+          {
+            name: "Lịch sử 5",
+            html: "<p>Khởi nghĩa Lam Sơn (1418-1427). Nguyễn Trãi đóng vai trò trọng yếu trong việc thảo thư dụ hàng giặc, giúp quân dân ta toàn thắng.</p>",
+            task: "Tại sao tư tưởng Tâm Công (đánh vào lòng người) lại giúp giảm bớt xương máu quân lính?"
+          }
+        ]
+      }
     ]
   },
   {
@@ -574,6 +712,170 @@ const danhNhanData = [
       { icon: "spa", text: "Ý nghĩa của bài Bánh trôi nước?", answer: "Mượn hình ảnh chiếc bánh trôi thấm đẫm thân phận nữ nhi: 'ba chìm bảy nổi', bị xã hội định đoạt (rắn nát mặc dầu tay kẻ nặn), nhưng cuối cùng vẫn giữ gìn được tấm lòng son sắt thủy chung." },
       { icon: "female", text: "Khát vọng tự do của phụ nữ xưa?", answer: "Là khát vọng thoát khỏi cảnh đa thê, lễ giáo phong kiến trói buộc o ép. Chị viết để lột trần những ngang trái đó, đòi quyền được yêu thương và tôn trọng." },
       { icon: "chat", text: "Bà mỉa mai đạo đức giả ra sao?", answer: "Chị vạch trần thói đạo mạo rởm đời của những kẻ có chữ nhưng tâm hồn thô bỉ. Thơ chị dùng những hình ảnh dân gian, nói bóng nói gió khiến cho đám quan coi thường phụ nữ phải tím mặt." }
+    ],
+    resources: [
+      {
+        categoryTitle: "Hình ảnh Tư liệu",
+        items: [
+          {
+            title: "Infographic Về Danh Nhân",
+            link: "https://drive.google.com/file/d/1CGC54spCNe1qCZn06WunPQI_yGsld_0H/view?usp=drive_link",
+            type: "image",
+            thumbnail: "https://drive.google.com/thumbnail?id=1CGC54spCNe1qCZn06WunPQI_yGsld_0H&sz=w1000"
+          },
+          {
+            title: "Chân dung",
+            link: "https://drive.google.com/file/d/13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W/view?usp=drive_link",
+            type: "image",
+            thumbnail: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000"
+          }
+        ]
+      }
+    ],
+    learningModules: [
+      {
+        id: "s1",
+        type: "text_media",
+        title: "1. Bối cảnh thời đại",
+        html: "<p>Hồ Xuân Hương sống vào giai đoạn cuối thế kỉ XVIII – đầu thế kỉ XIX, một thời kỳ đầy biến động trong lịch sử Việt Nam. Phong trào Tây Sơn (1771 – 1789) bùng nổ, lật đổ các chính quyền chúa Nguyễn, vua Lê – chúa Trịnh. Đến đầu thế kỷ XIX, vương triều Tây Sơn bị lật đổ bởi vương triều Nguyễn. Bối cảnh đầy biến động và bất công trong xã hội phong kiến đã ảnh hưởng sâu sắc đến tư tưởng của bà, khiến thơ bà mang tính trào phúng và khát vọng tự do, bảo vệ giá trị người phụ nữ.</p>",
+        media: { type: "video", url: "https://www.youtube.com/results?search_query=NGUY%E1%BB%84N+%C3%81NH+%C4%90%C3%81NH+RA+TH%C4%82NG+LONG+-+NH%C3%80+T%C3%82Y+S%C6%A0N+DI%E1%BB%86T+VONG" }
+      },
+      {
+        id: "s2",
+        type: "text_media",
+        title: "2. Cuộc đời",
+        html: "<p>Hồ Xuân Hương (1772 – 1822), tên thật là Hồ Phi Mai (hoa mai bay trên hồ). Quê tại Quỳnh Đôi, Quỳnh Lưu, Nghệ An. Năm 13 tuổi, cha mất, bà theo mẹ về Thọ Xương, Thăng Long sinh sống. Hồ Xuân Hương là nữ sĩ có ngoại hình xinh đẹp, cá tính mạnh mẽ. Tuy nhiên, tình duyên của bà gặp nhiều trắc trở, trải qua hai đời chồng và đều mang danh vợ lẽ.</p>",
+        media: { type: "video", url: "https://www.youtube.com/results?search_query=H%E1%BB%93+Xu%C3%A2n+H%C6%B0%C6%A1ng+-+M%E1%BB%99t+hi%E1%BB%87n+t%C6%B0%E1%BB%A3ng+%C4%91%E1%BB%99c+%C4%91%C3%A1o+c%E1%BB%A7a+th%C6%A1+ca" },
+        task: "Khai thác đoạn tư liệu sau đây và vẽ sơ đồ tư duy tóm tắt về bối cảnh thời đại và cuộc đời của Hồ Xuân Hương",
+        taskUrl: "https://aseanmotbian.my.canva.site/sodotuduyhoxuanhuong"
+      },
+      {
+        id: "s3",
+        type: "complex",
+        title: "3. Sự nghiệp sáng tác",
+        blocks: [
+          {
+            type: "text_media",
+            html: "<p>Trong sự nghiệp văn chương, Hồ Xuân Hương được xếp hạng nổi tiếng thứ 2 trong danh sách nhà thơ nổi tiếng tại Việt Nam. Thơ Hồ Xuân Hương được ứng dụng nhiều lý thuyết nghiên cứu như: Nữ quyền luận, Xã hội học, Phân tâm học...</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=152cyWUGj6oFhtg_MqHuHq-f4wUE2vPvc&sz=w1000", url: "https://drive.google.com/file/d/152cyWUGj6oFhtg_MqHuHq-f4wUE2vPvc/view" }
+          },
+          {
+            type: "text_media",
+            title: "Tập thơ Lưu hương ký",
+            html: "<p>Phát hành năm 1964, gồm 24 bài chữ Hán và 26 bài chữ Nôm. Trích lược một số bài nổi bật như: Xuân đình lan điệu, Bà Lang Khóc Chồng, Vịnh cái quạt, Bánh Trôi Nước...</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=19Ne74WtyNGwefXO4qZWeFi3ypjzznYyQ&sz=w1000", url: "https://drive.google.com/file/d/19Ne74WtyNGwefXO4qZWeFi3ypjzznYyQ/view" }
+          },
+          {
+            type: "text_media",
+            title: "Ngôn ngữ thơ đặc sắc",
+            html: "<p>Ngôn ngữ thơ với cách xưng hô độc đáo đầy ấn tượng, mang hơi hướng thông tục trong lời ăn tiếng nói hàng ngày. Ví dụ: 'Khéo khéo đi đâu lũ ngẩn ngơ / Lại đây cho chị dạy làm thơ'</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1qDauFfmHcrXG3I9Xm3P63Mi_w6fY7qkz&sz=w1000", url: "https://drive.google.com/file/d/1qDauFfmHcrXG3I9Xm3P63Mi_w6fY7qkz/view" }
+          }
+        ]
+      },
+      {
+        id: "s4",
+        type: "text_media",
+        title: "4. Hoạt động Sự nghiệp",
+        html: "<p>Nêu những nét chính về cuộc đời và sự nghiệp sáng tác của Hồ Xuân Hương. Theo em, những yếu tố nào ảnh hưởng đến cuộc đời và sự nghiệp sáng tác của bà?</p>",
+        task: "Tham gia thực hành và tìm hiểu trên Canva.",
+        taskUrl: "https://aseanmotbian.my.canva.site/timhieucuocdoihoxuanhuong"
+      },
+      {
+        id: "s5",
+        type: "complex",
+        title: "5. Đóng góp nổi bật",
+        blocks: [
+          {
+            type: "text_media",
+            title: "Đóng góp cho nữ quyền và bình đẳng",
+            html: "<p>Hồ Xuân Hương khẳng định vị thế và giá trị của người phụ nữ trong xã hội phong kiến. Thơ bà phá vỡ những khuôn mẫu Nho giáo, thể hiện khát vọng sống, khát vọng tình yêu và quyền được tôn trọng của người phụ nữ.</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1SveMvTe26U7hFu7x8tYp59v5KYzKXX4j&sz=w1000", url: "https://drive.google.com/file/d/1SveMvTe26U7hFu7x8tYp59v5KYzKXX4j/view" }
+          },
+          {
+            type: "text_media",
+            title: "Hệ giá trị tinh thần tiến bộ",
+            html: "<p>Bà thể hiện rõ thái độ phê phán những yếu tố xã hội kìm hãm con người, có giọng điệu trào phúng sắc bén nhằm châm biếm thói giả dối, sự đạo đức giả của nho sĩ và lễ giáo khắt khe.</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1b9VF7PumEfHgOiCLOaldVfDy0DBelep5&sz=w1000", url: "https://drive.google.com/file/d/1b9VF7PumEfHgOiCLOaldVfDy0DBelep5/view" }
+          },
+          {
+            type: "text_media",
+            title: "Sức sống và sự lan tỏa",
+            html: "<p>Thơ của bà được dịch ra nhiều ngôn ngữ (Anh, Pháp, Nga, Hàn, Nhật…) và được xem là hiện tượng độc đáo của văn học châu Á, làm phong phú văn học Việt Nam và nhân loại.</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1GGJa-1aJeIGnEHrFvcRCxcRcCHHCJx33&sz=w1000", url: "https://drive.google.com/file/d/1GGJa-1aJeIGnEHrFvcRCxcRcCHHCJx33/view" }
+          }
+        ]
+      },
+      {
+        id: "s6",
+        type: "text_media",
+        title: "6. Hoạt động Đóng góp",
+        html: "<p>Thiết kế Inforgraphic về Hồ Xuân Hương theo các gợi ý: bối cảnh thời đại, cuộc đời và sự nghiệp, đóng góp nổi bật.</p>",
+        task: "Thực hành thiết kế trên Canva",
+        taskUrl: "https://aseanmotbian.my.canva.site/thi-t-k-infographic-h-xu-n-h-ng-tr-n-canva"
+      },
+      {
+        id: "s7",
+        type: "text_media",
+        title: "7. Lịch sử vinh danh",
+        html: "<p>Thời Nguyễn, bà được tôn xưng là “Bà chúa thơ Nôm”. Trên bình diện quốc tế, tập <i>Spring Essence: The Poetry of Hồ Xuân Hương</i> được xuất bản tại Hoa Kỳ năm 2000.<br/><br/>Kỳ họp Đại hội đồng lần thứ 41 (2021) tại Paris, UNESCO đã vinh danh và tham gia kỷ niệm 250 năm sinh nữ sĩ. Ngày 03-12-2022, Nghệ An chính thức tổ chức lễ vinh danh trọng thể.</p>",
+        media: { type: "image", src: "https://drive.google.com/thumbnail?id=1a4oprQtU3kYhJrFXmuc_MyjJ_v0RNPk4&sz=w1000", url: "https://drive.google.com/file/d/1a4oprQtU3kYhJrFXmuc_MyjJ_v0RNPk4/view" }
+      },
+      {
+        id: "s8",
+        type: "complex",
+        title: "8. Đánh giá về danh nhân",
+        blocks: [
+          {
+            type: "text_media",
+            title: "GS.TS.NGND Trần Đình Sử",
+            html: "<p>Thơ Hồ Xuân Hương thể hiện một tư tưởng nhân văn, nhân bản mang tính nhân loại sâu sắc với hạt nhân là đấu tranh đòi quyền sống cho con người.</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1z6378v9CzuQTs3dr3z4sbb2SgmQ1fINJ&sz=w1000", url: "https://drive.google.com/file/d/1z6378v9CzuQTs3dr3z4sbb2SgmQ1fINJ/view" }
+          },
+          {
+            type: "text_media",
+            title: "Nhà văn Lady Borton",
+            html: "<p>Bà là một hiện tượng khác thường, phi thường. Cuộc đời và sự nghiệp thi ca của bà hẳn đã neo vào dòng phả hệ những nữ thi sĩ Việt Nam tiêu biểu như những người thầy.</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1bHnfMk--V9710doe673StKMsoRbGYH8r&sz=w1000", url: "https://drive.google.com/file/d/1bHnfMk--V9710doe673StKMsoRbGYH8r/view" }
+          },
+          {
+            type: "text_media",
+            title: "Nghị quyết 41C/15 (UNESCO)",
+            html: "<p>Hồ Xuân Hương là hiện tượng văn hóa - thẩm mỹ đặc biệt với hệ thống quan niệm độc đáo qua các tác phẩm thi ca.</p>",
+            media: { type: "image", src: "https://drive.google.com/thumbnail?id=1Yd3FAXyG83gxGrg2kT3Ll8bhxoBL4qHt&sz=w1000", url: "https://drive.google.com/file/d/1Yd3FAXyG83gxGrg2kT3Ll8bhxoBL4qHt/view" }
+          }
+        ]
+      },
+      {
+        id: "s9",
+        type: "game",
+        title: "9. Hoạt động Ngâm thơ",
+        html: "<p>Hoạt động ngâm thơ các tác phẩm nổi bật của nữ sĩ.</p>",
+        taskUrl: "https://aseanmotbian.my.canva.site/ngamthohoxuanhuong"
+      },
+      {
+        id: "s10",
+        type: "game",
+        title: "10. Trò chơi Trắc nghiệm (Nhiều lựa chọn)",
+        html: "<p>Tham gia trò chơi Canva tương tác chuyên đề về Hồ Xuân Hương.</p>",
+        taskUrl: "https://aseanmotbian.my.canva.site/tracnghiemhoxuanhuong"
+      },
+      {
+        id: "s11",
+        type: "quiz",
+        title: "11. Trắc nghiệm ĐÚNG/SAI",
+        taskUrl: "https://aseanmotbian.my.canva.site/tr-c-nghi-m-ng-sai-th-h-xu-n-h-ng",
+        questions: [
+          { q: "Bài thơ 'Thân em vừa trắng lại vừa tròn...' là bài Tự Tình do Hồ Xuân Hương sáng tác.", a: "S" },
+          { q: "Nội dung bài thơ Bánh trôi nước phản ánh về số phận của người phụ nữ Việt Nam trong xã hội phong kiến.", a: "Đ" },
+          { q: "Bài thơ Bánh trôi nước có sử dụng nghệ thuật tu từ ẩn dụ đặc sắc.", a: "Đ" },
+          { q: "Dù bị phân biệt bởi tư tưởng “trọng nam khinh nữ” nhưng người phụ nữ Việt Nam vẫn giữ lòng thuỷ chung son sắt.", a: "Đ" },
+          { q: "Bà đi nhiều nơi và thân thiết với nhiều danh sĩ, có Nguyễn Du. Cuộc đời Hồ Xuân Hương lận đận, éo le.", a: "Đ" },
+          { q: "Đối tượng thường được đề cập đến nhất trong thơ Hồ Xuân Hương là những người phụ nữ hạnh phúc.", a: "S" },
+          { q: "Hồ Xuân Hương là nhà thơ phụ nữ viết về phụ nữ, trào phúng mà trữ tình, đậm đà chất dân gian.", a: "Đ" },
+          { q: "Hồ Xuân Hương chỉ viết thơ bằng chữ Nôm. Vì vậy, bà được mệnh danh là “Bà Chúa thơ Nôm”.", a: "S" }
+        ]
+      }
     ]
   },
   {
@@ -707,6 +1009,96 @@ const danhNhanData = [
       { icon: "menu_book", text: "Xin ngài cho biết về bộ sách Đại Việt Thông Sử?", answer: "Đại Việt Thông Sử, hay còn gọi là Lê Triều Thông Sử, là bộ kỳ thư lão phu dụng tâm biên soạn, chép lại toàn diện về triều đại nhà Lê Sơ. Lão phu đi sâu vào việc phân tích kinh tế, chế độ, luật pháp và sự nghiệp của các bậc khai quốc công thần, để vãn bối đời sau có được bức tranh tường tận về cội rễ làm nên sự hưng thịnh của dân tộc." },
       { icon: "psychology", text: "Ngài có lời khuyên nào cho thế hệ trẻ trong việc học hành?", answer: "Lão phu thường đúc kết rằng 'Dẫu có bạc vàng trăm vạn lạng cũng chẳng bằng một quyển sách hay'. Vãn bối ngày nay chớ nên bằng lòng với những điều sẵn có bề nổi. Phải chịu khó đi học trực tiếp, miệt mài khảo cứu, tai nghe, mắt thấy, tay ghi chép lại tường tận. Học mà không đi đôi với khảo cứu thực tế thì chỉ là thứ học suông, làm sao có thể giúp ích cho non sông." },
       { icon: "star", text: "Tại sao ngài được suy tôn là nhà bác học lớn nhất thời phong kiến?", answer: "Sở dĩ hậu thế ưu ái gọi lão phu như vậy, âu cũng bởi thói quen ghi chép mọi nơi mọi lúc và tâm hồn luôn khao khát được thấu tỏ bể học vô tận. Cuối đời, lão phu để lại mấy chục bộ sách, bao trùm sử học, địa lý, cho đến y học, thiên văn, triết lý. Sự am tường ấy một phần thiên bẩm, nhưng phần hơn là ở chữ 'cần cù' rèn mài miệt mài." }
+    ],
+    resources: [
+      {
+        categoryTitle: "Hình ảnh Tư liệu",
+        items: [
+          { title: "Chân dung Lê Quý Đôn", link: "https://drive.google.com/file/d/16mZybqn2Pcw4-8OqCxEjvXa8fYNtWtUF/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=16mZybqn2Pcw4-8OqCxEjvXa8fYNtWtUF&sz=w1000" },
+          { title: "Bắc Sứ Thông Lục", link: "https://drive.google.com/file/d/1_iiRc-tIyZBLQQe7XV1_v_FlG3U4giBR/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1_iiRc-tIyZBLQQe7XV1_v_FlG3U4giBR&sz=w1000" },
+          { title: "Luật pháp cai trị", link: "https://drive.google.com/file/d/1BRvDGPDrAZ48CEkCZLkWxYn4gQOq96zy/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1BRvDGPDrAZ48CEkCZLkWxYn4gQOq96zy&sz=w1000" },
+          { title: "Văn học sử", link: "https://drive.google.com/file/d/1HNnJLADttjo8wf5xr2DUO18KMdmLdQd6/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1HNnJLADttjo8wf5xr2DUO18KMdmLdQd6&sz=w1000" },
+          { title: "Triết lý học đại thành", link: "https://drive.google.com/file/d/1j8KDwzyc9yCHM8zXhrZhxlr-yyuFPGut/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1j8KDwzyc9yCHM8zXhrZhxlr-yyuFPGut&sz=w1000" },
+          { title: "Giao thoa tri thức Á-Âu", link: "https://drive.google.com/file/d/1o94CGyBP9DMShkzEsmUmGU94lP6y2vlc/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1o94CGyBP9DMShkzEsmUmGU94lP6y2vlc&sz=w1000" },
+          { title: "Sự kiện UNESCO", link: "https://drive.google.com/file/d/1viFgPhlpcrwU5_aEhBIsifLfQwvLNW-y/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1viFgPhlpcrwU5_aEhBIsifLfQwvLNW-y&sz=w1000" },
+          { title: "Khu di tích lịch sử", link: "https://drive.google.com/file/d/1wB5iPuinajoip0VKxprPh6Q3rbol20tr/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1wB5iPuinajoip0VKxprPh6Q3rbol20tr&sz=w1000" }
+        ]
+      }
+    ],
+    learningModules: [
+      {
+        id: "s1",
+        type: "text_media",
+        title: "1. Bối cảnh thời đại",
+        html: "<p>Lê Quý Đôn sinh ra trong thế kỷ XVIII đầy biến động. Đàng Trong - Đàng Ngoài chia cắt. Nhưng đây cũng là thời kỳ luồng sinh khí văn hóa mới trỗi dậy, sự giao thương mở rộng không gian tri thức cho sĩ phu, thôi thúc ông thu thập và ghi chép bách khoa về lịch sử, địa lý và kinh đô.</p>",
+        media: { type: "video", url: "https://www.youtube.com/results?search_query=THANH+V%C6%AF%C6%A0NG+TR%E1%BB%8ANH+TR%C3%81NG+TI%E1%BA%BEP+X%C3%9AC+V%C4%82N+MINH+PH%C6%AF%C6%A0NG+T%C3%82Y" }
+      },
+      {
+        id: "s2",
+        type: "text_media",
+        title: "2. Cuộc đời và Sự nghiệp",
+        html: "<p>Nổi tiếng là thần đồng, mới 2 tuổi đã nhận biết mặt chữ. Ông đỗ Bảng Nhãn ở tuổi 27. Cả đời làm quan rèn giũa đạo đức cương nghị, đi vi hành hiểu đời sống bá tánh. Ông kiêm chức Lại bộ tả thị lang, Công bộ thượng thư... Mọi kiến thức dân gian đều được ông đúc kết và được thiên hạ gọi là 'túi khôn thời đại'.</p>",
+        media: { type: "video", url: "https://www.youtube.com/results?search_query=Th%E1%BA%A7n+%C4%90%E1%BB%93ng+H%E1%BB%8D+L%C3%AA+-+Phim+C%E1%BB%95+T%C3%ADch+Vi%E1%BB%87t+Nam+Hay+Nh%E1%BA%A5t" },
+        task: "Hoạt động: Thiết kế thẻ danh nhân Lê Quý Đôn.",
+        taskUrl: "https://aseanmotbian.my.canva.site/thietkethedanhnhanh"
+      },
+      {
+        id: "s3",
+        type: "complex",
+        title: "3. Những đóng góp nổi bật",
+        blocks: [
+          {
+            type: "text_media",
+            title: "Chính trị & Ngoại giao",
+            html: "<p>Chủ trương 'khoan dữ điều hòa', dùng luật pháp nghiêm minh nhưng đề cao đức trị. Khi đi sứ, ông soạn Bắc sứ thông lục, tiếp xúc với tri thức phương Tây với kiến giải độc đáo.</p>"
+          },
+          {
+            type: "text_media",
+            title: "Kinh tế - Nông học",
+            html: "<p>Tác giả Vân đài loại ngữ. Nhấn mạnh Tứ bất: 'Phi nông bất ổn, phi công bất phú, phi thương bất hoạt, phi trí bất hưng'.</p>"
+          },
+          {
+            type: "text_media",
+            title: "Sử học & Văn học",
+            html: "<p>Bộ Phủ biên tạp lục, Đại Việt thông sử, Toàn Việt thi lục... Phương pháp sử học cực kỳ chi tiết: 'Phép làm sử là nhặt đủ không bỏ sót.</p>"
+          }
+        ]
+      },
+      {
+        id: "s4",
+        type: "text_media",
+        title: "4. Hoạt động Tổng kết",
+        html: "<p>Sử dụng sơ đồ tư duy để trình bày tổng quan các trụ cột cống hiến tri thức của ông.</p>",
+        task: "Vẽ sơ đồ tư duy tóm tắt đóng góp tiêu biểu của Lê Quý Đôn.",
+        taskUrl: "https://aseanmotbian.my.canva.site/vesodotuduy"
+      },
+      {
+        id: "s5",
+        type: "text_media",
+        title: "5. Lịch sử vinh danh",
+        html: "<p>Ngày 31/10/2025, UNESCO chính thức nghị quyết vinh danh và kỷ niệm 300 năm ngày sinh danh nhân Lê Quý Đôn (1726-2026). Khu lưu niệm ở Hưng Hà - Thái Bình được xếp hạng di tích quốc gia. Rất nhiều trường học lớn trên cả nước và tượng đài luôn nhắc nhở về người thầy mẫu mực.</p>",
+        media: { type: "image", src: "https://drive.google.com/thumbnail?id=1viFgPhlpcrwU5_aEhBIsifLfQwvLNW-y&sz=w1000", url: "https://drive.google.com/file/d/1viFgPhlpcrwU5_aEhBIsifLfQwvLNW-y/view?usp=drive_link" }
+      },
+      {
+        id: "s6",
+        type: "game",
+        title: "6. Trò chơi Trắc nghiệm",
+        html: "<p>Kiểm tra kiến thức qua bộ câu trắc nghiệm trên Canva</p>",
+        taskUrl: "https://aseanmotbian.my.canva.site/timhieudanhnhanlequydon"
+      },
+      {
+        id: "s7",
+        type: "quiz",
+        title: "7. Trắc nghiệm ĐÚNG/SAI",
+        taskUrl: "https://aseanmotbian.my.canva.site/tracnghiemdungsailequydon",
+        questions: [
+          { q: "Suốt cuộc đời, Lê Quý Đôn có hai hoài bão lớn là thực thi cải cách chính trị và đọc viết sách.", a: "Đ" },
+          { q: "Một trong hoài bão của ông là thiết kế pháp chế nhằm làm cho nước giàu dân mạnh.", a: "Đ" },
+          { q: "Lê Quý Đôn chỉ chú trọng đường làm quan mà ngó lơ học thuật kinh viện.", a: "S" },
+          { q: "Triều đình lúc bấy giờ đã vô cùng vinh danh và sẵn lòng cấp cho ông chức quan Tể tướng.", a: "S" },
+          { q: "Kho tàng di sản sách chữ Hán và Nôm của ông bao trùm đa dạng mọi lĩnh vực.", a: "Đ" }
+        ]
+      }
     ]
   }
 ];
