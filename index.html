@@ -124,18 +124,18 @@
     </div>
   </nav>
 
-  <div class="flex">
+  <div class="flex flex-col lg:flex-row">
     <!-- SideNavBar -->
     <aside
-      class="fixed left-0 top-16 h-[calc(100vh-64px)] flex flex-col py-6 bg-[#f6f3ea] dark:bg-stone-800 w-72 border-r-0 z-40">
-      <div class="px-8 mb-8">
+      class="sticky top-[60px] md:top-[68px] lg:fixed lg:top-16 lg:left-0 z-40 lg:h-[calc(100vh-64px)] w-full lg:w-72 flex lg:flex-col py-3 lg:py-6 bg-[#f6f3ea] dark:bg-stone-800 border-b border-outline-variant/20 lg:border-none">
+      <div class="hidden lg:block px-8 mb-8">
         <h2 class="font-serif text-[#472a07] text-xl font-bold">Danh Nhân Văn Hóa</h2>
         <p class="font-sans text-xs text-stone-500 uppercase tracking-widest mt-1">Hành trình di sản</p>
       </div>
-      <nav id="sidebar-nav" class="flex-1 space-y-1">
+      <nav id="sidebar-nav" class="flex flex-row lg:flex-col flex-1 lg:space-y-1 overflow-x-auto lg:overflow-x-visible items-center lg:items-stretch scrollbar-hide px-4 lg:px-0 gap-3 lg:gap-0">
         <!-- Rendered by JS -->
       </nav>
-      <div class="px-8 mt-6">
+      <div class="hidden lg:block px-8 mt-6">
         <a href="https://drive.google.com/drive/folders/1u1PUQ-UHbtnL9kOroOGd_TjLoGlPvR9e?usp=drive_link"
           target="_blank"
           class="block text-center w-full py-3 bg-surface-container-high text-on-surface text-sm font-bold rounded-lg transition-transform hover:bg-[#e5e2da] active:scale-95">
@@ -145,7 +145,7 @@
     </aside>
 
     <!-- Main Content Area -->
-    <main id="main-content" class="ml-72 flex-1 p-12 max-w-7xl mx-auto page-transition">
+    <main id="main-content" class="lg:ml-72 flex-1 p-4 md:p-8 lg:p-12 max-w-7xl mx-auto w-full overflow-hidden page-transition">
       <!-- Hero Section -->
       <header class="mb-16 relative overflow-hidden flex flex-col items-center text-center">
         <div
@@ -313,14 +313,14 @@
         const a = document.createElement('a');
 
         if (isActive) {
-          a.className = "cursor-pointer bg-[#ffffff] dark:bg-stone-700 text-[#690008] dark:text-white rounded-l-full ml-4 shadow-sm flex items-center px-6 py-3 transition-all duration-200";
+          a.className = "cursor-pointer bg-[#ffffff] dark:bg-stone-700 text-[#690008] dark:text-white lg:rounded-l-full rounded-full shrink-0 lg:ml-4 shadow-sm flex items-center px-4 py-2 lg:px-6 lg:py-3 transition-all duration-200 border border-outline-variant/10 lg:border-none";
         } else {
-          a.className = "cursor-pointer text-stone-500 dark:text-stone-400 hover:translate-x-1 hover:bg-[#f1eee5] dark:hover:bg-stone-700 transition-all duration-200 flex items-center px-6 py-3 ml-4";
+          a.className = "cursor-pointer text-stone-500 dark:text-stone-400 hover:translate-y-[1px] lg:hover:translate-y-0 lg:hover:translate-x-1 hover:bg-[#f1eee5] dark:hover:bg-stone-700 transition-all duration-200 flex items-center px-4 py-2 lg:px-6 lg:py-3 lg:ml-4 shrink-0 rounded-full lg:rounded-l-full bg-surface-container-high/50 lg:bg-transparent";
         }
 
         a.innerHTML = `
-          <div class="w-8 h-8 rounded-md overflow-hidden ring-1 ring-black/10 shrink-0 mr-3 shadow-sm bg-white"><img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover"></div>
-          <span class="font-sans text-sm font-semibold">${p.name}</span>
+          <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-md overflow-hidden ring-1 ring-black/10 shrink-0 mr-2 lg:mr-3 shadow-sm bg-white"><img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover"></div>
+          <span class="font-sans text-[13px] lg:text-sm font-semibold whitespace-nowrap">${p.name}</span>
         `;
 
         a.onclick = (e) => {

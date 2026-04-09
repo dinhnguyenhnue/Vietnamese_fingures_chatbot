@@ -36,6 +36,7 @@ const danhNhanData = [
     ],
     avatar: "https://drive.google.com/thumbnail?id=1axI1iFE8R_iAH10pu34W5PtqOJb7GIxt&sz=w1000",
     headerAvatar: "https://drive.google.com/thumbnail?id=1axI1iFE8R_iAH10pu34W5PtqOJb7GIxt&sz=w1000",
+    chatAvatar: "https://drive.google.com/thumbnail?id=1axI1iFE8R_iAH10pu34W5PtqOJb7GIxt&sz=w1000",
     chatRole: "Chuyên gia lịch sử & văn hóa",
     gemLink: "https://gemini.google.com/gem/1XsVPSGgEq1dx9XuObJ9L53M8REIh1tOQ?usp=sharing",
     initialAIChat: `
@@ -482,6 +483,7 @@ const danhNhanData = [
         type: "text_media",
         title: "3. Sự nghiệp – hoạt động",
         html: "<p>1400: Làm quan nhà Hồ <br/>1407: Bị giặc Minh bắt giam lỏng<br/>1417: Tham gia khởi nghĩa, dâng Bình Ngô sách<br/>1428: Làm quan triều Lê<br/>1442: Án oan Lệ Chi Viên (tru di tam tộc)<br/>1464: Được giả oan</p>",
+        media: { type: "image", src: "https://drive.google.com/thumbnail?id=1Jr6iK-hVp9fZSC38NSDdJ-FSTckgDd6M&sz=w1000", url: "https://drive.google.com/file/d/1Jr6iK-hVp9fZSC38NSDdJ-FSTckgDd6M/view?usp=sharing" },
         task: "Tóm tắt những sự kiện chính về cuộc đời Nguyễn Trãi trên timeline.",
         taskUrl: "https://aseanmotbian.my.canva.site/timeline-s-ki-n-cu-c-i-nguy-n-tr-i"
       },
@@ -677,10 +679,10 @@ const danhNhanData = [
     title: "Bà Chúa Thơ Nôm",
     quote: '"Ví đây đổi phận làm trai được / Thì sự anh hùng há bấy nhiêu."',
     bioTitle: "Cá Tính Ấn Tượng",
-    bio: "Hồ Xuân Hương (cuối thế kỷ 18 - đầu thế kỷ 19) là đại diện xuất sắc của văn học Việt Nam. Thơ bà mang đậm chất văn học dân gian, sắc sảo, trào phúng nhưng ẩn chứa tư tưởng nhân văn sâu sắc. Bà dũng cảm dùng ngòi bút để đả kích thói đạo đức giả của xã hội phong kiến và mạnh mẽ đòi quyền sống cho chị em phụ nữ.",
+    bio: "Hồ Xuân Hương (sống vào cuối thế kỷ 18 - đầu thế kỷ 19), được mệnh danh là 'Bà Chúa Thơ Nôm', là một trong những hiện tượng văn học độc đáo và xuất chúng nhất trong lịch sử văn học trung đại Việt Nam. Bằng ngòi bút tài hoa, sắc sảo và mang đậm chất trào phúng dân gian, bà đã mạnh mẽ xé toạc bức màn đạo đức giả của giới nho sĩ phong kiến đương thời. Thơ Hồ Xuân Hương không chỉ là tiếng cười mỉa mai, lên án những lề thói Nho giáo hà khắc mà còn là tiếng khóc xót xa, đồng cảm cho thân phận bọt bèo của người phụ nữ chịu kiếp đa thê lẽ mọn. Vượt lên trên bi kịch cá nhân, các tác phẩm của bà chói lọi tinh thần nhân văn sâu sắc, ngợi ca sức sống phồn thực mãnh liệt và kiên cường đòi hỏi quyền bình đẳng, tự do yêu đương cho phái đẹp. Những cống hiến phi thường ấy đã đưa bà trở thành Danh nhân Văn hóa Thế giới được UNESCO vinh danh.",
     lifespan: "1772 - 1822",
     hometown: "Quỳnh Lưu, Nghệ An",
-    image: "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/7/26/1073072/Hxh123-01.jpg",
+    image: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
     imageCaptionTitle: "Đấu tranh vì phụ nữ",
     imageTitle: "Thơ Nôm Hồ Xuân Hương",
     imageDesc: "Lột trần đạo đức giả, đấu tranh cho nữ quyền và khát vọng sống.",
@@ -694,24 +696,25 @@ const danhNhanData = [
       "Bà phản kháng thế nào trước thói trọng nam khinh nữ?",
       "Tại sao thơ bà vừa tục lại vừa trong sáng?"
     ],
-    chatAvatar: "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/7/26/1073072/Hxh123-01.jpg",
-    headerAvatar: "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/7/26/1073072/Hxh123-01.jpg",
+    avatar: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
+    chatAvatar: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
+    headerAvatar: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
     chatRole: "Nữ Thi Sĩ Dân Gian",
     gemLink: "https://gemini.google.com/gem/1i7dppJR9xh7TbnzBp-s9BblbrUFl6Hd9?usp=sharing",
     initialAIChat: `
-      <h3 class="font-headline text-lg text-primary mb-3">Tự Do và Tiếng Cười Lên Án</h3>
+      <h3 class="font-headline text-lg text-primary mb-3">Tiếng Cười Trào Lộng & Khát Vọng Tự Do</h3>
       <div class="space-y-4 text-on-surface/90 text-[15px] leading-relaxed font-body">
-        <p>Chào cưng! Chị là Xuân Hương đây. Xã hội này lắm kẻ phong lưu nhưng mang cái đầu rỗng tuếch, chị là chị dùng thơ mắng thẳng mặt chẳng nể nang một ai.</p>
-        <p>Phụ nữ sinh ra cũng bằng da bằng thịt, cớ chi phải chịu kiếp lẻ mọn, 'kẻ đắp chăn bông kẻ lạnh lùng'? Tiếng thơ của chị là tiếng cười tự do, đập tan cái vỏ bọc đạo mạo giả dối của những bậc nam tử hẹp hòi. Đừng thấy chị hay việt bằng thơ đố thanh giảng tục mà vội chê khen, tâm hồn người phụ nữ như tảng đá, như dòng suối đầy mãnh liệt.</p>
-        <p>Cưng muốn nghe chị giải nghĩa bài thơ nào không?</p>
+        <p>Chào cưng! Chị là Xuân Hương đây. Đời ưu ái gọi chị là "Bà Chúa Thơ Nôm", âu cũng vì chị dám dùng chính thứ tiếng mẹ đẻ bình dân ấy để nói lên những điều mà bao kẻ ngậm miệng bưng bít không dám thốt ra. Sống trong cái xã hội lắm kẻ phong lưu nhưng mang cái đầu rỗng tuếch, chị đành dùng thơ mắng thẳng mặt chẳng nể nang một ai!</p>
+        <p>Phụ nữ sinh ra cũng bằng da bằng thịt, cớ chi phải chịu kiếp đa thê lẽ mọn tận cùng cay đắng, thấm thía cảnh 'kẻ đắp chăn bông kẻ lạnh lùng'? Tiếng thơ của chị là tiếng cười của khao khát tự do mãnh liệt, đập tan mọi vỏ bọc đạo mạo giả dối của những bậc đấng nam nhi hẹp hòi. Đừng thấy chị hay viết bằng thơ đố thanh giảng tục mà vội chê khen, bởi ẩn dưới lớp từ ngữ xù xì ấy là tâm hồn người phụ nữ rắn rỏi vươn lên như tảng đá chênh vênh, chảy tràn sức sống như dòng suối trong vắt.</p>
+        <p>Thơ chị vịn lấy cái tục để thanh cao hóa con người. Cưng muốn nghe chị giãi bày tâm sự hay giở bài thơ nào ra để đàm đạo không?</p>
       </div>`,
     suggestedQuestions: [
-      { icon: "spa", text: "Bà muốn gửi gắm điều gì qua bài thơ 'Bánh trôi nước'?", answer: "Mượn hình ảnh chiếc bánh trôi thấm đẫm thân phận nữ nhi: 'ba chìm bảy nổi', bị xã hội định đoạt (rắn nát mặc dầu tay kẻ nặn), nhưng cuối cùng vẫn giữ gìn được tấm lòng son sắt thủy chung gửi đến người đời." },
-      { icon: "female", text: "Bà phản kháng thế nào trước thói trọng nam khinh nữ?", answer: "Chị dùng chính ngòi bút trào phúng, chua cay của mình để lột trần bộ mặt giả nhân giả nghĩa của giới nho sĩ. Chị viết 'Ví đây đổi phận làm trai được', không phải mong làm đàn ông, mà để nói lên rằng chí khí người phụ nữ chẳng hề thua kém, cớ sao xã hội lại ép uổng họ vào kiếp đa thê lẽ mọn?" },
-      { icon: "chat", text: "Tại sao thơ bà vừa tục lại vừa trong sáng?", answer: "Bởi vì cái 'tục' ấy chỉ là lớp vỏ bọc nhằm chế giễu bọn đạo đức giả, bọn quan lại sâu mọt thích lên mặt rao giảng luân thường đạo lý nhưng bên trong thối nát. Xuyên qua bức màn đố thanh giảng tục, thơ chị là tiếng khóc, tiếng cười và khát vọng sống trần tục mà vô cùng mãnh liệt, trong sáng của người phụ nữ." },
-      { icon: "spa", text: "Ý nghĩa của bài Bánh trôi nước?", answer: "Mượn hình ảnh chiếc bánh trôi thấm đẫm thân phận nữ nhi: 'ba chìm bảy nổi', bị xã hội định đoạt (rắn nát mặc dầu tay kẻ nặn), nhưng cuối cùng vẫn giữ gìn được tấm lòng son sắt thủy chung." },
-      { icon: "female", text: "Khát vọng tự do của phụ nữ xưa?", answer: "Là khát vọng thoát khỏi cảnh đa thê, lễ giáo phong kiến trói buộc o ép. Chị viết để lột trần những ngang trái đó, đòi quyền được yêu thương và tôn trọng." },
-      { icon: "chat", text: "Bà mỉa mai đạo đức giả ra sao?", answer: "Chị vạch trần thói đạo mạo rởm đời của những kẻ có chữ nhưng tâm hồn thô bỉ. Thơ chị dùng những hình ảnh dân gian, nói bóng nói gió khiến cho đám quan coi thường phụ nữ phải tím mặt." }
+      { icon: "spa", text: "Bà muốn gửi gắm điều gì qua bài thơ 'Bánh trôi nước'?", answer: "Mượn hình ảnh chiếc bánh trôi nước bình dị, chị muốn nói lên thân phận bọt bèo, 'ba chìm bảy nổi' của người phụ nữ trong xã hội phong kiến xưa. Số phận của họ bị lệ thuộc, bị định đoạt bởi những luật lệ hà khắc, 'rắn nát mặc dầu tay kẻ nặn'. Nhưng vượt lên trên tất thảy những bất công và oan trái ấy, người phụ nữ vẫn giữ trọn vẹn vẻ đẹp tâm hồn, sự thủy chung và tấm lòng son sắt vô giá ('mà em vẫn giữ tấm lòng son'). Bài thơ không chỉ là tiếng than thân trách phận mà còn là khúc ca đầy kiêu hãnh tự hào về phẩm giá của phái đẹp." },
+      { icon: "female", text: "Bà phản kháng thế nào trước thói trọng nam khinh nữ?", answer: "Trong một xã hội mang nặng tư tưởng Nho giáo khắc nghiệt, coi khinh nữ giới, chị không chọn cách im lặng cam chịu. Bằng ngòi bút trào phúng sắc như dao, chị vạch trần thói đạo mạo giả tạo của những kẻ tự xưng là nam nhi đại trượng phu nhưng thực chất lại nhỏ nhen, hủ lậu. Chị từng dõng dạc thốt lên 'Ví đây đổi phận làm trai được', mượn lời để giáng đòn mạnh mẽ vào tư tưởng cậy quyền làm đàn ông. Chị kịch liệt lên án kiếp lẽ mọn tăm tối đẫm nước mắt, đòi lại quyền cất tiếng nói, đòi sự công bằng và khẳng định đanh thép rằng trí tuệ, bản lĩnh của nữ giới chẳng hề thua kém bất kỳ đấng mày râu nào." },
+      { icon: "chat", text: "Tại sao thơ bà vừa tục lại vừa trong sáng?", answer: "Nhiều người lúc mới đọc thơ chị lướt qua thì thấy 'tục', nhưng cái tục ấy chẳng phải là sự thô thiển bậy bạ. Đó là một 'vũ khí nghệ thuật' để lột bỏ bức màn che đậy sự đạo đức giả của giới Nho sĩ đồi bại đương thời. Xóa đi lớp vỏ ngôn từ xù xì kiểu 'đố thanh giảng tục', người ta sẽ lập tức thấy một tiếng cười trào lộng cay độc, mỉa mai bọn quan lại hư hỏng đội lốt thanh cao. Đồng thời, mượn cái ranh giới mỏng manh ấy, chị khéo léo bộc lộ trọn vẹn niềm khát vọng sống không ngừng nghỉ, ngợi ca vẻ đẹp phồn thực và sức sống trần tục rực rỡ của con người thoát khỏi những rào cản luân lý trói buộc nghẹt thở." },
+      { icon: "favorite", text: "Niềm khao khát hạnh phúc tình yêu trong thơ bà được thể hiện ra sao?", answer: "Được người đời uyển xưng là 'Bà Chúa Thơ Nôm', tài sắc vĩ đại là thế, nhưng cuộc đời tư của chị lại chịu vô kể đắng cay đứt ruột, cả hai lần lên xe hoa đều cắn răng chịu kiếp sống bề lẽ, nhặt nhạnh tình cảm thừa thãi. Chùm thơ 'Tự tình' (I, II, III) chính là những giọt nước mắt vỡ òa nhức nhối chị gạt thầm trong đêm thanh vắng. Sự khao khát tình yêu đôi lứa rực cháy ấy không ngừng bị trêu đùa bởi tạo hóa, khiến ta cô đơn tột cùng rợn ngợp giữa không gian rộng lớn. Dù tuyệt vọng, nhưng thẳm sâu từng nét bút, tiếng lòng của chị mãi khát khao về một tình yêu chân thủy trọn vẹn, trọn đời." },
+      { icon: "history_edu", text: "Vì sao hậu thế suy tôn bà là 'Bà Chúa Thơ Nôm'?", answer: "Danh xưng tráng lệ uy nghi mà người đời ưu ái ban tặng bao đời qua chẳng có gì khác ngoài khả năng chèo lái, tinh thông thứ ngôn ngữ tiếng Việt (chữ Nôm) đạt đến sự tinh diệu ngút trời chưa ai sánh kịp. Chị đã nhào nặn vô số phương ngữ, ca dao tục ngữ dân gian hòa cùng thể thơ Đường luật bác học gọt giũa và nắn nót tột đỉnh thành những vần điệu súc tích kiêu kì mà vẫn rạo rực ngồn ngộn hơi thở muôn đời. Bằng những nhịp điệu sinh động và hình ảnh lả lướt, chị đẩy lùi lối thơ rập khuôn, đài các ngâm vịnh. Chị đã tạc nên một hiện tượng thi ca Nôm truyền kỳ bất diệt." },
+      { icon: "auto_stories", text: "Thông điệp lớn nhất mà bà gửi lại thế hệ mai sau?", answer: "Xuyên suốt gia tài hàng chục thi phẩm hiếm hoi không bị tàn lấp theo thời gian, thông điệp lấp lánh chói lọi nhất mà chị truyền đạt lại cho rường cột mai sau, không gì khác, là sức vươn lên kiêu kỳ của tự do, của ý chí trào phúng phản kháng khốc liệt mà sảng khoái với những bạo tàn, bất công của lễ giáo cường quyền. Chị tha thiết muốn muôn lớp phụ nữ sau nầy luôn bảo vệ tư thế ngẩng cao đầu hãnh diện về trọn vẹn bản thể cốt cách của chính mình, dám dấn thân yêu đương, dám khát vọng, và dũng cảm đè nát mọi rào cấm tối tăm phong kiến. Đấy là áng đạo ca sáng ngời đòi lại trọn vẹn quyền làm Người mạnh mẽ nhất." }
     ],
     resources: [
       {
@@ -756,7 +759,7 @@ const danhNhanData = [
         blocks: [
           {
             type: "text_media",
-            html: "<p>Trong sự nghiệp văn chương, Hồ Xuân Hương được xếp hạng nổi tiếng thứ 2 trong danh sách nhà thơ nổi tiếng tại Việt Nam. Thơ Hồ Xuân Hương được ứng dụng nhiều lý thuyết nghiên cứu như: Nữ quyền luận, Xã hội học, Phân tâm học...</p>",
+            html: "<p>Hồ Xuân Hương là một trong những thi sĩ mang tầm vóc quốc tế của Việt Nam. Thơ của bà vượt thời đại, không chỉ mang giá trị văn chương xuất chúng mà còn đi tiên phong trong việc lồng ghép các tư tưởng hiện đại, được giới chuyên môn nghiên cứu sâu rộng qua nhiều góc độ: Nữ quyền luận, Xã hội học, Phân tâm học...</p>",
             media: { type: "image", src: "https://drive.google.com/thumbnail?id=152cyWUGj6oFhtg_MqHuHq-f4wUE2vPvc&sz=w1000", url: "https://drive.google.com/file/d/152cyWUGj6oFhtg_MqHuHq-f4wUE2vPvc/view" }
           },
           {
@@ -776,8 +779,9 @@ const danhNhanData = [
       {
         id: "s4",
         type: "text_media",
-        title: "4. Hoạt động Sự nghiệp",
-        html: "<p>Nêu những nét chính về cuộc đời và sự nghiệp sáng tác của Hồ Xuân Hương. Theo em, những yếu tố nào ảnh hưởng đến cuộc đời và sự nghiệp sáng tác của bà?</p>",
+        title: "4. Sự nghiệp – hoạt động",
+        html: "<p><strong>Mở quán Cổ Nguyệt Đường:</strong> Sinh thời, bà từng dựng một ngôi nhà nhỏ ven Hồ Tây lấy tên Cổ Nguyệt Đường làm nơi dạy học và đàm đạo văn chương. Nơi đây nhanh chóng trở thành chốn hội tụ thi phú của nhiều văn nhân, tài tử đương thời (viết chữ Cổ và Nguyệt ghép lại thành chữ Hồ - họ của bà).</p><p class='mt-3'><strong>Giao du và xướng họa:</strong> Với tâm hồn phóng khoáng, bà đi du ngoạn rất nhiều danh lam thắng cảnh miền Bắc (Đèo Ba Dội, Động Hương Tích, Kẽm Trống...). Bà từng giao du, xướng họa thi ca với hàng loạt danh sĩ nổi tiếng như Đại thi hào Nguyễn Du hay Chiêu Hổ.</p><p class='mt-3'><strong>Khẳng định dấu ấn cá nhân:</strong> Toàn bộ sự nghiệp của bà, từ những vần thơ đố thanh giảng tục đến những tác phẩm trong Lưu Hương Ký, không chỉ làm phong phú kho tàng chữ Nôm dân tộc mà còn là những bản án đanh thép, dùng sức mạnh của ngòi bút để tố cáo sự đạo đức giả của Nho giáo phong kiến.</p>",
+        media: { type: "image", src: "https://drive.google.com/thumbnail?id=1CGC54spCNe1qCZn06WunPQI_yGsld_0H&sz=w1000", url: "https://drive.google.com/file/d/1CGC54spCNe1qCZn06WunPQI_yGsld_0H/view?usp=drive_link" },
         task: "Tham gia thực hành và tìm hiểu trên Canva.",
         taskUrl: "https://aseanmotbian.my.canva.site/timhieucuocdoihoxuanhuong"
       },
@@ -1067,9 +1071,10 @@ const danhNhanData = [
       {
         id: "s4",
         type: "text_media",
-        title: "4. Hoạt động Tổng kết",
-        html: "<p>Sử dụng sơ đồ tư duy để trình bày tổng quan các trụ cột cống hiến tri thức của ông.</p>",
-        task: "Vẽ sơ đồ tư duy tóm tắt đóng góp tiêu biểu của Lê Quý Đôn.",
+        title: "4. Sự nghiệp – hoạt động",
+        html: "<p>Sơ đồ tư duy trình bày trực quan các trụ cột cống hiến tri thức và chặng đường làm quan của nhà bác học Lê Quý Đôn.</p>",
+        media: { type: "image", src: "https://drive.google.com/thumbnail?id=1j8KDwzyc9yCHM8zXhrZhxlr-yyuFPGut&sz=w1000", url: "https://drive.google.com/file/d/1j8KDwzyc9yCHM8zXhrZhxlr-yyuFPGut/view?usp=drive_link" },
+        task: "Vẽ sơ đồ tư duy tóm tắt đóng góp tiêu biểu và sự nghiệp của Lê Quý Đôn.",
         taskUrl: "https://aseanmotbian.my.canva.site/vesodotuduy"
       },
       {
