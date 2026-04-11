@@ -134,6 +134,23 @@
         transform: scale(1);
       }
     }
+
+    /* Custom Scrollbar cho Tabs & Sidebar */
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent; 
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(139, 26, 26, 0.4); 
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: rgba(139, 26, 26, 0.8); 
+    }
   </style>
 </head>
 
@@ -165,7 +182,7 @@
         <p class="text-xs font-sans font-semibold uppercase tracking-widest text-secondary opacity-70">Hành trình di sản
         </p>
       </div>
-      <nav id="sidebar-nav" class="flex flex-row lg:flex-col flex-1 lg:space-y-1 overflow-x-auto lg:overflow-x-visible items-center lg:items-stretch scrollbar-hide px-4 lg:px-0 gap-3 lg:gap-0">
+      <nav id="sidebar-nav" class="flex flex-row lg:flex-col flex-1 lg:space-y-1 overflow-x-auto lg:overflow-x-visible items-center lg:items-stretch custom-scrollbar px-4 lg:px-0 gap-3 lg:gap-0">
         <!-- Rendered by JS -->
       </nav>
       <div class="hidden lg:block mt-auto px-6 pt-6 border-t border-outline-variant/20">
