@@ -741,14 +741,14 @@ const danhNhanData = [
         type: "text_media",
         title: "1. Bối cảnh thời đại",
         html: "<p>Hồ Xuân Hương sống vào giai đoạn cuối thế kỉ XVIII – đầu thế kỉ XIX, một thời kỳ đầy biến động trong lịch sử Việt Nam. Phong trào Tây Sơn (1771 – 1789) bùng nổ, lật đổ các chính quyền chúa Nguyễn, vua Lê – chúa Trịnh. Đến đầu thế kỷ XIX, vương triều Tây Sơn bị lật đổ bởi vương triều Nguyễn. Bối cảnh đầy biến động và bất công trong xã hội phong kiến đã ảnh hưởng sâu sắc đến tư tưởng của bà, khiến thơ bà mang tính trào phúng và khát vọng tự do, bảo vệ giá trị người phụ nữ.</p>",
-        media: { type: "video", url: "https://www.youtube.com/results?search_query=NGUY%E1%BB%84N+%C3%81NH+%C4%90%C3%81NH+RA+TH%C4%82NG+LONG+-+NH%C3%80+T%C3%82Y+S%C6%A0N+DI%E1%BB%86T+VONG" }
+        media: { type: "video", url: "https://youtu.be/ELAD2y0wXCI?si=qKA0V7ZSZJUMomRa" }
       },
       {
         id: "s2",
         type: "text_media",
         title: "2. Cuộc đời",
         html: "<p>Hồ Xuân Hương (1772 – 1822), tên thật là Hồ Phi Mai (hoa mai bay trên hồ). Quê tại Quỳnh Đôi, Quỳnh Lưu, Nghệ An. Năm 13 tuổi, cha mất, bà theo mẹ về Thọ Xương, Thăng Long sinh sống. Hồ Xuân Hương là nữ sĩ có ngoại hình xinh đẹp, cá tính mạnh mẽ. Tuy nhiên, tình duyên của bà gặp nhiều trắc trở, trải qua hai đời chồng và đều mang danh vợ lẽ.</p>",
-        media: { type: "video", url: "https://www.youtube.com/results?search_query=H%E1%BB%93+Xu%C3%A2n+H%C6%B0%C6%A1ng+-+M%E1%BB%99t+hi%E1%BB%87n+t%C6%B0%E1%BB%A3ng+%C4%91%E1%BB%99c+%C4%91%C3%A1o+c%E1%BB%A7a+th%C6%A1+ca" },
+        media: { type: "video", url: "https://youtu.be/JOP9TidyKAg?si=fyq-fBHGrT2c8w6J" },
         task: "Khai thác đoạn tư liệu sau đây và vẽ sơ đồ tư duy tóm tắt về bối cảnh thời đại và cuộc đời của Hồ Xuân Hương",
         taskUrl: "https://aseanmotbian.my.canva.site/sodotuduyhoxuanhuong"
       },
@@ -1035,7 +1035,7 @@ const danhNhanData = [
         type: "text_media",
         title: "1. Bối cảnh thời đại",
         html: "<p>Lê Quý Đôn sinh ra trong thế kỷ XVIII đầy biến động. Đàng Trong - Đàng Ngoài chia cắt. Nhưng đây cũng là thời kỳ luồng sinh khí văn hóa mới trỗi dậy, sự giao thương mở rộng không gian tri thức cho sĩ phu, thôi thúc ông thu thập và ghi chép bách khoa về lịch sử, địa lý và kinh đô.</p>",
-        media: { type: "video", url: "https://www.youtube.com/results?search_query=THANH+V%C6%AF%C6%A0NG+TR%E1%BB%8ANH+TR%C3%81NG+TI%E1%BA%BEP+X%C3%9AC+V%C4%82N+MINH+PH%C6%AF%C6%A0NG+T%C3%82Y" }
+        media: { type: "video", url: "https://youtu.be/tIknfs18ifw?si=KATxhe3Ic5Omshox" }
       },
       {
         id: "s2",

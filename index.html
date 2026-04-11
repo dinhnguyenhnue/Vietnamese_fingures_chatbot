@@ -103,6 +103,23 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Custom Scrollbar cho Tabs */
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent; 
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(139, 26, 26, 0.4); 
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: rgba(139, 26, 26, 0.8); 
+    }
   </style>
 </head>
 
@@ -164,16 +181,14 @@
       </header>
 
       <!-- Navigation Tabs -->
-      <div class="flex justify-center mb-16 border-b border-outline-variant/20">
-        <div class="flex gap-12">
-          <button class="pb-4 border-b-2 border-primary text-primary font-bold text-sm tracking-wide">HÀNH TRÌNH TÌM HIỂU</button>
-          <a id="tab-chat-link"
-            class="cursor-pointer pb-4 border-b-2 border-transparent text-stone-400 hover:text-stone-600 font-bold text-sm tracking-wide transition-colors">HỎI ĐÁP CÙNG AI</a>
+      <div class="mb-16 border-b border-outline-variant/20 relative">
+        <div id="dynamic-tabs" class="flex overflow-x-auto custom-scrollbar gap-8 lg:gap-12 px-2 pb-2 w-max max-w-full mx-auto justify-start">
+          <!-- Rendered by JS -->
         </div>
       </div>
 
       <!-- Bento Grid Content -->
-      <section class="bg-surface-container-lowest p-8 sm:p-10 rounded-3xl border border-outline-variant/30 shadow-sm mb-16">
+      <section id="section-tieu-su" class="bg-surface-container-lowest p-8 sm:p-10 rounded-3xl border border-outline-variant/30 shadow-sm mb-16 transition-opacity duration-300">
         <h3 id="bio-title" class="serif-text text-3xl font-bold text-primary mb-8 border-b border-outline-variant/30 pb-4 uppercase"></h3>
         <div class="grid grid-cols-12 gap-8">
           <!-- Biography Column -->
@@ -229,12 +244,8 @@
       </section>
 
       <!-- Learning Modules Section -->
-      <div id="learning-modules-section" class="hidden flex-col gap-12 pt-16 mt-8 border-t border-outline-variant/20">
-        <div class="text-center">
-          <h2 class="serif-text text-4xl font-bold text-primary mb-4">Bài học và Khám phá</h2>
-          <p class="font-sans text-stone-600 max-w-2xl mx-auto">Chuyên đề chi tiết về cuộc đời, sự nghiệp, di sản và các bài tập tương tác thực hành.</p>
-        </div>
-        <div id="learning-modules-content" class="space-y-12">
+      <div id="learning-modules-section" class="hidden flex-col">
+        <div id="learning-modules-content" class="w-full">
           <!-- Rendered by JS -->
         </div>
       </div>
@@ -301,9 +312,7 @@
       };
 
       // Set TopNav and Tab hrefs
-      document.getElementById('nav-bio').onclick = () => smoothNavigate(`index.html?id=${currentId}`);
       document.getElementById('nav-chat').onclick = () => smoothNavigate(`code_chatbot.html?id=${currentId}`);
-      document.getElementById('tab-chat-link').onclick = () => smoothNavigate(`code_chatbot.html?id=${currentId}`);
       document.getElementById('float-chat-btn').onclick = () => smoothNavigate(`code_chatbot.html?id=${currentId}`);
 
       // 1. Render Sidebar
@@ -397,7 +406,8 @@
         
         person.learningModules.forEach((mod, index) => {
           const modDiv = document.createElement('div');
-          modDiv.className = "bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 shadow-sm relative overflow-hidden";
+          modDiv.id = `module-${mod.id}`;
+          modDiv.className = "bg-surface-container-lowest p-8 sm:p-10 rounded-3xl border border-outline-variant/30 shadow-sm mb-16 relative overflow-hidden transition-opacity duration-300";
           
           let innerHtml = `<h3 class="serif-text text-2xl font-bold text-primary mb-6 flex items-center gap-3"><span class="bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center text-xl font-sans font-bold shadow-sm ring-1 ring-primary/20">${mod.id.replace('s', '')}</span> ${mod.title.replace(/^\d+\.\s*/, '')}</h3>`;
           
@@ -535,6 +545,52 @@
         });
       }
       
+      // Render Navigation Tabs
+      const dynamicTabs = document.getElementById('dynamic-tabs');
+      const sectionTieuSu = document.getElementById('section-tieu-su');
+      const allSections = [{ id: 'tieu-su', label: 'Tiểu sử', el: sectionTieuSu }];
+      
+      if (person.learningModules && person.learningModules.length > 0) {
+         person.learningModules.forEach(mod => {
+            const el = document.getElementById(`module-${mod.id}`);
+            if (el) {
+               allSections.push({ id: `module-${mod.id}`, label: mod.title.replace(/^\d+\.\s*/, ''), el: el });
+            }
+         });
+      }
+
+      function switchTab(activeId) {
+         allSections.forEach(sec => {
+            if (sec.id === activeId) {
+               sec.el.classList.remove('hidden');
+               setTimeout(() => { sec.el.style.opacity = '1'; }, 10); // Trigger CSS transition
+            } else {
+               sec.el.classList.add('hidden');
+               sec.el.style.opacity = '0';
+            }
+         });
+         
+         Array.from(dynamicTabs.children).forEach(btn => {
+            if (btn.dataset.target === activeId) {
+               btn.className = "cursor-pointer pb-4 border-b-2 border-primary text-primary font-bold text-sm tracking-wide transition-colors uppercase whitespace-nowrap px-2";
+            } else {
+               btn.className = "cursor-pointer pb-4 border-b-2 border-transparent text-stone-400 hover:text-stone-600 font-bold text-sm tracking-wide transition-colors uppercase whitespace-nowrap px-2";
+            }
+         });
+      }
+
+      allSections.forEach(sec => {
+         const btn = document.createElement('a');
+         btn.dataset.target = sec.id;
+         btn.textContent = sec.label;
+         btn.onclick = () => switchTab(sec.id);
+         dynamicTabs.appendChild(btn);
+      });
+      
+      if (allSections.length > 0) {
+         switchTab('tieu-su');
+      }
+
       // Global quiz checker function
       window.checkAnswer = function(btn, chosen) {
          const container = btn.closest('.quiz-item');
