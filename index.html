@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Tinh Hoa Việt - Tiểu sử</title>
+  <title>Tinh Hoa Việt - Hành Trình Khám Phá Di Sản</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
@@ -103,583 +103,79 @@
       opacity: 1;
       transform: translateY(0);
     }
-
-    /* Custom Scrollbar cho Tabs */
-    .custom-scrollbar::-webkit-scrollbar {
-      height: 6px;
-      width: 6px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-      background: transparent; 
-      border-radius: 4px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: rgba(139, 26, 26, 0.4); 
-      border-radius: 4px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-      background: rgba(139, 26, 26, 0.8); 
-    }
   </style>
 </head>
 
-<body class="bg-background">
+<body class="bg-background flex flex-col min-h-screen">
   <!-- TopNavBar -->
-  <nav
-    class="flex justify-between items-center px-8 py-4 w-full sticky top-0 bg-[#fcf9f0] dark:bg-stone-900/90 z-50 backdrop-blur-md border-b border-outline-variant/10">
-    <a href="index.html"
-      class="text-2xl font-serif font-bold text-[#690008] dark:text-[#8b1a1a] tracking-tight hover:opacity-80 transition-opacity">Tinh
-      Hoa Việt</a>
-    <div class="hidden md:flex gap-8 items-center">
-      <a id="nav-bio"
-        class="cursor-pointer text-[#690008] dark:text-[#8b1a1a] font-bold border-b-2 border-[#690008] pb-1 font-sans text-sm tracking-wide">Tiểu
-        sử & Dấu ấn</a>
-      <a id="nav-chat"
-        class="cursor-pointer text-stone-600 dark:text-stone-400 font-medium hover:text-[#690008] transition-colors duration-300 font-sans text-sm tracking-wide">Hỏi đáp cùng AI</a>
-    </div>
-    <div class="flex items-center gap-4">
-    </div>
+  <nav class="flex justify-between items-center px-8 py-4 w-full sticky top-0 bg-[#fcf9f0]/90 dark:bg-stone-900/90 z-50 backdrop-blur-md border-b border-outline-variant/10">
+    <a href="index.html" class="text-2xl font-serif font-bold text-[#690008] dark:text-[#8b1a1a] tracking-tight hover:opacity-80 transition-opacity w-full text-center md:text-left md:w-auto">Tinh Hoa Việt</a>
   </nav>
 
-  <div class="flex flex-col lg:flex-row">
-    <!-- SideNavBar -->
-    <aside
-      class="sticky top-[60px] md:top-[68px] lg:fixed lg:top-16 lg:left-0 z-40 lg:h-[calc(100vh-64px)] w-full lg:w-72 flex lg:flex-col py-3 lg:py-6 bg-[#f6f3ea] dark:bg-stone-800 border-b border-outline-variant/20 lg:border-none">
-      <div class="hidden lg:block px-8 mb-8">
-        <h2 class="font-serif text-[#472a07] text-xl font-bold">Danh Nhân Văn Hóa</h2>
-        <p class="font-sans text-xs text-stone-500 uppercase tracking-widest mt-1">Hành trình di sản</p>
-      </div>
-      <nav id="sidebar-nav" class="flex flex-row lg:flex-col flex-1 lg:space-y-1 overflow-x-auto lg:overflow-x-visible items-center lg:items-stretch custom-scrollbar px-4 lg:px-0 gap-3 lg:gap-0">
-        <!-- Rendered by JS -->
-      </nav>
-      <div class="hidden lg:block px-8 mt-6">
-        <a href="https://drive.google.com/drive/folders/1u1PUQ-UHbtnL9kOroOGd_TjLoGlPvR9e?usp=drive_link"
-          target="_blank"
-          class="block text-center w-full py-3 bg-surface-container-high text-on-surface text-sm font-bold rounded-lg transition-transform hover:bg-[#e5e2da] active:scale-95">
-          Khám phá Kho lưu trữ
-        </a>
-      </div>
-    </aside>
+  <main id="main-content" class="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-12 page-transition">
+    <!-- Hero Section -->
+    <header class="mb-20 relative overflow-hidden flex flex-col items-center text-center">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-tertiary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <span class="font-sans text-secondary font-semibold tracking-[0.2em] uppercase text-xs mb-4">Hành trình di sản</span>
+      <h1 class="serif-text text-5xl md:text-7xl font-bold text-primary mb-6 tracking-tight">Danh Nhân Văn Hóa</h1>
+      <p class="font-sans text-stone-600 max-w-2xl mx-auto text-lg leading-relaxed">Khám phá cuộc đời, sự nghiệp và những cống hiến vĩ đại của các bậc tiền nhân đã góp phần tạc nên cốt cách và hình hài Tổ quốc Việt Nam.</p>
+    </header>
 
-    <!-- Main Content Area -->
-    <main id="main-content" class="lg:ml-72 flex-1 p-4 md:p-8 lg:p-12 max-w-7xl mx-auto w-full overflow-hidden page-transition">
-      <!-- Hero Section -->
-      <header class="mb-16 relative overflow-hidden flex flex-col items-center text-center">
-        <div
-          class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none">
-        </div>
-        <h1 id="hero-name" class="serif-text text-8xl font-bold text-primary mb-6 tracking-tight"></h1>
-        <div class="flex items-center gap-4 mb-8">
-          <div class="h-px w-12 bg-outline-variant/40"></div>
-          <span id="hero-title"
-            class="font-sans text-secondary font-semibold tracking-[0.2em] uppercase text-xs"></span>
-          <div class="h-px w-12 bg-outline-variant/40"></div>
-        </div>
-        <blockquote class="max-w-2xl mx-auto">
-          <p id="hero-quote" class="serif-text italic text-2xl text-tertiary leading-relaxed"></p>
-        </blockquote>
-      </header>
+    <!-- Grid -->
+    <div id="card-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+       <!-- Rendered by JS -->
+    </div>
+  </main>
 
-      <!-- Navigation Tabs -->
-      <div class="mb-16 border-b border-outline-variant/20 relative">
-        <div id="dynamic-tabs" class="flex overflow-x-auto custom-scrollbar gap-8 lg:gap-12 px-2 pb-2 w-max max-w-full mx-auto justify-start">
-          <!-- Rendered by JS -->
-        </div>
-      </div>
+  <footer class="mt-auto py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center w-full max-w-7xl mx-auto px-8 text-stone-400 text-xs tracking-widest uppercase font-bold">
+    <div class="mb-4 md:mb-0">© 2026 TINH HOA VIỆT - DI SẢN VĂN HÓA</div>
+    <div class="flex gap-6">
+      <a class="hover:text-primary transition-colors" href="#">Về chúng tôi</a>
+      <a class="hover:text-primary transition-colors" href="#">Tài liệu tham khảo</a>
+    </div>
+  </footer>
 
-      <!-- Bento Grid Content -->
-      <section id="section-tieu-su" class="bg-surface-container-lowest p-8 sm:p-10 rounded-3xl border border-outline-variant/30 shadow-sm mb-16 transition-opacity duration-300">
-        <h3 id="bio-title" class="serif-text text-3xl font-bold text-primary mb-8 border-b border-outline-variant/30 pb-4 uppercase"></h3>
-        <div class="grid grid-cols-12 gap-8">
-          <!-- Biography Column -->
-          <div class="col-span-12 lg:col-span-7 space-y-8">
-            <p id="bio-desc" class="font-sans text-stone-700 leading-relaxed text-lg"></p>
-            <div class="grid grid-cols-2 gap-6">
-              <div class="bg-surface-container-low p-6 rounded-lg text-center shadow-sm">
-                <span class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">Sinh thời</span>
-                <span id="bio-lifespan" class="serif-text text-xl text-primary font-semibold"></span>
-              </div>
-              <div class="bg-surface-container-low p-6 rounded-lg text-center shadow-sm">
-                <span class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">Quê quán</span>
-                <span id="bio-hometown" class="serif-text text-xl text-primary font-semibold"></span>
-              </div>
-            </div>
-            
-            <div class="relative group overflow-hidden rounded-xl h-[450px] md:h-[600px] bg-surface-container-highest shadow-sm border border-outline-variant/20">
-              <img id="image-element"
-                class="w-full h-full object-contain object-top transition-transform duration-700 group-hover:scale-105" src=""
-                alt="Hero Image" />
-              <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
-                <h2 id="image-title" class="text-white font-bold text-xl drop-shadow-md"></h2>
-                <p id="image-desc" class="text-white/80 text-sm mt-1 mb-3"></p>
-                <div id="hero-metadata" class="flex flex-col gap-1.5 hidden"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Legacy Column -->
-          <div class="col-span-12 lg:col-span-5 space-y-8">
-            <div class="bg-primary p-10 rounded-xl text-white shadow-sm border border-outline-variant/10">
-              <div class="flex items-center gap-3 mb-6">
-                <span class="material-symbols-outlined text-primary-fixed"
-                  style="font-variation-settings: 'FILL' 1;">bookmark_heart</span>
-                <h3 class="serif-text text-3xl font-bold">Dấu ấn Lịch sử</h3>
-              </div>
-              <ul id="achievements-list" class="space-y-6">
-                <!-- Rendered by JS -->
-              </ul>
-            </div>
-
-            <div class="bg-surface-container p-8 rounded-xl border border-outline-variant/30 shadow-sm">
-              <div class="flex items-center justify-between mb-6">
-                <h4 class="serif-text text-xl font-bold text-tertiary">Câu hỏi thường gặp</h4>
-                <span class="material-symbols-outlined text-stone-400">lightbulb</span>
-              </div>
-              <div id="faq-list" class="space-y-4">
-                <!-- Rendered by JS -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Learning Modules Section -->
-      <div id="learning-modules-section" class="hidden flex-col">
-        <div id="learning-modules-content" class="w-full">
-          <!-- Rendered by JS -->
-        </div>
-      </div>
-
-      <!-- Resources Library Section -->
-      <div id="resources-section" class="hidden flex-col gap-12 pt-16 mt-8 border-t border-outline-variant/20">
-        <div class="text-center">
-          <h2 class="serif-text text-4xl font-bold text-primary mb-4">Thư Viện Tư Liệu</h2>
-          <p class="font-sans text-stone-600 max-w-2xl mx-auto">Tài liệu, hình ảnh và video liên quan đến cuộc đời, sự nghiệp và di sản của danh nhân.</p>
-        </div>
-        <div id="resources-content" class="space-y-12">
-          <!-- Rendered by JS -->
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <footer
-        class="mt-20 pt-8 border-t border-outline-variant/10 flex justify-between items-center text-stone-400 text-xs tracking-widest uppercase font-bold">
-        <div>© 2026 TINH HOA VIỆT - DI SẢN VĂN HÓA</div>
-        <div class="flex gap-6">
-          <a class="hover:text-primary transition-colors" href="#">Tài liệu tham khảo</a>
-          <a class="hover:text-primary transition-colors" href="#">Bản quyền nội dung</a>
-        </div>
-      </footer>
-    </main>
-  </div>
-
-  <button id="float-chat-btn"
-    class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50 group">
-    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
-    <span
-      class="absolute right-16 bg-white text-primary px-4 py-2 rounded-lg text-xs font-bold shadow-lg opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity pointer-events-none">Hỏi
-      AI về Danh Nhân</span>
-  </button>
-
-  <!-- Load Data and Logic -->
   <script src="data.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // Parse URL parameters
-      const urlParams = new URLSearchParams(window.location.search);
-      let currentId = urlParams.get('id');
+      const grid = document.getElementById('card-grid');
 
-      // Default to chu-van-an if no ID is found or invalid
-      let person = danhNhanData.find(p => p.id === currentId);
-      if (!person) {
-        currentId = danhNhanData[0].id; // Fallback to first one
-        person = danhNhanData[0];
-        // Modify URL without reloading to reflect default ID
-        window.history.replaceState({}, '', `?id=${currentId}`);
+      function getBirthYear(lifespan) {
+         const match = lifespan.match(/\d+/);
+         return match ? parseInt(match[0], 10) : 9999;
       }
 
-      document.title = `Tinh Hoa Việt - ${person.name}`;
+      // Sort data by birth year
+      const sortedData = [...danhNhanData].sort((a, b) => getBirthYear(a.lifespan) - getBirthYear(b.lifespan));
 
-      // Smooth Page Transition setup
-      const mainContent = document.getElementById('main-content');
-
-      // Navigate gently function
-      window.smoothNavigate = function (url) {
-        mainContent.classList.remove('loaded');
-        setTimeout(() => {
-          window.location.href = url;
-        }, 300); // match transition timing in CSS
-      };
-
-      // Set TopNav and Tab hrefs
-      document.getElementById('nav-chat').onclick = () => smoothNavigate(`code_chatbot.html?id=${currentId}`);
-      document.getElementById('float-chat-btn').onclick = () => smoothNavigate(`code_chatbot.html?id=${currentId}`);
-
-      // 1. Render Sidebar
-      const sidebarNav = document.getElementById('sidebar-nav');
-      danhNhanData.forEach(p => {
-        const isActive = p.id === currentId;
-        const a = document.createElement('a');
-
-        if (isActive) {
-          a.className = "cursor-pointer bg-[#ffffff] dark:bg-stone-700 text-[#690008] dark:text-white lg:rounded-l-full rounded-full shrink-0 lg:ml-4 shadow-sm flex items-center px-4 py-2 lg:px-6 lg:py-3 transition-all duration-200 border border-outline-variant/10 lg:border-none";
-        } else {
-          a.className = "cursor-pointer text-stone-500 dark:text-stone-400 hover:translate-y-[1px] lg:hover:translate-y-0 lg:hover:translate-x-1 hover:bg-[#f1eee5] dark:hover:bg-stone-700 transition-all duration-200 flex items-center px-4 py-2 lg:px-6 lg:py-3 lg:ml-4 shrink-0 rounded-full lg:rounded-l-full bg-surface-container-high/50 lg:bg-transparent";
-        }
-
-        a.innerHTML = `
-          <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-md overflow-hidden ring-1 ring-black/10 shrink-0 mr-2 lg:mr-3 shadow-sm bg-white"><img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover"></div>
-          <span class="font-sans text-[13px] lg:text-sm font-semibold whitespace-nowrap">${p.name}</span>
-        `;
-
-        a.onclick = (e) => {
-          e.preventDefault();
-          if (p.id !== currentId) {
-            smoothNavigate(`index.html?id=${p.id}`);
-          }
-        };
-        sidebarNav.appendChild(a);
-      });
-
-      // 2. Render Main Content Fields
-      document.getElementById('hero-name').textContent = person.name;
-      document.getElementById('hero-title').textContent = person.title;
-      document.getElementById('hero-quote').textContent = person.quote;
-
-      document.getElementById('bio-title').textContent = person.bioTitle;
-      document.getElementById('bio-desc').textContent = person.bio;
-      document.getElementById('bio-lifespan').textContent = person.lifespan;
-      document.getElementById('bio-hometown').textContent = person.hometown;
-
-      const imgEl = document.getElementById('image-element');
-      imgEl.src = person.image;
-      imgEl.className = `w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${person.imagePosition || ""}`;
-      const titleEl = document.getElementById('image-title');
-      const descEl = document.getElementById('image-desc');
-      const metaContainer = document.getElementById('hero-metadata');
-      
-      if (person.imageCaptionTitle) titleEl.textContent = person.imageCaptionTitle;
-      if (person.imageDesc) descEl.textContent = person.imageDesc;
-      
-      if (person.metadata) {
-         metaContainer.classList.remove('hidden');
-         metaContainer.innerHTML = '';
-         person.metadata.forEach(m => {
-            metaContainer.innerHTML += `<div class="text-white/90 text-sm flex gap-2"><span class="font-bold opacity-80 min-w-[80px]">${m.label}:</span> <span>${m.value}</span></div>`;
-         });
-      } // 3. Render Achievements
-      const achList = document.getElementById('achievements-list');
-      person.achievements.forEach((ach, index) => {
-        const li = document.createElement('li');
-        li.className = "flex gap-4";
-        li.innerHTML = `
-          <span class="serif-text text-primary-fixed text-4xl font-bold opacity-40">0${index + 1}</span>
-          <div>
-            <h5 class="font-sans font-bold text-lg mb-1">${ach.title}</h5>
-            <p class="text-white/70 text-sm leading-relaxed">${ach.desc}</p>
-          </div>
-        `;
-        achList.appendChild(li);
-      });
-
-      // 4. Render FAQs
-      const faqList = document.getElementById('faq-list');
-      person.faqs.forEach(faq => {
-        const btn = document.createElement('button');
-        btn.className = "w-full text-left p-4 bg-surface-container-lowest rounded-lg text-sm font-semibold text-stone-700 hover:text-primary transition-colors flex justify-between items-center group";
-        // Click to jump to AI Chatbot section
-        btn.onclick = () => smoothNavigate(`code_chatbot.html?id=${currentId}&q=${encodeURIComponent(faq)}`);
-        btn.innerHTML = `
-          <span>${faq}</span>
-          <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
-        `;
-        faqList.appendChild(btn);
-      });
-
-      // Render Learning Modules
-      const lmSection = document.getElementById('learning-modules-section');
-      const lmContent = document.getElementById('learning-modules-content');
-      
-      if (person.learningModules && person.learningModules.length > 0) {
-        lmSection.classList.remove('hidden');
-        lmSection.classList.add('flex');
-        
-        person.learningModules.forEach((mod, index) => {
-          const modDiv = document.createElement('div');
-          modDiv.id = `module-${mod.id}`;
-          modDiv.className = "bg-surface-container-lowest p-8 sm:p-10 rounded-3xl border border-outline-variant/30 shadow-sm mb-16 relative overflow-hidden transition-opacity duration-300";
-          
-          let innerHtml = `<h3 class="serif-text text-2xl font-bold text-primary mb-6 flex items-center gap-3"><span class="bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center text-xl font-sans font-bold shadow-sm ring-1 ring-primary/20">${mod.id.replace('s', '')}</span> ${mod.title.replace(/^\d+\.\s*/, '')}</h3>`;
-          
-          if (mod.type === 'text_media') {
-             innerHtml += `<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">`;
-             innerHtml += `<div class="font-sans text-stone-700 leading-relaxed md:col-span-${mod.media ? '1' : '2'} space-y-4">${mod.html}</div>`;
-             
-             if (mod.media) {
-                if (mod.media.type === 'video') {
-                   let embedBg = 'class="bg-black/5"';
-                   const yIdMatch = mod.media.url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})/);
-                   if (yIdMatch && yIdMatch[1]) {
-                      embedBg = `style="background-image: url('https://img.youtube.com/vi/${yIdMatch[1]}/hqdefault.jpg'); background-size: cover; background-position: center;"`;
-                   }
-                   innerHtml += `<a href="${mod.media.url}" target="_blank" class="block relative rounded-xl overflow-hidden shadow-md group aspect-video flex items-center justify-center border border-outline-variant/30" ${embedBg}>`;
-                   innerHtml += `<div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>`;
-                   innerHtml += `<span class="material-symbols-outlined text-6xl text-white opacity-90 group-hover:scale-110 transition-transform drop-shadow-lg relative z-10">play_circle</span>`;
-                   innerHtml += `</a>`;
-                } else if (mod.media.type === 'image') {
-                   innerHtml += `<div class="space-y-2"><a href="${mod.media.url}" target="_blank" class="block rounded-xl overflow-hidden shadow-md"><img src="${mod.media.src}" class="w-full h-auto object-contain max-h-[80vh]" /></a>${mod.media.caption ? `<p class="text-xs text-center text-stone-500 italic">${mod.media.caption}</p>` : ''}</div>`;
-                }
-             }
-             innerHtml += `</div>`;
-             
-             if (mod.task) {
-                innerHtml += `<div class="mt-8 bg-tertiary-container/10 border-l-4 border-tertiary p-6 rounded-r-lg">`;
-                innerHtml += `  <div class="flex items-center gap-2 text-tertiary font-bold mb-2"><span class="material-symbols-outlined">edit_note</span> Nhiệm vụ học tập</div>`;
-                innerHtml += `  <p class="text-stone-700">${mod.task}</p>`;
-                if (mod.taskUrl) {
-                   innerHtml += `<a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 mt-4 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><span class="material-symbols-outlined text-[20px]">open_in_new</span> Thực hành trên Canva</a>`;
-                }
-                innerHtml += `</div>`;
-             }
-          }
-          else if (mod.type === 'complex') {
-             innerHtml += `<div class="space-y-12">`;
-             mod.blocks.forEach(blk => {
-                innerHtml += `<div>`;
-                if (blk.title) innerHtml += `<h4 class="font-bold text-lg text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-stone-400 text-sm">label_important</span> ${blk.title.replace(/^\d+\.\s*/, '')}</h4>`;
-                
-                if (blk.type === 'text_media') {
-                   innerHtml += `<div class="flex flex-col sm:flex-row gap-8 items-center mb-8 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm">`;
-                   if (blk.media) {
-                      innerHtml += `<div class="w-full sm:w-1/3 flex-shrink-0"><a href="${blk.media.url}" target="_blank" class="block rounded-xl overflow-hidden shadow-md border border-outline-variant/30 bg-white"><img src="${blk.media.src}" class="w-full h-auto object-contain max-h-48" /></a>${blk.media.caption ? `<p class="text-xs text-center text-stone-500 italic mt-2">${blk.media.caption}</p>` : ''}</div>`;
-                   }
-                   innerHtml += `<div class="font-sans text-stone-700 leading-relaxed text-[15px] italic w-full border-l-4 border-primary/30 pl-5 flex-grow">${blk.html || ''}</div>`;
-                   innerHtml += `</div>`;
-                }
-                else if (blk.type === 'table_task') {
-                   innerHtml += `<div class="bg-tertiary-container/10 border-l-4 border-tertiary p-6 rounded-r-lg">`;
-                   innerHtml += `  <div class="flex items-center gap-2 text-tertiary font-bold mb-2"><span class="material-symbols-outlined">edit_note</span> Nhiệm vụ học tập</div>`;
-                   innerHtml += `  <p class="text-stone-700 font-medium mb-4">${blk.task}</p>`;
-                   if (blk.taskUrl) {
-                      innerHtml += `<a href="${blk.taskUrl}" target="_blank" class="inline-flex items-center gap-2 mb-4 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><span class="material-symbols-outlined text-[20px]">open_in_new</span> Thực hành trên Canva</a>`;
-                   }
-                   innerHtml += `  <div class="overflow-x-auto"><table class="w-full text-left border-collapse border border-outline-variant/50 bg-white">`;
-                   innerHtml += `    <thead class="bg-surface-container-highest"><tr>${blk.headers.map(h => `<th class="p-3 border border-outline-variant/30 text-sm text-stone-700 font-bold">${h}</th>`).join('')}</tr></thead>`;
-                   innerHtml += `    <tbody>${blk.rows.map(r => `<tr>${r.map(c => `<td class="p-4 border border-outline-variant/30 text-sm text-stone-500 italic">${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
-                   innerHtml += `  </table></div>`;
-                   innerHtml += `</div>`;
-                }
-                innerHtml += `</div>`;
-             });
-             innerHtml += `</div>`;
-          }
-          else if (mod.type === 'table_task') {
-             innerHtml += `<div class="overflow-x-auto mb-6"><table class="w-full text-left border border-outline-variant/50 bg-white rounded-lg overflow-hidden">`;
-             innerHtml += `  <thead class="bg-primary/5 text-primary"><tr>${mod.headers.map(h => `<th class="p-4 border-b border-outline-variant/30 text-sm font-bold">${h}</th>`).join('')}</tr></thead>`;
-             innerHtml += `  <tbody>${mod.rows.map(r => `<tr>${r.map(c => `<td class="p-4 border-b border-outline-variant/30 text-sm text-stone-700">${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
-             innerHtml += `</table></div>`;
-             if (mod.task) {
-                innerHtml += `<div class="bg-tertiary-container/10 border-l-4 border-tertiary p-6 rounded-r-lg">`;
-                innerHtml += `  <div class="flex items-center gap-2 text-tertiary font-bold mb-2"><span class="material-symbols-outlined">edit_note</span> Nhiệm vụ học tập</div>`;
-                innerHtml += `  <p class="text-stone-700">${mod.task}</p>`;
-                if (mod.taskUrl) {
-                   innerHtml += `<a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 mt-4 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><span class="material-symbols-outlined text-[20px]">open_in_new</span> Thực hành trên Canva</a>`;
-                }
-                innerHtml += `</div>`;
-             }
-          }
-          else if (mod.type === 'game') {
-             innerHtml += `<div class="w-full">`;
-             if (mod.taskUrl) {
-                innerHtml += `<div class="w-full relative group rounded-3xl overflow-hidden shadow-md border border-outline-variant/30 bg-gradient-to-br from-[#00c4cc]/20 to-[#690008]/20 flex flex-col items-center justify-center cursor-pointer min-h-[400px]" onclick="window.open('${mod.taskUrl}', '_blank')">`;
-                innerHtml += `  <div class="absolute inset-0 bg-white/40 backdrop-blur-sm group-hover:bg-white/10 transition-all duration-500"></div>`;
-                innerHtml += `  <div class="relative z-10 flex flex-col items-center group-hover:-translate-y-2 transition-transform duration-500">`;
-                innerHtml += `     <span class="material-symbols-outlined text-8xl text-[#00c4cc] drop-shadow-lg mb-6 group-hover:scale-110 transition-transform duration-500">play_circle</span>`;
-                innerHtml += `     <h4 class="text-3xl font-bold text-stone-800 tracking-wide mb-3 drop-shadow-sm">Bắt đầu trò chơi</h4>`;
-                innerHtml += `     <p class="text-stone-700 font-bold bg-white/80 px-6 py-2 rounded-full text-sm shadow-sm ring-1 ring-black/5 flex items-center gap-2"><span class="material-symbols-outlined text-sm">launch</span> Play / Mở thẻ mới</p>`;
-                innerHtml += `  </div>`;
-                innerHtml += `</div>`;
-             } else {
-                innerHtml += `<div class="flex flex-col items-center justify-center p-10 bg-gradient-to-r from-primary-container/20 to-tertiary-container/20 rounded-xl border border-outline-variant/30">`;
-                innerHtml += `  <span class="material-symbols-outlined text-6xl text-primary mb-4 drop-shadow-sm">sports_esports</span>`;
-                innerHtml += `  <div class="text-stone-700 font-medium mb-6 text-center">${mod.html}</div>`;
-                innerHtml += `  <button class="px-8 py-3 bg-stone-300 text-stone-500 font-bold rounded-full cursor-not-allowed shadow-inner flex items-center gap-2"><span class="material-symbols-outlined text-sm">lock</span> ${mod.status}</button>`;
-                innerHtml += `</div>`;
-             }
-             innerHtml += `</div>`;
-          }
-          else if (mod.type === 'quiz') {
-             if (mod.taskUrl) {
-                innerHtml += `<div class="flex justify-end mb-4"><a href="${mod.taskUrl}" target="_blank" class="inline-flex items-center gap-2 px-5 py-2 bg-[#00c4cc] text-white font-bold rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"><span class="material-symbols-outlined text-[20px]">open_in_new</span> Link gốc trên Canva</a></div>`;
-             }
-             innerHtml += `<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="quiz-${mod.id}">`;
-             mod.questions.forEach((q, i) => {
-                innerHtml += `<div class="bg-surface-container p-6 rounded-xl border border-outline-variant/30 shadow-sm quiz-item" data-ans="${q.a}">`;
-                innerHtml += `  <p class="font-bold text-stone-800 mb-6 text-[15px] leading-relaxed"><span class="text-primary mr-2 bg-primary/10 px-2 py-1 rounded">Câu ${i+1}</span> ${q.q}</p>`;
-                innerHtml += `  <div class="flex gap-4">`;
-                innerHtml += `    <button class="flex-1 py-3 rounded-lg font-bold border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all active:scale-95" onclick="checkAnswer(this, 'Đ')">Đúng</button>`;
-                innerHtml += `    <button class="flex-1 py-3 rounded-lg font-bold border-2 border-stone-400 text-stone-500 hover:bg-stone-500 hover:text-white transition-all active:scale-95" onclick="checkAnswer(this, 'S')">Sai</button>`;
-                innerHtml += `  </div>`;
-                innerHtml += `  <div class="feedback-msg mt-4 text-center rounded-lg p-3 hidden"></div>`;
-                innerHtml += `</div>`;
-             });
-             innerHtml += `</div>`;
-          }
-          else if (mod.type === 'integration') {
-             innerHtml += `<div class="grid grid-cols-1 md:grid-cols-2 gap-8">`;
-             mod.subjects.forEach(sub => {
-                innerHtml += `<div class="bg-[#f8fafd] p-8 rounded-xl border border-blue-100 shadow-sm">`;
-                innerHtml += `  <h4 class="font-bold text-[#1e40af] mb-4 flex items-center gap-2 border-b border-blue-100 pb-3"><span class="material-symbols-outlined">menu_book</span> ${sub.name}</h4>`;
-                innerHtml += `  <div class="text-sm text-stone-700 leading-relaxed mb-6 space-y-3">${sub.html}</div>`;
-                innerHtml += `  <div class="bg-white p-5 rounded-lg border-l-4 border-[#3b82f6] shadow-sm text-sm">`;
-                innerHtml += `    <strong class="flex items-center gap-2 mb-2 text-[#2563eb]"><span class="material-symbols-outlined text-[16px]">psychology_alt</span> Câu hỏi mở rộng:</strong>`;
-                innerHtml += `    <span class="text-stone-600 font-medium">${sub.task}</span>`;
-                innerHtml += `  </div>`;
-                innerHtml += `</div>`;
-             });
-             innerHtml += `</div>`;
-          }
-          
-          modDiv.innerHTML = innerHtml;
-          lmContent.appendChild(modDiv);
-        });
-      }
-      
-      // Render Navigation Tabs
-      const dynamicTabs = document.getElementById('dynamic-tabs');
-      const sectionTieuSu = document.getElementById('section-tieu-su');
-      const allSections = [{ id: 'tieu-su', label: 'Tiểu sử', el: sectionTieuSu }];
-      
-      if (person.learningModules && person.learningModules.length > 0) {
-         person.learningModules.forEach(mod => {
-            const el = document.getElementById(`module-${mod.id}`);
-            if (el) {
-               allSections.push({ id: `module-${mod.id}`, label: mod.title.replace(/^\d+\.\s*/, ''), el: el });
-            }
-         });
-      }
-
-      function switchTab(activeId) {
-         allSections.forEach(sec => {
-            if (sec.id === activeId) {
-               sec.el.classList.remove('hidden');
-               setTimeout(() => { sec.el.style.opacity = '1'; }, 10); // Trigger CSS transition
-            } else {
-               sec.el.classList.add('hidden');
-               sec.el.style.opacity = '0';
-            }
-         });
+      sortedData.forEach(p => {
+         const card = document.createElement('a');
+         card.href = `detail.html?id=${p.id}`;
+         card.className = "group block bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden shadow-[0px_12px_32px_rgba(28,28,23,0.06)] hover:shadow-[0px_16px_48px_rgba(28,28,23,0.12)] transition-all duration-500 hover:-translate-y-2 relative";
          
-         Array.from(dynamicTabs.children).forEach(btn => {
-            if (btn.dataset.target === activeId) {
-               btn.className = "cursor-pointer pb-4 border-b-2 border-primary text-primary font-bold text-sm tracking-wide transition-colors uppercase whitespace-nowrap px-2";
-            } else {
-               btn.className = "cursor-pointer pb-4 border-b-2 border-transparent text-stone-400 hover:text-stone-600 font-bold text-sm tracking-wide transition-colors uppercase whitespace-nowrap px-2";
-            }
-         });
-      }
-
-      allSections.forEach(sec => {
-         const btn = document.createElement('a');
-         btn.dataset.target = sec.id;
-         btn.textContent = sec.label;
-         btn.onclick = () => switchTab(sec.id);
-         dynamicTabs.appendChild(btn);
-      });
-      
-      if (allSections.length > 0) {
-         switchTab('tieu-su');
-      }
-
-      // Global quiz checker function
-      window.checkAnswer = function(btn, chosen) {
-         const container = btn.closest('.quiz-item');
-         const correctAns = container.getAttribute('data-ans');
-         const feedback = container.querySelector('.feedback-msg');
-         
-         const btns = container.querySelectorAll('button');
-         btns.forEach(b => {
-             b.disabled = true;
-             b.classList.remove('hover:bg-primary', 'hover:text-white', 'hover:bg-stone-500', 'active:scale-95');
-             b.classList.add('opacity-50', 'cursor-not-allowed');
-         });
-         
-         feedback.classList.remove('hidden');
-         if (chosen === correctAns) {
-            feedback.innerHTML = '<span class="material-symbols-outlined text-lg align-middle mr-1">check_circle</span> Trả lời chính xác!';
-            feedback.className = 'feedback-msg mt-4 text-center rounded-lg p-3 bg-green-50 text-green-700 font-bold border border-green-200';
-            btn.classList.add('bg-green-600', 'text-white', 'border-green-600', 'opacity-100');
-            btn.classList.remove('border-primary', 'text-primary', 'border-stone-400', 'text-stone-500', 'opacity-50');
-         } else {
-            feedback.innerHTML = '<span class="material-symbols-outlined text-lg align-middle mr-1">cancel</span> Chưa chính xác! Hãy đọc kỹ lại bài học nhé.';
-            feedback.className = 'feedback-msg mt-4 text-center rounded-lg p-3 bg-red-50 text-red-700 font-bold border border-red-200';
-            btn.classList.add('bg-red-500', 'text-white', 'border-red-500', 'opacity-100');
-            btn.classList.remove('border-primary', 'text-primary', 'border-stone-400', 'text-stone-500', 'opacity-50');
-            
-            // Highlight correct one
-            btns.forEach(b => {
-               if(b.textContent.trim() === 'Đúng' && correctAns === 'Đ') {
-                  b.classList.add('bg-green-600', 'text-white', 'border-green-600', 'opacity-100');
-               } else if (b.textContent.trim() === 'Sai' && correctAns === 'S') {
-                  b.classList.add('bg-green-600', 'text-white', 'border-green-600', 'opacity-100');
-               }
-            });
-         }
-      }
-
-      // 5. Render Resources
-      const resSection = document.getElementById('resources-section');
-      const resContent = document.getElementById('resources-content');
-      
-      if (person.resources && person.resources.length > 0) {
-        resSection.classList.remove('hidden');
-        resSection.classList.add('flex');
-        
-        person.resources.forEach(category => {
-          const catDiv = document.createElement('div');
-          catDiv.className = "bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 shadow-sm";
-          
-          let html = `
-            <div class="mb-6">
-              <h3 class="serif-text text-2xl font-bold text-primary mb-2">${category.categoryTitle}</h3>
-              ${category.categoryDesc ? `<p class="font-sans text-sm text-stone-500">${category.categoryDesc}</p>` : ''}
+         card.innerHTML = `
+            <div class="h-96 w-full relative overflow-hidden bg-surface-container-high">
+              <img src="${p.headerAvatar || p.image || p.avatar}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 ${p.imagePosition || ''}">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 transition-colors duration-500 group-hover:from-black"></div>
+              <div class="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end text-white z-10">
+                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-primary-fixed-dim drop-shadow-md mb-2 flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">${p.sidebarIcon}</span> ${p.title}</span>
+                <h3 class="serif-text text-3xl font-bold mb-1 leading-tight drop-shadow-md">${p.name}</h3>
+                <span class="text-xs font-sans font-medium text-white/80 mb-4 tracking-wider">${p.lifespan}</span>
+                <div class="h-px w-8 bg-primary-fixed-dim/50 mb-4 transition-all duration-500 group-hover:w-16"></div>
+                <p class="text-sm serif-text italic text-white/90 line-clamp-3 leading-snug">"${p.quote.replace(/^"|"$/g, '')}"</p>
+              </div>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          `;
-          
-          category.items.forEach(item => {
-            let icon = 'image';
-            if (item.type === 'video') icon = 'play_circle';
-            if (item.type === 'folder') icon = 'folder';
-            
-            html += `
-              <a href="${item.link}" target="_blank" class="group block relative rounded-lg overflow-hidden border border-outline-variant/20 bg-surface h-48 hover:shadow-md transition-shadow">
-                ${item.thumbnail ? 
-                  `<img src="${item.thumbnail}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="${item.title}" />` : 
-                  `<div class="w-full h-full flex flex-col items-center justify-center bg-surface-container-low text-stone-400 group-hover:text-primary transition-colors">
-                     <span class="material-symbols-outlined text-4xl mb-2">${icon}</span>
-                   </div>`
-                }
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4">
-                  <h4 class="text-white font-bold text-sm leading-tight mb-1 line-clamp-2">${item.title}</h4>
-                  ${item.desc ? `<p class="text-white/70 text-xs line-clamp-1">${item.desc}</p>` : ''}
-                </div>
-              </a>
-            `;
-          });
-          
-          html += `</div>`;
-          catDiv.innerHTML = html;
-          resContent.appendChild(catDiv);
-        });
-      }
+         `;
+         grid.appendChild(card);
+      });
 
       // Trigger fade-in animation
       setTimeout(() => {
-        mainContent.classList.add('loaded');
-      }, 50);
+        document.getElementById('main-content').classList.add('loaded');
+      }, 100);
     });
   </script>
 </body>
-
 </html>
