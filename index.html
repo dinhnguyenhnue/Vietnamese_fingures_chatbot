@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html class="light" lang="vi">
+<html lang="vi">
 
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Tinh Hoa Việt - Hành Trình Khám Phá Di Sản</title>
+  <title>Tinh Hoa Việt - Di Sản Nghìn Năm</title>
   <link rel="icon" href="favicon.png" type="image/png" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
-    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -20,162 +20,143 @@
       theme: {
         extend: {
           colors: {
-            "error-container": "#ffdad6",
-            "primary-fixed": "#ffdad6",
-            "surface-bright": "#fcf9f0",
-            "on-tertiary-container": "#dcac7f",
-            "on-secondary-fixed": "#2b1611",
-            "surface-container-low": "#f6f3ea",
-            "on-surface-variant": "#58413f",
-            "on-error-container": "#93000a",
-            "background": "#fcf9f0",
-            "on-surface": "#1c1c17",
-            "secondary-fixed-dim": "#e5beb5",
             "primary": "#690008",
-            "tertiary-fixed-dim": "#eebd8e",
-            "inverse-on-surface": "#f4f1e8",
-            "inverse-primary": "#ffb3ac",
-            "on-background": "#1c1c17",
-            "surface-tint": "#ac322e",
-            "tertiary-container": "#61401b",
-            "surface-container": "#f1eee5",
-            "outline": "#8c716e",
-            "tertiary": "#472a07",
-            "surface-container-high": "#ebe8df",
-            "on-tertiary-fixed-variant": "#61401b",
-            "surface-dim": "#dddad1",
-            "primary-container": "#8b1a1a",
-            "primary-fixed-dim": "#ffb3ac",
-            "tertiary-fixed": "#ffdcbd",
-            "on-primary-fixed": "#410003",
-            "error": "#ba1a1a",
-            "surface": "#fcf9f0",
-            "surface-container-lowest": "#ffffff",
-            "on-secondary-fixed-variant": "#5c403a",
-            "inverse-surface": "#31312b",
-            "secondary-fixed": "#ffdad2",
-            "on-primary-fixed-variant": "#8a1a1a",
-            "on-primary": "#ffffff",
-            "on-tertiary-fixed": "#2c1600",
-            "on-primary-container": "#ff9a91",
-            "outline-variant": "#e0bfbc",
-            "on-error": "#ffffff",
-            "surface-variant": "#e5e2da",
-            "surface-container-highest": "#e5e2da",
-            "on-secondary": "#ffffff",
-            "secondary": "#755750",
-            "on-secondary-container": "#7a5b54",
-            "secondary-container": "#ffd7ce",
-            "on-tertiary": "#ffffff"
+            "accent": "#d4af37",
+            "background": "#4a0404", // Deep red background
+            "surface": "#fcf9f0",   // Light surface for cards
           },
           fontFamily: {
-            "headline": ["Newsreader", "serif"],
-            "body": ["Manrope", "sans-serif"],
-            "label": ["Manrope", "sans-serif"]
+            "headline": ["Marcellus", "serif"],
+            "body": ["Outfit", "sans-serif"],
           },
-          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
         },
       },
     }
   </script>
   <style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    body {
+      background-color: #4a0404;
+      color: #fcf9f0;
+      font-family: 'Outfit', sans-serif;
     }
 
-    body {
+    .card-element {
       background-color: #fcf9f0;
       color: #1c1c17;
-      font-family: 'Manrope', sans-serif;
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .card-element:hover {
+      transform: translateY(-8px);
+      border: 3px solid #d4af37;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 
     .serif-text {
-      font-family: 'Newsreader', serif;
+      font-family: 'Marcellus', serif;
     }
 
-    /* Page Transition Animation CSS */
-    .page-transition {
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.4s ease-out;
-    }
-
-    .page-transition.loaded {
-      opacity: 1;
-      transform: translateY(0);
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
   </style>
 </head>
 
-<body class="bg-background flex flex-col min-h-screen">
-  <!-- TopNavBar -->
-  <nav class="flex justify-between items-center px-8 py-4 w-full sticky top-0 bg-[#fcf9f0]/90 dark:bg-stone-900/90 z-50 backdrop-blur-md border-b border-outline-variant/10">
-    <a href="index.html" class="text-2xl font-serif font-bold text-[#690008] dark:text-[#8b1a1a] tracking-tight hover:opacity-80 transition-opacity w-full text-center md:text-left md:w-auto">Tinh Hoa Việt</a>
-  </nav>
+<body class="flex flex-col min-h-screen">
+  
+  <!-- Header with Favicon Logo -->
+  <header class="w-full bg-[#1a0505] border-b border-[#d4af37]/30 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="favicon.png" alt="Logo" class="w-10 h-10 object-contain">
+        <div>
+          <h1 class="text-xl font-headline font-bold text-accent tracking-widest leading-none">TINH HOA VIỆT</h1>
+          <p id="stat-counter" class="text-[9px] uppercase tracking-widest text-[#d4af37]/60 font-bold mt-1">Hành trình di sản</p>
+        </div>
+      </a>
+      <div class="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest text-[#fcf9f0]/70">
+        <a href="#" class="hover:text-accent transition-colors">Trang chủ</a>
+        <a href="#" class="hover:text-accent transition-colors">Tài liệu</a>
+        <a href="#" class="hover:text-accent transition-colors">Liên hệ</a>
+      </div>
+    </div>
+  </header>
 
-  <main id="main-content" class="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-12 page-transition">
-    <!-- Hero Section -->
-    <header class="mb-20 relative overflow-hidden flex flex-col items-center text-center">
-      <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-tertiary-container/5 rounded-full blur-3xl pointer-events-none"></div>
-      
-      <span class="font-sans text-secondary font-semibold tracking-[0.2em] uppercase text-xs mb-4">Hành trình di sản</span>
-      <h1 class="serif-text text-5xl md:text-7xl font-bold text-primary mb-6 tracking-tight">Danh Nhân Văn Hóa</h1>
-      <p class="font-sans text-stone-600 max-w-2xl mx-auto text-lg leading-relaxed">Khám phá cuộc đời, sự nghiệp và những cống hiến vĩ đại của các bậc tiền nhân đã góp phần tạc nên cốt cách và hình hài Tổ quốc Việt Nam.</p>
-    </header>
+  <main class="flex-1 w-full max-w-7xl mx-auto px-6 py-16">
+    <!-- Hero Title -->
+    <div class="text-center mb-16">
+      <h2 class="serif-text text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">Tinh Hoa Việt</h2>
+      <p class="text-[#d4af37] text-lg font-light tracking-wide italic">Bản sắc nghìn năm trong tầm tay bạn</p>
+    </div>
 
-    <!-- Grid -->
+    <!-- The Grid - Pure and Simple like at the beginning -->
     <div id="card-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-       <!-- Rendered by JS -->
+       <!-- Cards load here -->
     </div>
   </main>
 
-  <footer class="mt-auto py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center w-full max-w-7xl mx-auto px-8 text-stone-400 text-xs tracking-widest uppercase font-bold">
-    <div class="mb-4 md:mb-0">© 2026 TINH HOA VIỆT - DI SẢN VĂN HÓA</div>
-    <div class="flex gap-6">
-      <a class="hover:text-primary transition-colors" href="#">Về chúng tôi</a>
-      <a class="hover:text-primary transition-colors" href="#">Tài liệu tham khảo</a>
-    </div>
+  <footer class="bg-[#1a0505] py-12 border-t border-[#d4af37]/20 text-center">
+    <p class="text-[#d4af37]/60 text-[10px] uppercase tracking-[0.3em] font-bold">© 2026 VIETNAMESE FIGURES - TINH HOA VIỆT</p>
   </footer>
 
   <script src="data.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const grid = document.getElementById('card-grid');
-
-      function getBirthYear(lifespan) {
-         const match = lifespan.match(/\d+/);
-         return match ? parseInt(match[0], 10) : 9999;
+      const counter = document.getElementById('stat-counter');
+      
+      if (typeof danhNhanData === 'undefined' || !Array.isArray(danhNhanData)) {
+        grid.innerHTML = '<p class="col-span-full text-center text-accent py-20">Lỗi: Không tìm thấy dữ liệu danh nhân.</p>';
+        return;
       }
 
-      // Sort data by birth year
-      const sortedData = [...danhNhanData].sort((a, b) => getBirthYear(a.lifespan) - getBirthYear(b.lifespan));
+      function parseYear(lifespan) {
+        if (!lifespan) return 9999;
+        const matches = lifespan.toString().match(/\d{3,4}/);
+        return matches ? parseInt(matches[0], 10) : 9999;
+      }
+
+      const sortedData = [...danhNhanData].sort((a, b) => parseYear(a.lifespan) - parseYear(b.lifespan));
+      counter.innerHTML = `Đã hiển thị ${sortedData.length} danh nhân tiêu biểu`;
 
       sortedData.forEach(p => {
-         const card = document.createElement('a');
-         card.href = `detail.html?id=${p.id}`;
-         card.className = "group block bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden shadow-[0px_12px_32px_rgba(28,28,23,0.06)] hover:shadow-[0px_16px_48px_rgba(28,28,23,0.12)] transition-all duration-500 hover:-translate-y-2 relative";
-         
-         card.innerHTML = `
-            <div class="h-96 w-full relative overflow-hidden bg-surface-container-high">
-              <img src="${p.headerAvatar || p.image || p.avatar}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 ${p.imagePosition || ''}">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 transition-colors duration-500 group-hover:from-black"></div>
-              <div class="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end text-white z-10">
-                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-primary-fixed-dim drop-shadow-md mb-2 flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">${p.sidebarIcon}</span> ${p.title}</span>
-                <h3 class="serif-text text-3xl font-bold mb-1 leading-tight drop-shadow-md">${p.name}</h3>
-                <span class="text-xs font-sans font-medium text-white/80 mb-4 tracking-wider">${p.lifespan}</span>
-                <div class="h-px w-8 bg-primary-fixed-dim/50 mb-4 transition-all duration-500 group-hover:w-16"></div>
-                <p class="text-sm serif-text italic text-white/90 line-clamp-3 leading-snug">"${p.quote.replace(/^"|"$/g, '')}"</p>
-              </div>
-            </div>
-         `;
-         grid.appendChild(card);
-      });
+        if (!p || !p.id) return;
 
-      // Trigger fade-in animation
-      setTimeout(() => {
-        document.getElementById('main-content').classList.add('loaded');
-      }, 100);
+        const card = document.createElement('a');
+        card.href = `detail.html?id=${p.id}`;
+        card.className = "card-element rounded-xl overflow-hidden flex flex-col shadow-2xl";
+        
+        const image = p.image || p.headerAvatar || p.avatar || "placeholder.jpg";
+        const name = p.name || "Danh nhân";
+        const lifespan = p.lifespan || "Lịch sử";
+        const title = p.title || "Văn hóa Việt";
+        const quote = p.quote ? p.quote.toString().replace(/^"|"$/g, '') : "Để lại di sản cho muôn đời sau...";
+
+        card.innerHTML = `
+          <div class="h-64 w-full relative">
+            <img src="${image}" alt="${name}" class="w-full h-full object-cover ${p.imagePosition || 'object-center'}">
+            <div class="absolute bottom-0 left-0 bg-accent text-black px-3 py-1 text-[9px] font-bold uppercase tracking-widest">
+              ${title}
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="serif-text text-2xl font-bold mb-1">${name}</h3>
+            <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-4">${lifespan}</p>
+            <div class="h-px w-8 bg-accent mb-4"></div>
+            <p class="text-sm font-light italic text-gray-700 line-clamp-2 leading-relaxed">
+              "${quote}"
+            </p>
+            <div class="mt-auto pt-6 flex items-center text-[10px] font-bold uppercase text-accent group">
+              Xem chi tiết <span class="material-symbols-outlined text-[14px] ml-1">arrow_forward</span>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
     });
   </script>
 </body>

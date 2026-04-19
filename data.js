@@ -411,7 +411,7 @@ const danhNhanData = [
     bio: "Nguyễn Trãi (1380–1442), hiệu Ức Trai, là đại công thần khai quốc nhà Lê sơ. Ông là nhà quân sự, chính trị, ngoại giao và nhà văn hóa kiệt xuất của dân tộc. Tư tưởng \"nhân nghĩa\" và chiến lược \"đánh vào lòng người\" của ông đã góp phần quyết định vào thắng lợi của cuộc khởi nghĩa Lam Sơn, đánh đuổi giặc Minh, giành lại độc lập cho Tổ quốc.",
     lifespan: "1380 - 1442",
     hometown: "Nhị Khê, Thường Tín",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Nguyen_Trai.jpg",
+    image: "https://drive.google.com/thumbnail?id=1EEpTa_Y6VGhHyikhF7_3CaDwqLR1_AiX&sz=w1000",
     imageCaptionTitle: "Tầm vóc vĩ đại",
     imageTitle: "Bình Ngô Đại Cáo",
     imageDesc: "Áng thiên cổ hùng văn tuyên bố nền độc lập tự chủ của Đại Việt.",
@@ -425,8 +425,8 @@ const danhNhanData = [
       "Hoàn cảnh nào khiến ngài viết Bình Ngô đại cáo?",
       "Quan niệm của ông về 'Nhân Nghĩa' là gì?"
     ],
-    chatAvatar: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Nguyen_Trai.jpg",
-    headerAvatar: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Nguyen_Trai.jpg",
+    chatAvatar: "https://drive.google.com/thumbnail?id=1EEpTa_Y6VGhHyikhF7_3CaDwqLR1_AiX&sz=w1000",
+    headerAvatar: "https://drive.google.com/thumbnail?id=1EEpTa_Y6VGhHyikhF7_3CaDwqLR1_AiX&sz=w1000",
     chatRole: "Anh hùng dân tộc & Nhà văn hóa",
     gemLink: "https://gemini.google.com/gem/1jWcatr4yyM_6e3jG7cTvUzoWs10A3I9K?usp=sharing",
     initialAIChat: `
@@ -448,7 +448,7 @@ const danhNhanData = [
       {
         categoryTitle: "Hình ảnh Tư liệu",
         items: [
-          { title: "Chân dung Nguyễn Trãi", link: "https://drive.google.com/file/d/1esbMQzHacwdhy7Hx2RfJAPTM0CM5kTu4/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1esbMQzHacwdhy7Hx2RfJAPTM0CM5kTu4&sz=w1000" },
+          { title: "Chân dung Nguyễn Trãi", link: "https://drive.google.com/file/d/1EEpTa_Y6VGhHyikhF7_3CaDwqLR1_AiX/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1EEpTa_Y6VGhHyikhF7_3CaDwqLR1_AiX&sz=w1000" },
           { title: "Bình Ngô đại cáo", link: "https://drive.google.com/file/d/19m6RQxMAlupmpCh2RPbMVx4MHZ_FzBkA/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=19m6RQxMAlupmpCh2RPbMVx4MHZ_FzBkA&sz=w1000" },
           { title: "Trong khởi nghĩa Lam Sơn", link: "https://drive.google.com/file/d/1Jr6iK-hVp9fZSC38NSDdJ-FSTckgDd6M/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1Jr6iK-hVp9fZSC38NSDdJ-FSTckgDd6M&sz=w1000" },
           { title: "Quân trung từ mệnh tập", link: "https://drive.google.com/file/d/1qpVRMIqJuCMKT4EkchPkNVv8o1qKKPys/view?usp=sharing", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1qpVRMIqJuCMKT4EkchPkNVv8o1qKKPys&sz=w1000" },
@@ -594,7 +594,7 @@ const danhNhanData = [
     bio: "Lê Hữu Trác (1724–1791), biệt hiệu Hải Thượng Lãn Ông, là một đại danh y, nhà văn hóa lớn của Việt Nam thế kỷ 18. Ông không chỉ có y thuật lỗi lạc mà còn đề cao y đức, coi trọng tính mạng con người trên hết. Di sản của ông đặt nền móng vô cùng vững chắc cho nền y học cổ truyền nước nhà.",
     lifespan: "1724 - 1791",
     hometown: "Liêu Xá, Yên Mỹ",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/29/Danh-y-le-huu-trac.jpg",
+    image: "https://drive.google.com/thumbnail?id=1yW52CNguwAPSL-ls6FhmqefGh0TQYxdP&sz=w1000",
     imageCaptionTitle: "Bách khoa Y học",
     imageTitle: "Hải Thượng Y Tông Tâm Lĩnh",
     imageDesc: "Tác phẩm đông y đồ sộ nhất Việt Nam gồm 28 tập, 66 quyển.",
@@ -608,8 +608,8 @@ const danhNhanData = [
       "Tại sao ngài lại xưng là Hải Thượng Lãn Ông?",
       "Cảm nghĩ của ông khi chữa bệnh ở phủ Chúa Trịnh?"
     ],
-    chatAvatar: "https://upload.wikimedia.org/wikipedia/commons/2/29/Danh-y-le-huu-trac.jpg",
-    headerAvatar: "https://upload.wikimedia.org/wikipedia/commons/2/29/Danh-y-le-huu-trac.jpg",
+    chatAvatar: "https://drive.google.com/thumbnail?id=1yW52CNguwAPSL-ls6FhmqefGh0TQYxdP&sz=w1000",
+    headerAvatar: "https://drive.google.com/thumbnail?id=1yW52CNguwAPSL-ls6FhmqefGh0TQYxdP&sz=w1000",
     chatRole: "Đại Y Tôn Lỗi Lạc",
     gemLink: "https://gemini.google.com/gem/1FQqSaFj7d5GPjCfeATDMM5dxmLuFSmKE?usp=sharing",
     initialAIChat: `
@@ -638,7 +638,7 @@ const danhNhanData = [
     bio: "Nguyễn Du (1765–1820), tự Tố Như, là nhà thơ lớn nhất của văn học trung đại Việt Nam. Sống trong giai đoạn lịch sử đầy biến động, ông thấu hiểu sâu sắc nỗi thống khổ của nhân dân. Qua các tác phẩm của mình, đặc biệt là Truyện Kiều, ông đã đưa ngôn ngữ tiếng Việt (chữ Nôm) lên đỉnh cao nghệ thuật.",
     lifespan: "1765 - 1820",
     hometown: "Nghi Xuân, Hà Tĩnh",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e3/T%C6%B0%E1%BB%A3ng_%C4%91%C3%A0i_c%E1%BB%A5_Nguy%E1%BB%85n_Du.jpg",
+    image: "https://drive.google.com/thumbnail?id=19LwP_dwBoL0hDWBninQFfTEJo4wU8mnR&sz=w1000",
     imageCaptionTitle: "Tác phẩm kiệt xuất",
     imageTitle: "Truyện Kiều",
     imageDesc: "Tuyệt tác gồm 3254 câu thơ lục bát khơi gợi lòng trắc ẩn của bao thế hệ.",
@@ -652,8 +652,8 @@ const danhNhanData = [
       "Ngài nghĩ gì về chữ Tâm và chữ Tài?",
       "Truyện Kiều được sáng tác lấy cảm hứng từ đâu?"
     ],
-    chatAvatar: "https://upload.wikimedia.org/wikipedia/commons/e/e3/T%C6%B0%E1%BB%A3ng_%C4%91%C3%A0i_c%E1%BB%A5_Nguy%E1%BB%85n_Du.jpg",
-    headerAvatar: "https://upload.wikimedia.org/wikipedia/commons/e/e3/T%C6%B0%E1%BB%A3ng_%C4%91%C3%A0i_c%E1%BB%A5_Nguy%E1%BB%85n_Du.jpg",
+    chatAvatar: "https://drive.google.com/thumbnail?id=19LwP_dwBoL0hDWBninQFfTEJo4wU8mnR&sz=w1000",
+    headerAvatar: "https://drive.google.com/thumbnail?id=19LwP_dwBoL0hDWBninQFfTEJo4wU8mnR&sz=w1000",
     chatRole: "Đại Thi Hào Văn Học",
     gemLink: "https://gemini.google.com/gem/1KvJP34yNqYLU81xnZ7SyxBZ3ACmvn3-q?usp=sharing",
     initialAIChat: `
@@ -683,6 +683,7 @@ const danhNhanData = [
     lifespan: "1772 - 1822",
     hometown: "Quỳnh Lưu, Nghệ An",
     image: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
+    imagePosition: "object-top",
     imageCaptionTitle: "Đấu tranh vì phụ nữ",
     imageTitle: "Thơ Nôm Hồ Xuân Hương",
     imageDesc: "Lột trần đạo đức giả, đấu tranh cho nữ quyền và khát vọng sống.",
@@ -936,7 +937,7 @@ const danhNhanData = [
     bio: "Chủ tịch Hồ Chí Minh (1890–1969), người sáng lập Đảng Cộng sản Việt Nam, là vị lãnh tụ thiên tài của giai cấp công nhân và nhân dân Việt Nam. Người đã cống hiến trọn đời cho sự nghiệp giải phóng dân tộc, đấu tranh cho hòa bình và tiến bộ nhân loại. Tư tưởng, đạo đức của Người là tài sản tinh thần vô giá.",
     lifespan: "1890 - 1969",
     hometown: "Kim Liên, Nam Đàn",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ho_Chi_Minh_1946.jpg/500px-Ho_Chi_Minh_1946.jpg",
+    image: "https://drive.google.com/thumbnail?id=1D65uysbClBc4-Vxdte22RJczbw59T22O&sz=w1000",
     imageCaptionTitle: "Độc lập Tự do",
     imageTitle: "Bản Tuyên Ngôn Độc Lập",
     imageDesc: "Áng văn thấm đẫm ý chí dân tộc, khai sinh nước Việt Nam mới.",
@@ -950,8 +951,8 @@ const danhNhanData = [
       "Cảm xúc của Bác khi đọc Tuyên Ngôn Độc Lập?",
       "Bác dặn dò thanh niên điều gì trong di chúc?"
     ],
-    chatAvatar: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ho_Chi_Minh_1946.jpg/500px-Ho_Chi_Minh_1946.jpg",
-    headerAvatar: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ho_Chi_Minh_1946.jpg/500px-Ho_Chi_Minh_1946.jpg",
+    chatAvatar: "https://drive.google.com/thumbnail?id=1D65uysbClBc4-Vxdte22RJczbw59T22O&sz=w1000",
+    headerAvatar: "https://drive.google.com/thumbnail?id=1D65uysbClBc4-Vxdte22RJczbw59T22O&sz=w1000",
     chatRole: "Anh Hùng Giải Phóng Dân Tộc",
     gemLink: "https://gemini.google.com/gem/1MbwVXEdUHAlPIxBn_vx2t8fVII67NviY?usp=sharing",
     initialAIChat: `
@@ -980,7 +981,7 @@ const danhNhanData = [
     bio: "Lê Quý Đôn (1726–1784), tên thật là Lê Danh Phương, tự Doãn Hậu, hiệu Quế Đường, là vị quan thời Lê Trung Hưng và là nhà bác học lớn nhất của Việt Nam thời phong kiến. Với trí tuệ uyên bác và tinh thần cần mẫn, ông để lại hàng trăm bộ sách đồ sộ bao trùm mọi lĩnh vực: triết học, lịch sử, địa lý và văn học.",
     lifespan: "1726 - 1784",
     hometown: "Diên Hà, Thái Bình",
-    image: "https://baotanglichsu.vn/DataFiles/2025/11/News/Tieng%20Viet/3.11.2025/Danh%20nhanLe%20Quy%20Don%20ngoi%20sao%20sang%20tren%20bau%20tr%C6%A1i%20V%C4%83n%20h%C3%B3a%20VN/1.png",
+    image: "https://drive.google.com/thumbnail?id=1iRU7wBnj8Va6hqayhWcy6zT81K4cWJFn&sz=w1000",
     imagePosition: "object-top",
     imageCaptionTitle: "Kho Tàng Tri Thức",
     imageTitle: "Phủ Biên Tạp Lục",
@@ -995,10 +996,10 @@ const danhNhanData = [
       "Cuốn Phủ biên tạp lục được viết trong hoàn cảnh nào?",
       "Quan điểm 'Phi nông bất ổn...' có ý nghĩa như thế nào?"
     ],
-    chatAvatar: "https://baotanglichsu.vn/DataFiles/2025/11/News/Tieng%20Viet/3.11.2025/Danh%20nhanLe%20Quy%20Don%20ngoi%20sao%20sang%20tren%20bau%20tr%C6%A1i%20V%C4%83n%20h%C3%B3a%20VN/1.png",
-    headerAvatar: "https://baotanglichsu.vn/DataFiles/2025/11/News/Tieng%20Viet/3.11.2025/Danh%20nhanLe%20Quy%20Don%20ngoi%20sao%20sang%20tren%20bau%20tr%C6%A1i%20V%C4%83n%20h%C3%B3a%20VN/1.png",
+    chatAvatar: "https://drive.google.com/thumbnail?id=1iRU7wBnj8Va6hqayhWcy6zT81K4cWJFn&sz=w1000",
+    headerAvatar: "https://drive.google.com/thumbnail?id=1iRU7wBnj8Va6hqayhWcy6zT81K4cWJFn&sz=w1000",
     chatRole: "Nhà Bác Học Uyên Thâm",
-    gemLink: "https://gemini.google.com/",
+    gemLink: "https://gemini.google.com/gem/1Ly-XNihjk21yNzTso9OAP87SMCcQhfdw?usp=sharing",
     initialAIChat: `
       <h3 class="font-headline text-lg text-primary mb-3">Tri thức là sức mạnh của non sông</h3>
       <div class="space-y-4 text-on-surface/90 text-[15px] leading-relaxed font-body">
@@ -1018,7 +1019,7 @@ const danhNhanData = [
       {
         categoryTitle: "Hình ảnh Tư liệu",
         items: [
-          { title: "Chân dung Lê Quý Đôn", link: "https://drive.google.com/file/d/16mZybqn2Pcw4-8OqCxEjvXa8fYNtWtUF/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=16mZybqn2Pcw4-8OqCxEjvXa8fYNtWtUF&sz=w1000" },
+          { title: "Chân dung Lê Quý Đôn", link: "https://drive.google.com/file/d/1iRU7wBnj8Va6hqayhWcy6zT81K4cWJFn/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1iRU7wBnj8Va6hqayhWcy6zT81K4cWJFn&sz=w1000" },
           { title: "Bắc Sứ Thông Lục", link: "https://drive.google.com/file/d/1_iiRc-tIyZBLQQe7XV1_v_FlG3U4giBR/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1_iiRc-tIyZBLQQe7XV1_v_FlG3U4giBR&sz=w1000" },
           { title: "Luật pháp cai trị", link: "https://drive.google.com/file/d/1BRvDGPDrAZ48CEkCZLkWxYn4gQOq96zy/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1BRvDGPDrAZ48CEkCZLkWxYn4gQOq96zy&sz=w1000" },
           { title: "Văn học sử", link: "https://drive.google.com/file/d/1HNnJLADttjo8wf5xr2DUO18KMdmLdQd6/view?usp=drive_link", type: "image", thumbnail: "https://drive.google.com/thumbnail?id=1HNnJLADttjo8wf5xr2DUO18KMdmLdQd6&sz=w1000" },
