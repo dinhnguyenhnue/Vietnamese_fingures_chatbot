@@ -79,6 +79,23 @@
     }
   </script>
   <style>
+    /* Standard Typography sync with Detail page */
+    .font-serif-premium { font-family: 'Newsreader', serif; }
+    .font-sans-premium { font-family: 'Manrope', sans-serif; }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Chat bubble content optimization */
+    .chat-text-content {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+    }
+    .dark .chat-text-content { color: #e5e7eb; }
+
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
@@ -159,16 +176,15 @@
   <!-- TopNavBar -->
   <header
     class="flex justify-between items-center px-8 py-4 w-full sticky top-0 bg-[#fcf9f0] dark:bg-stone-900/90 backdrop-blur-md z-50 border-b border-outline-variant/10">
-    <a href="index.html"
-      class="text-2xl font-serif font-bold text-[#690008] dark:text-[#8b1a1a] tracking-tight hover:opacity-80 transition-opacity">
-      Tinh Hoa Việt
+    <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+      <img src="favicon.png" alt="Logo" class="w-8 h-8 object-contain">
+      <span class="text-2xl font-serif font-bold text-[#690008] dark:text-[#8b1a1a] tracking-tight">TINH HOA VIỆT</span>
     </a>
     <nav class="hidden md:flex space-x-8">
       <a id="nav-bio"
-        class="cursor-pointer text-stone-600 dark:text-stone-400 font-medium hover:text-[#690008] transition-colors duration-300">Tiểu
-        sử & Dấu ấn</a>
+        class="cursor-pointer text-stone-600 dark:text-stone-400 font-bold hover:text-[#690008] transition-colors duration-300 font-sans text-[14px] uppercase tracking-[0.2em]">TIỂU SỬ & DẤU ẤN</a>
       <a id="nav-chat"
-        class="cursor-pointer text-[#690008] dark:text-[#8b1a1a] font-bold border-b-2 border-[#690008] pb-1">Hỏi đáp cùng AI</a>
+        class="cursor-pointer text-[#690008] dark:text-[#8b1a1a] font-bold border-b-2 border-[#690008] pb-1 font-sans text-[14px] uppercase tracking-[0.2em]">HỎI ĐÁP CÙNG AI</a>
     </nav>
     <div class="flex items-center space-x-4">
     </div>
@@ -206,8 +222,8 @@
               class="w-full h-full rounded-full object-cover border border-primary/20 shadow-sm" src="" />
           </div>
           <div>
-            <h1 class="font-headline text-xl text-primary font-semibold">Trợ lý AI Tinh Hoa Việt</h1>
-            <p id="header-role" class="text-[10px] uppercase tracking-widest text-secondary font-bold"></p>
+            <h1 class="font-headline text-2xl text-primary font-bold tracking-tight">Trợ lý AI Tinh Hoa Việt</h1>
+            <p id="header-role" class="text-[14px] uppercase tracking-[0.2em] text-secondary font-bold opacity-70"></p>
           </div>
         </div>
         <div class="flex gap-2">
@@ -430,7 +446,7 @@
               <img alt="Avatar" class="w-full h-full rounded-full object-cover border border-primary/20 shadow-sm ${person.imagePosition || ''}" src="${person.chatAvatar}" />
             </div>
             <div class="bg-surface-container-lowest border border-outline-variant/10 p-6 rounded-xl rounded-tl-none shadow-[0px_12px_32px_rgba(28,28,23,0.06)]">
-              <p id="${contentId}" class="text-[15px] leading-relaxed font-body"></p>
+              <p id="${contentId}" class="chat-text-content font-body"></p>
             </div>
           </div>
           <span class="text-[10px] mt-2 ml-12 text-outline font-semibold uppercase tracking-tighter">Trợ lý Tinh Hoa Việt • Vừa xong</span>

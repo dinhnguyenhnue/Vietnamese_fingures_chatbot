@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Liên Hệ & Đội Ngũ — Tinh Hoa Việt</title>
+<meta name="description" content="Thông tin liên hệ và đội ngũ thực hiện dự án Tinh Hoa Việt — Học liệu số Danh nhân Văn hóa UNESCO Việt Nam."/>
+<link rel="icon" href="favicon.png" type="image/png"/>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#690008',accent:'#d4af37'},fontFamily:{headline:['Marcellus','serif'],body:['Outfit','sans-serif']}}}}</script>
+<style>
+  body{font-family:'Outfit',sans-serif;background:#0f0102;}
+  .serif-text{font-family:'Marcellus',serif;}
+  .gold-line{height:2px;background:linear-gradient(90deg,transparent,#d4af37,transparent);}
+  .card-hover{transition:all .3s cubic-bezier(.16,1,.3,1);}
+  .card-hover:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.5);}
+  .role-badge{background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.25);color:#d4af37;}
+</style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+<!-- NAV -->
+<header class="w-full bg-[#1a0505] border-b border-[#d4af37]/30 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="favicon.png" alt="Logo" class="w-10 h-10 object-contain">
+      <div>
+        <h1 class="text-xl font-headline font-bold text-accent tracking-widest leading-none">TINH HOA VIỆT</h1>
+        <p class="text-[9px] uppercase tracking-widest text-[#d4af37]/60 font-bold mt-1">Hành trình di sản</p>
+      </div>
+    </a>
+    <div class="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest text-[#fcf9f0]/70">
+      <a href="index.html" class="hover:text-accent transition-colors">TRANG CHỦ</a>
+      <a href="tailieu.html" class="hover:text-accent transition-colors">TÀI LIỆU</a>
+      <a href="contact.html" class="text-accent">LIÊN HỆ</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden py-24 px-6">
+  <div class="absolute inset-0 bg-gradient-to-b from-[#1a0202] via-[#0f0102] to-[#0f0102]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.06)_0%,transparent_65%)]"></div>
+  <div class="relative max-w-3xl mx-auto text-center">
+    <p class="text-[14px] font-bold tracking-[0.4em] uppercase text-[#d4af37]/60 mb-6">✦ Đề án học liệu số</p>
+    <h2 class="serif-text text-5xl md:text-6xl text-white mb-6 leading-tight">Tinh Hoa Việt Nam</h2>
+    <div class="gold-line w-24 mx-auto mb-8"></div>
+    <p class="text-[20px] text-white/70 leading-relaxed max-w-2xl mx-auto font-medium">
+      Số hóa Di sản Danh nhân Văn hóa UNESCO &amp; Hệ sinh thái Trí tuệ Nhân tạo —<br>
+      Khoa Lịch sử &amp; Khoa CNTT, Trường Đại học Sư phạm Hà Nội.
+    </p>
+  </div>
+</section>
+
+<main class="flex-1 max-w-6xl mx-auto px-6 pb-24 w-full">
+
+  <!-- TẦM NHÌN -->
+  <section class="mb-20">
+    <div class="flex items-center gap-4 mb-8">
+      <span class="text-[#d4af37] text-[10px] font-bold tracking-[0.35em] uppercase">01</span>
+      <div class="h-px flex-1 bg-[#d4af37]/20"></div>
+      <h2 class="serif-text text-2xl text-white">Tầm nhìn &amp; Sứ mệnh</h2>
+      <div class="h-px flex-1 bg-[#d4af37]/20"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-[#1a0505]/60 border border-[#d4af37]/15 rounded-xl p-8">
+        <span class="material-symbols-outlined text-[#d4af37] text-3xl mb-4 block">museum</span>
+        <h3 class="serif-text text-2xl text-white mb-3">Hành lang Di sản Số</h3>
+        <p class="text-[18px] text-white/70 leading-relaxed">Dự án xây dựng một hệ thống học liệu số chuẩn xác dành cho giáo viên và học sinh, nơi những giá trị tư tưởng của các danh nhân văn hóa được UNESCO vinh danh được hồi sinh trong dòng chảy hiện đại.</p>
+      </div>
+      <div class="bg-[#1a0505]/60 border border-[#d4af37]/15 rounded-xl p-8">
+        <span class="material-symbols-outlined text-[#d4af37] text-3xl mb-4 block">smart_toy</span>
+        <h3 class="serif-text text-2xl text-white mb-3">Đột phá AI cá nhân hóa</h3>
+        <p class="text-[18px] text-white/70 leading-relaxed">Mỗi người dùng được kết nối với trợ lý Gemini AI riêng — kiểm soát lộ trình tri thức, tương tác học thuật thông minh, và kiến tạo năng lực số để khai phá kho tàng di sản dân tộc.</p>
+      </div>
+    </div>
+    <!-- Triết lý -->
+    <div class="mt-6 p-6 border border-[#d4af37]/20 rounded-xl bg-[#d4af37]/[0.03] text-center">
+      <p class="text-[#d4af37]/70 text-sm italic leading-relaxed">
+        "Việc kế thừa những hệ giá trị truyền thống của dân tộc vừa là động lực, vừa là nét độc đáo riêng biệt cho sự phát triển của đất nước."
+      </p>
+      <p class="text-[10px] text-white/30 font-bold uppercase tracking-widest mt-3">— Triết lý hành động của dự án</p>
+    </div>
+  </section>
+
+  <!-- ĐỘI NGŨ -->
+  <section class="mb-20">
+    <div class="flex items-center gap-4 mb-8">
+      <span class="text-[#d4af37] text-[10px] font-bold tracking-[0.35em] uppercase">02</span>
+      <div class="h-px flex-1 bg-[#d4af37]/20"></div>
+      <h2 class="serif-text text-2xl text-white">Đội ngũ thực hiện</h2>
+      <div class="h-px flex-1 bg-[#d4af37]/20"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Thành viên 1 - Trưởng nhóm -->
+      <div class="card-hover bg-[#1a0505]/80 border border-[#d4af37]/20 rounded-xl p-6 lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-[#d4af37]/15 border border-[#d4af37]/30 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[#d4af37] text-[20px]">person</span>
+          </div>
+          <div>
+            <p class="text-[14px] font-bold tracking-widest uppercase text-[#d4af37]/50">Trưởng nhóm</p>
+            <h3 class="serif-text text-2xl text-white leading-tight">Nguyễn Phan Minh Hiển</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="role-badge text-[13px] font-bold px-3 py-1 rounded-full tracking-wide">Lịch sử K72 CLC</span>
+        </div>
+        <p class="text-[16px] text-white/70 leading-relaxed">Giám tuyển nội dung · Định hướng chiến lược học thuật và xác thực tư liệu lịch sử toàn dự án.</p>
+        <div class="mt-4 pt-4 border-t border-[#d4af37]/10">
+          <p class="text-[12px] text-[#d4af37]/40 uppercase tracking-widest font-bold">Phụ trách</p>
+          <p class="text-[15px] text-white/60 mt-1">Trưởng nhóm — Giám tuyển nội dung</p>
+        </div>
+      </div>
+
+      <!-- Thành viên 2 -->
+      <div class="card-hover bg-[#1a0505]/60 border border-[#d4af37]/12 rounded-xl p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[#d4af37]/70 text-[20px]">person</span>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-widest uppercase text-[#d4af37]/40">Thành viên</p>
+            <h3 class="serif-text text-lg text-white leading-tight">Phan Nguyễn Thùy An</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="role-badge text-[10px] font-bold px-2 py-1 rounded-full tracking-wide">Lịch sử K72A1</span>
+        </div>
+        <p class="text-[12px] text-white/50 leading-relaxed">Biên tập và hệ thống hóa các tư liệu học thuật, đảm bảo độ chính xác và nhất quán của nội dung.</p>
+        <div class="mt-4 pt-4 border-t border-[#d4af37]/10">
+          <p class="text-[10px] text-[#d4af37]/40 uppercase tracking-widest font-bold">Phụ trách</p>
+          <p class="text-[12px] text-white/60 mt-1">Biên tập tư liệu</p>
+        </div>
+      </div>
+
+      <!-- Thành viên 3 -->
+      <div class="card-hover bg-[#1a0505]/60 border border-[#d4af37]/12 rounded-xl p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[#d4af37]/70 text-[20px]">person</span>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-widest uppercase text-[#d4af37]/40">Thành viên</p>
+            <h3 class="serif-text text-lg text-white leading-tight">Trần Thị Hồng Ánh</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="role-badge text-[10px] font-bold px-2 py-1 rounded-full tracking-wide">Lịch sử K72 CLC</span>
+        </div>
+        <p class="text-[12px] text-white/50 leading-relaxed">Nghiên cứu và đối chiếu tư liệu lịch sử từ văn bia, mộc bản và các công trình khoa học chuyên sâu.</p>
+        <div class="mt-4 pt-4 border-t border-[#d4af37]/10">
+          <p class="text-[10px] text-[#d4af37]/40 uppercase tracking-widest font-bold">Phụ trách</p>
+          <p class="text-[12px] text-white/60 mt-1">Nghiên cứu lịch sử</p>
+        </div>
+      </div>
+
+      <!-- Thành viên 4 -->
+      <div class="card-hover bg-[#1a0505]/60 border border-[#d4af37]/12 rounded-xl p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[#d4af37]/70 text-[20px]">person</span>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-widest uppercase text-[#d4af37]/40">Thành viên</p>
+            <h3 class="serif-text text-lg text-white leading-tight">Phan Phước Hoàn</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="role-badge text-[10px] font-bold px-2 py-1 rounded-full tracking-wide">Lịch sử K73 CLC</span>
+        </div>
+        <p class="text-[12px] text-white/50 leading-relaxed">Xây dựng và quản lý kho lưu trữ di sản số, đảm bảo tính toàn vẹn và bền vững của dữ liệu.</p>
+        <div class="mt-4 pt-4 border-t border-[#d4af37]/10">
+          <p class="text-[10px] text-[#d4af37]/40 uppercase tracking-widest font-bold">Phụ trách</p>
+          <p class="text-[12px] text-white/60 mt-1">Lưu trữ di sản</p>
+        </div>
+      </div>
+
+      <!-- Thành viên 5 - Kỹ thuật -->
+      <div class="card-hover bg-[#0f0810]/80 border border-[#d4af37]/20 rounded-xl p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-[#d4af37]/15 border border-[#d4af37]/30 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[#d4af37] text-[20px]">memory</span>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-widest uppercase text-[#d4af37]/50">Công nghệ</p>
+            <h3 class="serif-text text-lg text-white leading-tight">Đậu Đình Nguyên</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="role-badge text-[10px] font-bold px-2 py-1 rounded-full tracking-wide">CNTT K72K</span>
+        </div>
+        <p class="text-[12px] text-white/50 leading-relaxed">Xây dựng hạ tầng kỹ thuật, tích hợp Gemini AI và thiết kế hệ sinh thái công nghệ cho toàn bộ nền tảng.</p>
+        <div class="mt-4 pt-4 border-t border-[#d4af37]/10">
+          <p class="text-[10px] text-[#d4af37]/40 uppercase tracking-widest font-bold">Phụ trách</p>
+          <p class="text-[12px] text-white/60 mt-1">Phụ trách Công nghệ &amp; Giải pháp AI</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- THÔNG TIN LIÊN HỆ -->
+  <section class="mb-16">
+    <div class="flex items-center gap-4 mb-8">
+      <span class="text-[#d4af37] text-[10px] font-bold tracking-[0.35em] uppercase">03</span>
+      <div class="h-px flex-1 bg-[#d4af37]/20"></div>
+      <h2 class="serif-text text-2xl text-white">Thông tin liên hệ</h2>
+      <div class="h-px flex-1 bg-[#d4af37]/20"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="flex items-start gap-5 p-6 bg-[#1a0505]/40 border border-[#d4af37]/12 rounded-xl">
+        <span class="material-symbols-outlined text-[#d4af37] text-2xl mt-1">school</span>
+        <div>
+          <p class="text-[10px] font-bold tracking-[0.3em] uppercase text-[#d4af37]/50 mb-2">Đơn vị nghiên cứu</p>
+          <p class="text-white font-semibold text-[15px] mb-1">Trường Đại học Sư phạm Hà Nội</p>
+          <p class="text-white/50 text-[13px]">Khoa Lịch sử &amp; Khoa Công nghệ Thông tin</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-5 p-6 bg-[#1a0505]/40 border border-[#d4af37]/12 rounded-xl">
+        <span class="material-symbols-outlined text-[#d4af37] text-2xl mt-1">person_pin</span>
+        <div>
+          <p class="text-[10px] font-bold tracking-[0.3em] uppercase text-[#d4af37]/50 mb-2">Liên hệ trực tiếp</p>
+          <p class="text-white font-semibold text-[15px] mb-1">Nguyễn Phan Minh Hiển</p>
+          <p class="text-white/50 text-[13px]">Trưởng nhóm — Giám tuyển nội dung</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-5 p-6 bg-[#1a0505]/40 border border-[#d4af37]/12 rounded-xl">
+        <span class="material-symbols-outlined text-[#d4af37] text-2xl mt-1">smart_toy</span>
+        <div>
+          <p class="text-[10px] font-bold tracking-[0.3em] uppercase text-[#d4af37]/50 mb-2">Nền tảng AI</p>
+          <p class="text-white font-semibold text-[15px] mb-1">Google Gemini AI</p>
+          <p class="text-white/50 text-[13px]">Tích hợp trợ lý học thuật cá nhân hóa cho từng danh nhân</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-5 p-6 bg-[#1a0505]/40 border border-[#d4af37]/12 rounded-xl">
+        <span class="material-symbols-outlined text-[#d4af37] text-2xl mt-1">library_books</span>
+        <div>
+          <p class="text-[10px] font-bold tracking-[0.3em] uppercase text-[#d4af37]/50 mb-2">Ghi chú học thuật</p>
+          <p class="text-white font-semibold text-[15px] mb-1">7 Danh nhân Văn hóa</p>
+          <p class="text-white/50 text-[13px]">Dữ liệu trích xuất từ văn bia, mộc bản và tài liệu chính thống — đảm bảo tính xác thực tuyệt đối.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA quay lại -->
+  <div class="text-center">
+    <a href="index.html" class="inline-flex items-center gap-3 px-8 py-4 bg-[#d4af37] text-[#0f0102] font-bold text-[12px] uppercase tracking-[0.2em] rounded-lg hover:bg-[#c9a228] transition-all hover:-translate-y-1">
+      <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+      Quay lại Trang chủ
+    </a>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#1a0505] py-10 border-t border-[#d4af37]/20 text-center">
+  <p class="text-[#d4af37]/60 text-[10px] uppercase tracking-[0.3em] font-bold">© 2026 VIETNAMESE FIGURES — TINH HOA VIỆT</p>
+</footer>
+
+</body>
+</html>
