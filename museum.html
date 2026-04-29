@@ -111,6 +111,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .f-ach-text h4 { font-size: 24px; margin-bottom: 6px; color: #fcf9f0; }
 .f-ach-text p { font-size: 19px; color: rgba(252, 249, 240, 0.6); line-height: 1.6; }
 
+.f-panel-infographic {
+  width: 480px;
+  background: rgba(12, 2, 3, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 20px;
+  padding: 25px;
+  color: #fcf9f0;
+}
+
 /* 3D Center Title Style */
 .title-3d {
   font-family: 'Marcellus', serif;
@@ -490,15 +500,28 @@ function openPanel(i) {
   bioObj.rotation.y = 0.35; 
   focusGroup.add(bioObj);
 
-  // Right Panel: Achievements
+  // Right Panel: Achievements or Infographic
   const achDiv = document.createElement('div');
-  achDiv.className = 'f-panel';
-  const achsHTML = (p.achievements||[]).slice(0,3).map((a,n)=>`
-    <div class="f-ach-item">
-      <span class="f-ach-num">0${n+1}</span>
-      <div class="f-ach-text"><h4>${a.title}</h4><p>${a.desc||''}</p></div>
-    </div>`).join('');
-  achDiv.innerHTML = `<div class="f-label">✦ Dấu ấn lịch sử tiêu biểu</div><div class="f-ach">${achsHTML}</div>`;
+  
+  if (p.infographicImage) {
+    // Kiểu dáng riêng cho Infographic: không nền đen, không padding rộng
+    achDiv.className = 'f-panel-infographic';
+    achDiv.innerHTML = `
+      <div class="f-label" style="text-align: center; margin-bottom: 15px;">✦ INFOGRAPHIC</div>
+      <div style="overflow: hidden; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.8); border: 1px solid rgba(212,175,55,0.3);">
+        <img src="${p.infographicImage}" style="width: 100%; height: auto; display: block; transition: transform 0.6s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      </div>
+    `;
+  } else {
+    achDiv.className = 'f-panel';
+    const achsHTML = (p.achievements||[]).slice(0,3).map((a,n)=>`
+      <div class="f-ach-item">
+        <span class="f-ach-num">0${n+1}</span>
+        <div class="f-ach-text"><h4>${a.title}</h4><p>${a.desc||''}</p></div>
+      </div>`).join('');
+    achDiv.innerHTML = `<div class="f-label">✦ Dấu ấn lịch sử tiêu biểu</div><div class="f-ach">${achsHTML}</div>`;
+  }
+  
   const achObj = new CSS3DObject(achDiv);
   achObj.scale.setScalar(0.012);
   achObj.position.set(7.5, 0, 0); // Thu hẹp lại (11 -> 7.5)

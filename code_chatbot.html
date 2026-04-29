@@ -314,14 +314,16 @@
         const a = document.createElement('a');
 
         if (isActive) {
-          a.className = "cursor-pointer bg-[#ffffff] dark:bg-stone-700 text-[#690008] dark:text-white lg:rounded-l-full rounded-full shrink-0 lg:ml-4 shadow-sm flex items-center px-4 py-2 lg:px-6 lg:py-3 transition-all duration-200 border border-outline-variant/10 lg:border-none";
+          a.className = "cursor-pointer bg-[#ffffff] dark:bg-stone-700 text-[#690008] dark:text-white lg:rounded-l-full rounded-full shrink-0 lg:ml-4 shadow-sm flex items-center px-4 py-3 lg:px-8 lg:py-4 transition-all duration-200 border border-outline-variant/10 lg:border-none";
         } else {
-          a.className = "cursor-pointer text-stone-500 dark:text-stone-400 hover:translate-y-[1px] lg:hover:translate-y-0 lg:hover:translate-x-1 hover:bg-[#f1eee5] dark:hover:bg-stone-700 transition-all duration-200 flex items-center px-4 py-2 lg:px-6 lg:py-3 lg:ml-4 shrink-0 rounded-full lg:rounded-l-full bg-surface-container-high/50 lg:bg-transparent";
+          a.className = "cursor-pointer text-stone-500 dark:text-stone-400 hover:translate-y-[1px] lg:hover:translate-y-0 lg:hover:translate-x-1 hover:bg-[#f1eee5] dark:hover:bg-stone-700 transition-all duration-200 flex items-center px-4 py-3 lg:px-8 lg:py-4 lg:ml-4 shrink-0 rounded-full lg:rounded-l-full bg-surface-container-high/50 lg:bg-transparent";
         }
 
         a.innerHTML = `
-          <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-md overflow-hidden ring-1 ring-black/10 shrink-0 mr-2 lg:mr-3 shadow-sm bg-white"><img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover"></div>
-          <span class="font-sans text-[13px] lg:text-sm font-semibold whitespace-nowrap">${p.name}</span>
+          <div class="w-8 h-8 lg:w-10 lg:h-10 rounded-md overflow-hidden ring-1 ring-black/10 shrink-0 mr-3 shadow-sm bg-white">
+            <img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover">
+          </div>
+          <span class="font-sans text-[16px] font-bold whitespace-nowrap">${p.name}</span>
         `;
 
         a.onclick = (e) => {

@@ -3,6 +3,7 @@ const danhNhanData = [
     id: "chu-van-an",
     name: "Chu Văn An",
     sidebarIcon: "school",
+    infographicImage: "https://drive.google.com/thumbnail?id=1p9eJ6eg5jfY-u6PZCyw0kWbuR4igZQhe&sz=w1000",
     title: "Vạn Thế Sư Biểu",
     quote: '"Ta chưa từng thấy người nào không có phẩm hạnh mà có thể dạy bảo người khác thành người có đức."',
     bioTitle: "Tiểu sử Cuộc đời",
@@ -697,10 +698,11 @@ const danhNhanData = [
       "Bà phản kháng thế nào trước thói trọng nam khinh nữ?",
       "Tại sao thơ bà vừa tục lại vừa trong sáng?"
     ],
-    avatar: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
-    chatAvatar: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
-    headerAvatar: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
-    chatRole: "Nữ Thi Sĩ Dân Gian",
+    id: "ho-xuan-huong",
+    name: "Hồ Xuân Hương",
+    sidebarIcon: "history_edu",
+    infographicImage: "https://drive.google.com/thumbnail?id=1CGC54spCNe1qCZn06WunPQI_yGsld_0H&sz=w1000",
+    title: "Bà Chúa Thơ Nôm",
     gemLink: "https://gemini.google.com/gem/1i7dppJR9xh7TbnzBp-s9BblbrUFl6Hd9?usp=sharing",
     initialAIChat: `
       <h3 class="font-headline text-lg text-primary mb-3">Tiếng Cười Trào Lộng & Khát Vọng Tự Do</h3>
