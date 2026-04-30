@@ -684,6 +684,9 @@ const danhNhanData = [
     lifespan: "1772 - 1822",
     hometown: "Quỳnh Lưu, Nghệ An",
     image: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
+    avatar: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
+    headerAvatar: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
+    chatAvatar: "https://drive.google.com/thumbnail?id=13kwxchnr5lk37aX7r_qrbgUpY7_QIJ7W&sz=w1000",
     imagePosition: "object-top",
     imageCaptionTitle: "Đấu tranh vì phụ nữ",
     imageTitle: "Thơ Nôm Hồ Xuân Hương",
@@ -698,11 +701,8 @@ const danhNhanData = [
       "Bà phản kháng thế nào trước thói trọng nam khinh nữ?",
       "Tại sao thơ bà vừa tục lại vừa trong sáng?"
     ],
-    id: "ho-xuan-huong",
-    name: "Hồ Xuân Hương",
-    sidebarIcon: "history_edu",
     infographicImage: "https://drive.google.com/thumbnail?id=1CGC54spCNe1qCZn06WunPQI_yGsld_0H&sz=w1000",
-    title: "Bà Chúa Thơ Nôm",
+    chatRole: "Bà Chúa Thơ Nôm",
     gemLink: "https://gemini.google.com/gem/1i7dppJR9xh7TbnzBp-s9BblbrUFl6Hd9?usp=sharing",
     initialAIChat: `
       <h3 class="font-headline text-lg text-primary mb-3">Tiếng Cười Trào Lộng & Khát Vọng Tự Do</h3>
