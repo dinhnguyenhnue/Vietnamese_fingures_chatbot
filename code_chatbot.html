@@ -90,7 +90,7 @@
 
     /* Chat bubble content optimization */
     .chat-text-content {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.7;
       color: #333;
     }
@@ -182,9 +182,9 @@
     </a>
     <nav class="hidden md:flex space-x-8">
       <a id="nav-bio"
-        class="cursor-pointer text-stone-600 dark:text-stone-400 font-bold hover:text-[#690008] transition-colors duration-300 font-sans text-[14px] uppercase tracking-[0.2em]">TIỂU SỬ & DẤU ẤN</a>
+        class="cursor-pointer text-stone-600 dark:text-stone-400 font-bold hover:text-[#690008] transition-colors duration-300 font-sans text-[16px] uppercase tracking-[0.2em]">TIỂU SỬ & DẤU ẤN</a>
       <a id="nav-chat"
-        class="cursor-pointer text-[#690008] dark:text-[#8b1a1a] font-bold border-b-2 border-[#690008] pb-1 font-sans text-[14px] uppercase tracking-[0.2em]">HỎI ĐÁP CÙNG AI</a>
+        class="cursor-pointer text-[#690008] dark:text-[#8b1a1a] font-bold border-b-2 border-[#690008] pb-1 font-sans text-[16px] uppercase tracking-[0.2em]">HỎI ĐÁP CÙNG AI</a>
     </nav>
     <div class="flex items-center space-x-4">
     </div>
@@ -223,7 +223,7 @@
           </div>
           <div>
             <h1 class="font-headline text-2xl text-primary font-bold tracking-tight">Trợ lý AI Tinh Hoa Việt</h1>
-            <p id="header-role" class="text-[14px] uppercase tracking-[0.2em] text-secondary font-bold opacity-70"></p>
+            <p id="header-role" class="text-[15px] uppercase tracking-[0.2em] text-secondary font-bold opacity-70"></p>
           </div>
         </div>
         <div class="flex gap-2">
@@ -260,7 +260,7 @@
               <span id="input-person-icon" class="material-symbols-outlined"></span>
             </button>
             <input id="chat-input"
-              class="flex-1 bg-transparent border-none outline-none focus:ring-0 text-sm py-3 px-4 font-body placeholder:text-outline/60"
+              class="flex-1 bg-transparent border-none outline-none focus:ring-0 text-base py-3 px-4 font-body placeholder:text-outline/60"
               placeholder="Hỏi thêm về danh nhân..." type="text" autocomplete="off" />
             <div class="flex items-center gap-2 px-2">
               <button id="chat-send-btn"
@@ -391,7 +391,7 @@
         bubble.className = "flex flex-col items-end animate-in slide-in-from-right-4 duration-500 mt-6";
         bubble.innerHTML = `
           <div class="max-w-[80%] bg-surface-container-highest text-on-surface p-4 rounded-xl rounded-tr-none shadow-sm">
-            <p class="text-sm leading-relaxed font-semibold">${text}</p>
+            <p class="text-base leading-relaxed font-semibold">${text}</p>
           </div>
           <span class="text-[10px] mt-2 text-outline font-semibold uppercase tracking-tighter">Bạn • Vừa xong</span>
         `;
