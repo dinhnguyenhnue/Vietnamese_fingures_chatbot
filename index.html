@@ -71,42 +71,168 @@
   
   <!-- Header with Favicon Logo -->
   <header class="w-full bg-[#1a0505] border-b border-[#d4af37]/30 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="index.html" class="flex items-center gap-3">
-        <img src="favicon.png" alt="Logo" class="w-10 h-10 object-contain">
-        <div>
-          <h1 class="text-xl font-headline font-bold text-accent tracking-widest leading-none">TINH HOA VIỆT</h1>
-          <p id="stat-counter" class="text-[9px] uppercase tracking-widest text-[#d4af37]/60 font-bold mt-1">Hành trình di sản</p>
+    <div class="w-full px-4 md:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-6">
+        <!-- Dropdown Menu Trigger -->
+        <div class="relative">
+          <button id="menu-btn" class="flex items-center justify-center w-10 h-10 text-accent hover:bg-accent/10 rounded-lg transition-colors">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
+          <!-- Dropdown content -->
+          <div id="dropdown-menu" class="hidden absolute top-full left-0 mt-4 w-64 bg-[#1a0505] border border-accent/30 rounded-xl shadow-2xl overflow-hidden z-50 backdrop-blur-xl">
+            <div class="p-2 space-y-1">
+              <a href="index.html" class="flex items-center px-4 py-3 text-[13px] font-bold tracking-[0.2em] text-[#fcf9f0]/80 hover:text-accent hover:bg-accent/10 rounded-lg transition-all uppercase">Trang Chủ</a>
+              <a href="tailieu.html" class="flex items-center px-4 py-3 text-[13px] font-bold tracking-[0.2em] text-[#fcf9f0]/80 hover:text-accent hover:bg-accent/10 rounded-lg transition-all uppercase">Tài Liệu</a>
+              <a href="contact.html" class="flex items-center px-4 py-3 text-[13px] font-bold tracking-[0.2em] text-[#fcf9f0]/80 hover:text-accent hover:bg-accent/10 rounded-lg transition-all uppercase">Liên Hệ</a>
+              <div class="h-px bg-accent/20 my-2 mx-2"></div>
+              <a href="museum.html" class="flex items-center gap-3 px-4 py-3 text-[13px] font-bold tracking-[0.2em] text-accent hover:bg-accent/10 rounded-lg transition-all uppercase">
+                <span class="material-symbols-outlined text-[20px]">view_in_ar</span>
+                Bảo Tàng Số 3D
+              </a>
+            </div>
+          </div>
         </div>
-      </a>
-      <div class="hidden md:flex gap-8 text-[14px] font-bold uppercase tracking-widest text-[#fcf9f0]/80">
-        <a href="index.html" class="hover:text-accent transition-colors">TRANG CHỦ</a>
-        <a href="tailieu.html" class="hover:text-accent transition-colors">TÀI LIỆU</a>
-        <a href="contact.html" class="hover:text-accent transition-colors">LIÊN HỆ</a>
+
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="favicon.png" alt="Logo" class="w-10 h-10 object-contain transition-transform group-hover:scale-110">
+          <div>
+            <h1 class="text-xl font-headline font-bold text-accent tracking-widest leading-none">TINH HOA VIỆT</h1>
+            <p id="stat-counter" class="text-[9px] uppercase tracking-widest text-[#d4af37]/60 font-bold mt-1">Hành trình di sản</p>
+          </div>
+        </a>
+      </div>
+      
+      <div class="hidden md:flex gap-4">
+        <!-- Right side empty for balance or secondary actions -->
       </div>
     </div>
   </header>
 
-  <main class="flex-1 w-full max-w-7xl mx-auto px-6 py-16">
-    <!-- Hero Title -->
-    <div class="text-center mb-16">
-      <h2 class="serif-text text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">Tinh Hoa Việt</h2>
-      <p class="text-[#d4af37] text-lg font-light tracking-wide italic">Bản sắc nghìn năm trong tầm tay bạn</p>
+  <main class="flex-1 w-full max-w-[98%] mx-auto px-2 md:px-6 py-16">
+    <!-- Featured Section: Poster & Side Column Grid (Top) -->
+    <div class="grid grid-cols-1 lg:grid-cols-8 gap-6 mb-32 items-start">
+      <!-- Left: Intro Poster (6/8) -->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5Lb65zfNUpAuttSn_Bi3K74tOKpPz8331zuyAuS30CRuHtg/viewform?usp=preview" 
+         target="_blank"
+         class="lg:col-span-6 block rounded-3xl overflow-hidden shadow-2xl border border-accent/20 group relative">
+        <img src="https://drive.google.com/thumbnail?id=1vvrOWtVj7IB3a0FjxL6CavvIcOgkAEa5&sz=w1200" 
+             alt="Giới thiệu Tinh Hoa Việt" 
+             class="w-full h-auto transition-transform duration-1000 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+          <div class="px-10 py-5 bg-accent text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-2xl flex items-center gap-3 text-lg">
+             <span class="material-symbols-outlined text-2xl">edit_note</span>
+             THAM GIA KHẢO SÁT NGAY
+          </div>
+        </div>
+      </a>
+
+      <!-- Right: Side Column (Video & Museum - 2/8) -->
+      <div class="lg:col-span-2 flex flex-col gap-6">
+        <!-- Top: VTV Go YouTube Desktop Mockup -->
+        <a href="https://www.youtube.com/watch?v=FugGiTQ7Ym4" 
+           target="_blank" 
+           class="relative w-full aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black group block shrink-0">
+          <!-- Background Image (VTV News Frame) -->
+          <img src="https://img.youtube.com/vi/FugGiTQ7Ym4/maxresdefault.jpg" 
+               alt="VTV Go - Số hóa di sản văn hóa" 
+               class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700">
+          
+          <!-- Desktop Player Overlay (Mock) -->
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500">
+            <!-- Top Gradient -->
+            <div class="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black/70 to-transparent p-4 flex items-start justify-between">
+               <h3 class="text-white text-lg font-medium drop-shadow-md">Số hóa di sản văn hóa</h3>
+               <div class="flex gap-4 text-white/90">
+                 <span class="material-symbols-outlined">share</span>
+                 <span class="material-symbols-outlined">more_vert</span>
+               </div>
+            </div>
+
+            <!-- Center Play Button (Large YouTube Icon) -->
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-300">
+                <div class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[18px] border-l-white border-b-[10px] border-b-transparent ml-1"></div>
+              </div>
+            </div>
+
+            <!-- Bottom Controls (Desktop Style) -->
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <!-- Progress Bar -->
+              <div class="relative h-1 w-full bg-white/30 rounded-full mb-3">
+                 <div class="h-full w-[12%] bg-red-600 rounded-full relative">
+                   <div class="absolute -right-1.5 top-1/2 -translate-y-1/2 w-3 h-3 bg-red-600 rounded-full scale-0 group-hover:scale-100 transition-transform border border-white/20"></div>
+                 </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4 text-white/90">
+                  <span class="material-symbols-outlined text-2xl">play_arrow</span>
+                  <span class="material-symbols-outlined text-2xl">volume_up</span>
+                  <div class="text-xs font-sans">0:12 / 1:08</div>
+                </div>
+                <div class="flex items-center gap-4 text-white/90">
+                  <span class="material-symbols-outlined text-2xl">closed_caption</span>
+                  <span class="material-symbols-outlined text-2xl">settings</span>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" class="h-4 brightness-0 invert opacity-80">
+                  <span class="material-symbols-outlined text-2xl">fullscreen</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- YouTube Meta Info (Below video, Desktop style) -->
+        <div class="mt-4 px-2">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white font-bold overflow-hidden">
+                <img src="https://yt3.ggpht.com/ytc/AIdro_k6_K3-Z8L6_fR_1_0_0_0_0_0_0_0=s88-c-k-c0x00ffffff-no-rj" alt="VTV Go" class="w-full h-full object-cover" onerror="this.src='https://ui-avatars.com/api/?name=VTV+Go&background=ff0000&color=fff'">
+              </div>
+              <div>
+                <div class="flex items-center gap-1">
+                  <span class="text-white font-bold text-sm">VTV Go</span>
+                  <span class="material-symbols-outlined text-[14px] text-white/60">check_circle</span>
+                </div>
+                <p class="text-white/50 text-[10px]">3,22 Tr người đăng ký</p>
+              </div>
+              <button class="ml-4 px-4 py-2 bg-white text-black text-xs font-bold rounded-full hover:bg-white/90 transition-colors">Đăng ký</button>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex items-center bg-white/10 rounded-full overflow-hidden">
+                <button class="px-3 py-1.5 flex items-center gap-2 hover:bg-white/20 transition-colors border-r border-white/10">
+                  <span class="material-symbols-outlined text-sm text-white">thumb_up</span>
+                  <span class="text-white text-[10px] font-bold">4</span>
+                </button>
+                <button class="px-3 py-1.5 hover:bg-white/20 transition-colors">
+                  <span class="material-symbols-outlined text-sm text-white">thumb_down</span>
+                </button>
+              </div>
+              <button class="px-3 py-1.5 bg-white/10 rounded-full flex items-center gap-2 hover:bg-white/20 transition-colors text-white text-[10px] font-bold">
+                <span class="material-symbols-outlined text-sm">share</span> Chia sẻ
+              </button>
+            </div>
+          </div>
+          <div class="p-3 bg-white/5 rounded-xl">
+             <p class="text-white text-[11px] font-bold mb-1">659 lượt xem • 4 năm trước</p>
+             <p class="text-white/70 text-[10px] line-clamp-1 italic">100% di tích quốc gia đặc biệt sẽ được số hóa và ứng dụng trên các nền tảng số...</p>
+          </div>
+        </div>
+
+        <!-- Bottom: 3D Museum Banner (Increased spacing) -->
+        <a href="museum.html" class="relative mt-6 overflow-hidden rounded-3xl bg-gradient-to-b from-[#1a0505] to-[#2d0808] border border-accent/30 p-6 flex flex-col items-center justify-center gap-4 shadow-2xl group transition-all hover:border-accent shrink-0">
+          <div class="absolute inset-0 bg-radial-at-top from-accent/5 to-transparent pointer-events-none"></div>
+          <span class="material-symbols-outlined text-4xl text-accent group-hover:scale-110 transition-transform">view_in_ar</span>
+          <div class="text-center">
+            <h2 class="font-headline text-lg text-[#fcf9f0] leading-tight mb-1 uppercase tracking-widest">BẢO TÀNG 3D</h2>
+            <p class="text-[9px] text-accent/50 font-bold tracking-widest">VÀO TRẢI NGHIỆM</p>
+          </div>
+        </a>
+      </div>
     </div>
 
-    <!-- 3D Museum CTA Banner -->
-    <div style="margin-bottom:48px;position:relative;overflow:hidden;border-radius:16px;background:linear-gradient(135deg,#1a0505 0%,#2d0808 50%,#1a0a02 100%);border:1px solid rgba(212,175,55,0.3);padding:40px 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
-      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(212,175,55,0.08) 0%,transparent 60%);pointer-events:none;"></div>
-      <div style="position:absolute;top:-40px;right:80px;width:200px;height:200px;background:radial-gradient(circle,rgba(212,175,55,0.06) 0%,transparent 70%);pointer-events:none;border-radius:50%;"></div>
-      <div style="position:relative;">
-        <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(212,175,55,0.7);margin-bottom:10px;">✦ Trải nghiệm mới</p>
-        <h2 style="font-family:'Marcellus',serif;font-size:clamp(22px,3vw,36px);color:#fcf9f0;margin-bottom:8px;line-height:1.2;">Bảo Tàng Số 3D</h2>
-        <p style="color:rgba(252,249,240,0.6);font-size:14px;max-width:480px;line-height:1.6;">Khám phá không gian triển lãm ba chiều — nơi bốn danh nhân lịch sử hiện diện trong khung ảnh 3D tương tác với ánh sáng, hạt lân tinh và thông tin sống động.</p>
-      </div>
-      <a href="museum.html" style="flex-shrink:0;display:inline-flex;align-items:center;gap:10px;background:#d4af37;color:#0a0204;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:16px 32px;border-radius:8px;text-decoration:none;transition:all 0.3s;white-space:nowrap;" onmouseover="this.style.background='#c9a228';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#d4af37';this.style.transform='translateY(0)'">
-        <span class="material-symbols-outlined" style="font-size:18px;">view_in_ar</span>
-        Vào Bảo Tàng 3D
-      </a>
+    <!-- Hero Title (Positioned far below to avoid overlap) -->
+    <div class="text-center mt-32 mb-16 relative z-10">
+      <h2 class="serif-text text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg opacity-90">Tinh Hoa Việt</h2>
+      <p class="text-[#d4af37] text-lg font-light tracking-[0.4em] uppercase italic">Bản sắc nghìn năm trong tầm tay bạn</p>
     </div>
 
     <!-- The Grid - Pure and Simple like at the beginning -->
@@ -123,11 +249,30 @@
   <script src="data.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      // Dropdown Logic
+      const menuBtn = document.getElementById('menu-btn');
+      const dropdownMenu = document.getElementById('dropdown-menu');
+
+      if (menuBtn && dropdownMenu) {
+        menuBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          dropdownMenu.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', () => {
+          dropdownMenu.classList.add('hidden');
+        });
+
+        dropdownMenu.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
+      }
+
       const grid = document.getElementById('card-grid');
       const counter = document.getElementById('stat-counter');
       
       if (typeof danhNhanData === 'undefined' || !Array.isArray(danhNhanData)) {
-        grid.innerHTML = '<p class="col-span-full text-center text-accent py-20">Lỗi: Không tìm thấy dữ liệu danh nhân.</p>';
+        if (grid) grid.innerHTML = '<p class="col-span-full text-center text-accent py-20">Lỗi: Không tìm thấy dữ liệu danh nhân.</p>';
         return;
       }
 
@@ -138,7 +283,7 @@
       }
 
       const sortedData = [...danhNhanData].sort((a, b) => parseYear(a.lifespan) - parseYear(b.lifespan));
-      counter.innerHTML = `Đã hiển thị ${sortedData.length} danh nhân tiêu biểu`;
+      if (counter) counter.innerHTML = `Đã hiển thị ${sortedData.length} danh nhân tiêu biểu`;
 
       sortedData.forEach(p => {
         if (!p || !p.id) return;

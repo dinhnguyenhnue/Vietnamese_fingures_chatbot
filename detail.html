@@ -167,6 +167,12 @@
         <div
           class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none">
         </div>
+        
+        <!-- Hero Poster (Infographic) moved to top -->
+        <div id="infographic-container" class="mb-12 hidden w-full max-w-4xl mx-auto px-4">
+          <img id="infographic-element" src="" alt="Poster" class="w-full h-auto rounded-2xl shadow-2xl border border-outline-variant/20 transition-transform duration-500 hover:scale-[1.01]" />
+        </div>
+
         <h1 id="hero-name" class="serif-text text-8xl font-bold text-primary mb-6 tracking-tight"></h1>
         <div class="flex items-center gap-4 mb-8">
           <div class="h-px w-12 bg-outline-variant/40"></div>
@@ -188,9 +194,6 @@
 
       <!-- Bento Grid Content -->
       <section id="section-tieu-su" class="bg-surface-container-lowest p-8 sm:p-10 rounded-3xl border border-outline-variant/30 shadow-sm mb-16 transition-opacity duration-300">
-        <div id="infographic-container" class="mb-12 hidden">
-          <img id="infographic-element" src="" alt="Poster" class="w-full h-auto rounded-2xl shadow-2xl border border-outline-variant/20 transition-transform duration-500 hover:scale-[1.01]" />
-        </div>
         <h3 id="bio-title" class="serif-text text-3xl font-bold text-primary mb-8 border-b border-outline-variant/30 pb-4 uppercase"></h3>
         <div class="grid grid-cols-12 gap-8">
           <!-- Biography Column -->
@@ -353,11 +356,10 @@
       document.getElementById('bio-lifespan').textContent = person.lifespan;
       document.getElementById('bio-hometown').textContent = person.hometown;
 
-      // Render Infographic if exists
-      const infoContainer = document.getElementById('infographic-container');
-      const infoImg = document.getElementById('infographic-element');
-      if (person.infographicImage) {
-        infoImg.src = person.infographicImage;
+      // Render Poster/Infographic if exists (Prioritize posterImage)
+      const displayPoster = person.posterImage || person.infographicImage;
+      if (displayPoster) {
+        infoImg.src = displayPoster;
         infoContainer.classList.remove('hidden');
       } else {
         infoContainer.classList.add('hidden');
@@ -653,7 +655,7 @@
           
           let html = `
             <div class="mb-6">
-              <h3 class="serif-text text-2xl font-bold text-primary mb-2">${category.categoryTitle}</h3>
+              <h2 class="serif-text text-3xl font-bold text-[#800000] mb-6 uppercase tracking-wider">TIỂU SỬ</h2>
               ${category.categoryDesc ? `<p class="font-sans text-sm text-stone-500">${category.categoryDesc}</p>` : ''}
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
