@@ -188,6 +188,9 @@
 
       <!-- Bento Grid Content -->
       <section id="section-tieu-su" class="bg-surface-container-lowest p-8 sm:p-10 rounded-3xl border border-outline-variant/30 shadow-sm mb-16 transition-opacity duration-300">
+        <div id="infographic-container" class="mb-12 hidden">
+          <img id="infographic-element" src="" alt="Poster" class="w-full h-auto rounded-2xl shadow-2xl border border-outline-variant/20 transition-transform duration-500 hover:scale-[1.01]" />
+        </div>
         <h3 id="bio-title" class="serif-text text-3xl font-bold text-primary mb-8 border-b border-outline-variant/30 pb-4 uppercase"></h3>
         <div class="grid grid-cols-12 gap-8">
           <!-- Biography Column -->
@@ -349,6 +352,16 @@
       document.getElementById('bio-desc').textContent = person.bio;
       document.getElementById('bio-lifespan').textContent = person.lifespan;
       document.getElementById('bio-hometown').textContent = person.hometown;
+
+      // Render Infographic if exists
+      const infoContainer = document.getElementById('infographic-container');
+      const infoImg = document.getElementById('infographic-element');
+      if (person.infographicImage) {
+        infoImg.src = person.infographicImage;
+        infoContainer.classList.remove('hidden');
+      } else {
+        infoContainer.classList.add('hidden');
+      }
 
       const imgEl = document.getElementById('image-element');
       imgEl.src = person.image;

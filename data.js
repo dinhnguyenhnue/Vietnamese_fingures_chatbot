@@ -406,6 +406,7 @@ const danhNhanData = [
     id: "nguyen-trai",
     name: "Nguyễn Trãi",
     sidebarIcon: "history_edu",
+    infographicImage: "https://drive.google.com/thumbnail?id=1Tz8kbLXOaKXofic3Ufx-f0dLY3NDP4_u&sz=w1000",
     title: "Mưu phạt tâm công",
     quote: '"Việc nhân nghĩa cốt ở yên dân / Quân điếu phạt trước lo trừ bạo."',
     bioTitle: "Tiểu sử Anh hùng",
