@@ -148,7 +148,7 @@
         <h2 class="font-serif text-[#472a07] text-xl font-bold">Danh Nhân Văn Hóa</h2>
         <p class="font-sans text-xs text-stone-500 uppercase tracking-widest mt-1">Hành trình di sản</p>
       </div>
-      <nav id="sidebar-nav" class="flex flex-row lg:flex-col flex-1 lg:space-y-1 overflow-x-auto lg:overflow-x-visible items-center lg:items-stretch custom-scrollbar px-4 lg:px-0 gap-3 lg:gap-0">
+      <nav id="sidebar-nav" class="flex flex-row lg:flex-col flex-1 lg:space-y-1 overflow-x-auto lg:overflow-x-visible lg:overflow-y-auto items-center lg:items-stretch custom-scrollbar px-4 lg:px-0 gap-3 lg:gap-0">
         <!-- Rendered by JS -->
       </nav>
       <div class="hidden lg:block px-8 mt-6">
@@ -210,9 +210,9 @@
               </div>
             </div>
             
-            <div class="relative group overflow-hidden rounded-xl h-[450px] md:h-[600px] bg-surface-container-highest shadow-sm border border-outline-variant/20">
+            <div class="relative group overflow-hidden rounded-xl bg-surface-container-highest shadow-sm border border-outline-variant/20">
               <img id="image-element"
-                class="w-full h-full object-contain object-top transition-transform duration-700 group-hover:scale-105" src=""
+                class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105" src=""
                 alt="Hero Image" />
               <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
                 <h2 id="image-title" class="text-white font-bold text-xl drop-shadow-md"></h2>
@@ -333,7 +333,7 @@
         }
 
         a.innerHTML = `
-          <div class="w-8 h-8 lg:w-10 lg:h-10 rounded-md overflow-hidden ring-1 ring-black/10 shrink-0 mr-3 shadow-sm bg-white"><img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover"></div>
+          <div class="w-8 h-8 lg:w-10 lg:h-10 rounded-md overflow-hidden ring-1 ring-black/10 shrink-0 mr-3 shadow-sm bg-white"><img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover object-top"></div>
           <span class="font-sans text-[16px] font-bold whitespace-nowrap">${p.name}</span>
         `;
 
@@ -357,6 +357,8 @@
       document.getElementById('bio-hometown').textContent = person.hometown;
 
       // Render Poster/Infographic if exists (Prioritize posterImage)
+      const infoContainer = document.getElementById('infographic-container');
+      const infoImg = document.getElementById('infographic-element');
       const displayPoster = person.posterImage || person.infographicImage;
       if (displayPoster) {
         infoImg.src = displayPoster;
@@ -367,7 +369,7 @@
 
       const imgEl = document.getElementById('image-element');
       imgEl.src = person.image;
-      imgEl.className = `w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${person.imagePosition || ""}`;
+      imgEl.className = `w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105 ${person.imagePosition || ""}`;
       const titleEl = document.getElementById('image-title');
       const descEl = document.getElementById('image-desc');
       const metaContainer = document.getElementById('hero-metadata');

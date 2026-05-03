@@ -199,7 +199,7 @@
         <p class="text-xs font-sans font-semibold uppercase tracking-widest text-secondary opacity-70">Hành trình di sản
         </p>
       </div>
-      <nav id="sidebar-nav" class="flex flex-row lg:flex-col flex-1 lg:space-y-1 overflow-x-auto lg:overflow-x-visible items-center lg:items-stretch custom-scrollbar px-4 lg:px-0 gap-3 lg:gap-0">
+      <nav id="sidebar-nav" class="flex flex-row lg:flex-col flex-1 lg:space-y-1 overflow-x-auto lg:overflow-x-visible lg:overflow-y-auto items-center lg:items-stretch custom-scrollbar px-4 lg:px-0 gap-3 lg:gap-0">
         <!-- Rendered by JS -->
       </nav>
       <div class="hidden lg:block mt-auto px-6 pt-6 border-t border-outline-variant/20">
@@ -321,7 +321,7 @@
 
         a.innerHTML = `
           <div class="w-8 h-8 lg:w-10 lg:h-10 rounded-md overflow-hidden ring-1 ring-black/10 shrink-0 mr-3 shadow-sm bg-white">
-            <img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover">
+            <img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover object-top">
           </div>
           <span class="font-sans text-[16px] font-bold whitespace-nowrap">${p.name}</span>
         `;
@@ -346,7 +346,7 @@
          const btn = document.createElement('button');
          const isAct = p.id === currentId;
          btn.className = `w-10 h-10 flex-shrink-0 rounded-full border-2 ${isAct ? 'border-primary shadow-md scale-110 ring-2 ring-primary/20' : 'border-transparent opacity-60 hover:opacity-100 hover:scale-110 active:scale-95'} transition-all overflow-hidden bg-white cursor-pointer ml-1 first:ml-0`;
-         btn.innerHTML = `<img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover" title="${p.name}" alt="${p.name}"/>`;
+         btn.innerHTML = `<img src="${p.headerAvatar || p.avatar}" class="w-full h-full object-cover object-top" title="${p.name}" alt="${p.name}"/>`;
          btn.onclick = () => {
              if (!isAct) smoothNavigate(`code_chatbot.html?id=${p.id}`);
          };
