@@ -128,28 +128,56 @@
 
       <!-- Right: Side Column (Video & Museum - 2/8) -->
       <div class="lg:col-span-2 flex flex-col gap-6">
-        <!-- Video: Clickable Thumbnail -->
-        <a href="https://www.youtube.com/watch?v=MGX_7Rz_gNQ" 
-           target="_blank"
-           class="relative w-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black group block shrink-0">
-          <div class="relative w-full" style="padding-top: 56.25%;">
-            <img 
-              class="absolute top-0 left-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700"
-              src="https://img.youtube.com/vi/MGX_7Rz_gNQ/maxresdefault.jpg"
-              alt="Xem video trên YouTube"
-              onerror="this.src='https://img.youtube.com/vi/MGX_7Rz_gNQ/hqdefault.jpg'">
-            <!-- Play button overlay -->
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="w-16 h-16 bg-red-600/90 rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-300 group-hover:bg-red-600">
-                <div class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[18px] border-l-white border-b-[10px] border-b-transparent ml-1"></div>
-              </div>
+        <!-- Video: Google Drive Embed -->
+        <div class="shrink-0">
+          <!-- Label -->
+          <div class="flex items-center gap-2 mb-2 px-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-accent inline-block"></span>
+            <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-accent/70">Video giới thiệu</p>
+          </div>
+          <!-- Player wrapper -->
+          <div class="relative w-full rounded-2xl overflow-hidden border border-accent/20 shadow-2xl bg-black"
+               style="box-shadow: 0 0 30px rgba(212,175,55,0.08);">
+            <div class="relative w-full" style="padding-top: 62%;">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://drive.google.com/file/d/1re1_BCaCmeZnA822-JhBTB0LXLMzMgYf/preview"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                frameborder="0"
+                title="Video Tinh Hoa Việt">
+              </iframe>
             </div>
-            <!-- YouTube logo badge -->
-            <div class="absolute bottom-3 right-3 bg-black/70 px-2 py-1 rounded-md flex items-center gap-1">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" class="h-3 brightness-0 invert opacity-80">
+            <!-- Bottom gradient bar -->
+            <div class="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
+          </div>
+          <!-- Trích nguồn -->
+          <p class="text-[10px] text-[#fcf9f0]/40 mt-2 px-1 tracking-wide">
+            Nguồn: <a href="https://vtvgo.vn" target="_blank" class="text-accent/60 hover:text-accent underline underline-offset-2 transition-colors">VTVGo</a>
+          </p>
+        </div>
+
+        <!-- TODO: Nguồn thay thế từ VTVGo
+        <div class="shrink-0 pb-8">
+          <div class="flex items-center gap-2 mb-2 px-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-accent inline-block"></span>
+            <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-accent/70">Video giới thiệu — VTVGo</p>
+          </div>
+          <div class="relative w-full rounded-2xl overflow-hidden border border-accent/20 shadow-2xl bg-black"
+               style="box-shadow: 0 0 30px rgba(212,175,55,0.08);">
+            <div class="relative w-full" style="padding-top: 62%;">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="LINK_VTVGO_Ở_ĐÂY"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                frameborder="0"
+                title="Video Tinh Hoa Việt - VTVGo">
+              </iframe>
             </div>
           </div>
-        </a>
+        </div>
+        -->
 
         <!-- Bottom: 3D Museum Banner — flex-1 to fill remaining height -->
         <a href="museum.html" class="relative flex-1 overflow-hidden rounded-3xl bg-gradient-to-b from-[#1a0505] to-[#2d0808] border border-accent/30 p-8 flex flex-col items-center justify-center gap-5 shadow-2xl group transition-all hover:border-accent min-h-[280px]">
