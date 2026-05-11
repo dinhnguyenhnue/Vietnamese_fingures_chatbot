@@ -175,20 +175,50 @@
 <body class="bg-background text-on-background font-body">
   <!-- TopNavBar -->
   <header
-    class="flex justify-between items-center px-8 py-4 w-full sticky top-0 bg-[#fcf9f0] dark:bg-stone-900/90 backdrop-blur-md z-50 border-b border-outline-variant/10">
-    <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-      <img src="favicon.png" alt="Logo" class="w-8 h-8 object-contain">
-      <span class="text-2xl font-serif font-bold text-[#690008] dark:text-[#8b1a1a] tracking-tight">TINH HOA VIỆT</span>
-    </a>
+    class="flex justify-between items-center px-4 md:px-8 py-4 w-full sticky top-0 bg-[#fcf9f0] dark:bg-stone-900/90 backdrop-blur-md z-50 border-b border-outline-variant/10">
+    <div class="flex items-center gap-4">
+      <!-- Hamburger Menu -->
+      <div class="relative">
+        <button id="menu-btn" class="flex items-center justify-center w-10 h-10 text-[#690008] hover:bg-[#690008]/10 rounded-lg transition-colors">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+        <div id="dropdown-menu" class="hidden absolute top-full left-0 mt-2 w-64 bg-[#fcf9f0] border border-[#690008]/20 rounded-xl shadow-2xl overflow-hidden z-50">
+          <div class="p-2 space-y-1">
+            <a href="index.html" class="flex items-center px-4 py-3 text-[13px] font-bold tracking-[0.2em] text-stone-700 hover:text-[#690008] hover:bg-[#690008]/10 rounded-lg transition-all uppercase">Trang Chủ</a>
+            <a href="tailieu.html" class="flex items-center px-4 py-3 text-[13px] font-bold tracking-[0.2em] text-stone-700 hover:text-[#690008] hover:bg-[#690008]/10 rounded-lg transition-all uppercase">Tài Liệu</a>
+            <a href="contact.html" class="flex items-center px-4 py-3 text-[13px] font-bold tracking-[0.2em] text-stone-700 hover:text-[#690008] hover:bg-[#690008]/10 rounded-lg transition-all uppercase">Liên Hệ</a>
+            <div class="h-px bg-[#690008]/15 my-2 mx-2"></div>
+            <a href="museum.html" class="flex items-center gap-3 px-4 py-3 text-[13px] font-bold tracking-[0.2em] text-[#690008] hover:bg-[#690008]/10 rounded-lg transition-all uppercase">
+              <span class="material-symbols-outlined text-[20px]">view_in_ar</span>
+              Bảo Tàng Số 3D
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+        <img src="favicon.png" alt="Logo" class="w-8 h-8 object-contain">
+        <span class="text-xl font-bold text-[#690008] dark:text-[#8b1a1a] tracking-widest leading-none" style="font-family:'Playfair Display',serif;">TINH HOA VIỆT</span>
+      </a>
+    </div>
     <nav class="hidden md:flex space-x-8">
       <a id="nav-bio"
         class="cursor-pointer text-stone-600 dark:text-stone-400 font-bold hover:text-[#690008] transition-colors duration-300 font-sans text-[16px] uppercase tracking-[0.2em]">TIỂU SỬ & DẤU ẤN</a>
       <a id="nav-chat"
         class="cursor-pointer text-[#690008] dark:text-[#8b1a1a] font-bold border-b-2 border-[#690008] pb-1 font-sans text-[16px] uppercase tracking-[0.2em]">HỎI ĐÁP CÙNG AI</a>
     </nav>
-    <div class="flex items-center space-x-4">
-    </div>
+    <div class="flex items-center space-x-4"></div>
   </header>
+  <script>
+    (function(){
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('dropdown-menu');
+      if(btn && menu){
+        btn.addEventListener('click', e => { e.stopPropagation(); menu.classList.toggle('hidden'); });
+        document.addEventListener('click', () => menu.classList.add('hidden'));
+        menu.addEventListener('click', e => e.stopPropagation());
+      }
+    })();
+  </script>
 
   <div class="flex flex-col lg:flex-row min-h-[calc(100vh-64px)] relative">
     <!-- SideNavBar -->
